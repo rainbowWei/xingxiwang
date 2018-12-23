@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>头部</title>
+  <link rel="stylesheet" href="../../css/public/header.css">
+  <script src="../../js/plugins/jquery-1.11.3.min.js"></script>
+  <script src="../../js/plugins/jquery.cookie.js"></script>
+  <script src="/js/static/utils.js"></script>
+</head>
+<body>
+  <!-- header部分 -->
+<div class="header">
+  <div class="header-c clearfix">
+      <div class="logo fl"></div>
+      <ul class="nav fl clearfix">
+          <li class="test">
+            <span>首 页</span>
+            <p></p>
+          </li>
+          <li class="test">
+            <span>ＭＵＳＴ课程体系</span>
+              <div class="menu">
+                  <a href="javascript:;" >ＭＵＳＴ技术</a>
+                  <a href="javascript:">线上课程</a>
+                  <a href="javascript:">线下课程</a>
+                  <a href="javascript:">师资团队</a>
+                  <a href="javascript:">成功案例</a>
+              </div>
+              <p></p>
+
+          </li>
+          <li class="test">
+            <span>星希望网校</span>
+          </li>
+          <li class="test ">
+            <span>关于我们</span>
+              <div class="menu">
+                  <a href="javascript:" >星希望简介</a>
+                  <a href="javascript:">创始人简介</a>
+                  <a href="javascript:" >发展历程</a>
+                  <a href="javascript:" >所获荣誉</a>
+                  <a href="javascript:" >校区概况</a>
+              </div>
+              <p></p>
+          
+          </li>
+          <li class="test">
+            <span>新闻中心</span>
+            <div class="menu">
+                <a href="javascript:">最新动态</a>
+                <a href="javascript:">行业新闻</a>
+                <a href="javascript:">公益活动</a>
+                <a href="javascript:">媒体报道</a>
+            </div>
+            <p></p>
+  
+          </li>
+          <li class="test">
+            <span>爱心社</span>
+            <div class="menu">
+                <a href="javascript:">志愿者招募</a>
+                <a href="javascript:">爱心捐赠</a>
+            </div>
+            <p></p>
+          </li>
+      </ul>
+      <div class="contact fr">
+          <p>全国咨询热线</p>   
+          <p class="blue">010-52668752</p>
+      </div>
+  </div>   
+</div>
+<script>
+  // 二级菜单的显示和隐藏
+  $(".test").hover(
+    function(){
+    $(this).find("div").css('display','block'); 
+    },
+    function(){
+    $(this).find("div").css('display','none')
+    }
+  );
+
+
+  // 效果有问题
+  var URL = ['index.html', 'course.html', 'internet.html', 'news.html', 'love.html']
+  var COURSE = ['course.html', 'b.html', 'c.html']
+  
+  var I = getUrlParams (URL);
+  $.cookie('i', I);
+  
+  $(".nav li").children("p").removeClass("line")
+  $(".nav li").eq(I).children("p").addClass("line");
+
+  $(".nav").on("click", "li", function(e) {
+    var _this = $(this);
+    var index = Number(_this.index());
+    _this.children('p').addClass('line')
+    _this.siblings().children('p').removeClass('line')
+    
+    if (_this.find('.menu').length > 0) {
+      if (e.target.tagName === 'SPAN') {
+        return;
+      }
+      location.href = '/pags/' + COURSE[$(e.target).index()]
+    } else {
+      location.href = "/pags/" + URL[index]
+    }
+  })
+</script>
+</body>
+</html>
