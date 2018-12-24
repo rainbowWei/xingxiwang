@@ -3,7 +3,7 @@
  */
 
 function getUrlParams (URL) {
-  var reg = /(\w*.html)/;
+  var reg = /(\w*).html/;
   var url = location.href;
   var keywords = reg.exec(url);
   var I = 0;
@@ -15,4 +15,17 @@ function getUrlParams (URL) {
     }
   })
   return I;
+}
+
+function getParams (x) {
+  var search = location.search.substr(1).split("&");
+  var obj = {}
+  for(var i=0; i<search.length; i++) {
+    var temp = search[i].split('=');
+    obj[temp[0]] = temp[1]
+  }
+  if (typeof x === "string") {
+    return obj[x]
+  }
+  return obj
 }
