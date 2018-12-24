@@ -761,17 +761,19 @@ a:hover {
 .expert .ex-list {
   width: 100%;
   height: 1111px;
-  margin-top: 60px;
+  margin: 60px auto 40px;
 }
-.expert .ex-list li {
+.expert .ex-list a {
   float: left;
+  display: block;
   width: 232px;
   height: 350px;
   margin-right: 10px;
   margin-bottom: 20px;
   position: relative;
+  cursor: pointer;
 }
-.expert .ex-list li .img {
+.expert .ex-list a .img {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -779,7 +781,7 @@ a:hover {
   left: 0;
   top: 0;
 }
-.expert .ex-list li .title {
+.expert .ex-list a .title {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -791,27 +793,360 @@ a:hover {
   text-align: center;
   font-size: 24px;
   color: #ffffff;
+  display: block;
 }
-.expert .ex-list li .text {
+.expert .ex-list a .text {
   padding: 96px 0 0 16px;
   width: 216px;
   height: 254px;
   background-color: #050214;
   opacity: 0.8;
+  display: none;
 }
-.expert .ex-list li .text div {
+.expert .ex-list a .text div {
   font-size: 22px;
   line-height: 37px;
   color: #ffffff;
 }
-.expert .ex-list li .text p {
+.expert .ex-list a .text p {
   font-size: 14px;
   line-height: 31px;
   color: #ffffff;
 }
-.expert .ex-list li .text2 p {
+.expert .ex-list a .text2 p {
   line-height: 26px;
 }
 .expert .ex-list .mr {
   margin-right: 0;
+}
+.mode {
+  height: 1208px;
+  background-color: #f7f7f7;
+  padding-top: 20px;
+}
+.mode .ab-h {
+  width: 467px;
+  height: 71px;
+  margin: 0 auto ;
+  position: relative;
+}
+.mode .ab-h .line {
+  width: 100%;
+  height: 1px;
+  background: #dbdbdb;
+  position: absolute;
+  top: 50%;
+}
+.mode .ab-h .title {
+  width: 187px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -93px;
+  text-align: center;
+  top: 20px;
+}
+.mode .ab-h .title .t1 {
+  font-size: 38px;
+  line-height: 20px;
+  color: #333333;
+}
+.mode .ab-h .title .underline {
+  width: 80px;
+  height: 6px;
+  background-color: #f08300;
+  margin: 13px 0 0 92px;
+}
+.mode .ab-h .title .t2 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #b1b1b1;
+  margin-top: 10px;
+}
+.mode .mode-list {
+  width: 844px;
+  height: 977px;
+  margin: 40px auto 125px;
+}
+.mode .mode-list li div {
+  float: left;
+}
+.mode .mode-list li .tl {
+  margin: 114px 0 0 22px;
+}
+.mode .mode-list li .tl p {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #666666;
+}
+.mode .mode-list li .tl div {
+  width: 144px;
+  height: 4px;
+  background: #a9a9a9;
+  margin: 3px 0 0 37px ;
+}
+.mode .mode-list li .tp {
+  margin: 0 63px;
+  width: 304px;
+  height: 160px;
+  background: url(../../images/contrast.png);
+}
+.mode .mode-list li .tr div {
+  width: 130px;
+  margin-left: 0px;
+}
+.mode .mode-list .t1 {
+  width: 100%;
+  height: 160px;
+}
+.mode .mode-list .t2 {
+  margin-top: 25px;
+}
+.mode .mode-list .t2 .t2l {
+  width: 223px;
+  height: 109px;
+  padding-top: 30px;
+  background-color: #f08300;
+  border-radius: 62px 12px 62px 12px;
+  text-align: center;
+}
+.mode .mode-list .t2 .t2l p {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+}
+.mode .mode-list .t2 .t2l p .strong {
+  font-weight: bold;
+}
+.mode .mode-list .t2 .tp2 {
+  text-align: center;
+  margin: 0 50px 0;
+}
+.mode .mode-list .t2 .tp2 .arrow {
+  width: 295px;
+  height: 45px;
+  background: url(../../images/arrow2.png);
+}
+.mode .mode-list .t2 .tp2 .text {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #666666;
+}
+.mode .mode-list .t2 .tp3 {
+  margin: -19px 50px 0;
+}
+.mode .mode-list .t2 .tp4 {
+  margin: -10px 50px 0;
+}
+.trends {
+  width: 100%;
+  height: 394px;
+  padding-top: 30px;
+}
+.trends .tab {
+  width: 100%;
+  height: 68px;
+  position: relative;
+  top: 17px;
+}
+.trends .tab li {
+  float: left;
+  text-align: center;
+  line-height: 34px;
+  width: 397px;
+  height: 34px;
+  font-size: 24px;
+  color: #666666;
+  border-left: 2px solid #d2d2d2;
+  cursor: pointer;
+}
+.trends .tab li:first-child {
+  border-left: none;
+}
+.trends .tab .tab_on {
+  line-height: 68px;
+  width: 397px;
+  height: 68px;
+  color: #ffffff;
+  margin-top: -17px;
+  background-color: #ee52a8;
+  border-radius: 20px 20px 0px 0px;
+}
+.trends .tab .tab_on2 {
+  background-color: #5885e2;
+  line-height: 68px;
+  width: 397px;
+  height: 68px;
+  color: #ffffff;
+  margin-top: -17px;
+  border-radius: 20px 20px 0px 0px;
+}
+.trends .tab .tab_on3 {
+  background-color: #a665ec;
+  line-height: 68px;
+  width: 397px;
+  height: 68px;
+  color: #ffffff;
+  margin-top: -17px;
+  border-radius: 20px 20px 0px 0px;
+}
+.trends .line {
+  width: 100%;
+  height: 8px;
+  background: url(../../images/line.png);
+}
+.trends .content1 {
+  width: 1178px;
+  height: 276px;
+  padding: 10px 0 30px 22px;
+  background-color: #ffffff;
+  box-shadow: inset 1px 2px 7px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 7px 0px rgba(0, 0, 0, 0.24);
+}
+.trends .content1 div {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.trends .content1 div .frist {
+  float: left;
+  margin-top: 20px;
+  margin-right: 157px;
+}
+.trends .content1 div .frist .fl-img {
+  width: 204px;
+  height: 116px;
+}
+.trends .content1 div .frist .fr-text {
+  width: 208px;
+  height: 116px;
+  margin-left: 20px;
+  position: relative;
+}
+.trends .content1 div .frist .fr-text .title {
+  margin-top: 13px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #666666;
+}
+.trends .content1 div .frist .fr-text .time {
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #999999;
+  position: absolute;
+  bottom: 0;
+}
+.trends .content1 div .frist .fr-text2 {
+  width: 280px;
+}
+.trends .content1 div .second {
+  margin-right: 80px;
+}
+.trends .content1 div .trends-more {
+  width: 204px;
+  height: 116px;
+  background-color: #ffffff;
+  border: solid 1px #d6d6d6;
+  text-align: center;
+  line-height: 116px;
+}
+.trends .content1 div .trends-more a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.trends .content1 .on {
+  display: block;
+}
+.case {
+  width: 100%;
+  height: 767px;
+}
+.case .ab-h {
+  width: 467px;
+  height: 71px;
+  margin: 70px auto 0 ;
+  position: relative;
+}
+.case .ab-h .line {
+  width: 100%;
+  height: 1px;
+  background: #dbdbdb;
+  position: absolute;
+  top: 50%;
+}
+.case .ab-h .title {
+  width: 187px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -93px;
+  text-align: center;
+  top: 20px;
+}
+.case .ab-h .title .t1 {
+  font-size: 38px;
+  line-height: 20px;
+  color: #333333;
+}
+.case .ab-h .title .underline {
+  width: 80px;
+  height: 6px;
+  background-color: #f08300;
+  margin: 13px 0 0 92px;
+}
+.case .ab-h .title .t2 {
+  font-size: 18px;
+  line-height: 20px;
+  color: #b1b1b1;
+  margin-top: 10px;
+}
+.case .case-list {
+  width: 100%;
+  height: 228px;
+  margin-top: 50px;
+}
+.case .case-list a {
+  float: left;
+  margin-left: 16px;
+}
+.case .case-list a:first-child {
+  margin-left: 0;
+}
+.case .case-list a p {
+  width: 288px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0 16px 0 16px;
+}
+.case .case-list a .c1 {
+  background-color: #ef7649;
+}
+.case .case-list a .c2 {
+  background-color: #5b82e7;
+}
+.case .case-list a .c3 {
+  background-color: #ee52a8;
+}
+.case .case-list a .c4 {
+  background-color: #ee52a8;
+}
+.case .video {
+  width: 100%;
+  height: 348px;
+  margin-top: 20px;
+}
+.case .video video {
+  float: left;
+  background: #666;
+}
+.case .video video:first-child {
+  margin-right: 20px;
 }

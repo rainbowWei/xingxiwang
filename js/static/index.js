@@ -47,4 +47,34 @@ $(function(){
      }, function () {
      t = setInterval(move, 4000);
      })
+
+     //专家团队的显示隐藏
+     $(".ex-list a").hover(
+        function(){
+            $(this).find(".title").css('display','none')
+            $(this).find(".text").css('display','block'); 
+        },
+        function(){
+            $(this).find(".title").css('display','block')
+            $(this).find(".text").css('display','none'); 
+        }
+      );
+
+      //公司动态  行业新闻   ASD百科
+      $(".tab li").click(function(){
+        $(".content1 li").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');    
+    })
+    $(".tab li").mouseover(function(){
+        //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+            var _index = $(this).index();
+            $(".content1>div").eq(_index).show().siblings().hide();
+            if(_index == 0){
+                 $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
+            }else if(_index == 1){
+                $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3");
+            }else{
+                $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3");
+            }
+       
+        });
 })

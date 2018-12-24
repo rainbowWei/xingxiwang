@@ -1,4 +1,4 @@
-@import 'reset.less';
+@import '../public/reset.less';
 
 //轮播部分
 a:hover{
@@ -645,14 +645,16 @@ a:hover{
     .ex-list{
         width:100%;
         height:1111px;
-        margin-top: 60px;
-        li{
+        margin: 60px auto 40px;
+        a{
             float: left;
+            display: block;
             width: 232px;
             height: 350px;
             margin-right:10px;
             margin-bottom:20px;
             position: relative;
+            cursor: pointer;
             .img{
                 width:100%;
                 height:100%;
@@ -673,6 +675,7 @@ a:hover{
                 text-align: center;
                 font-size: 24px;
                 color: #ffffff;
+                display: block;
             }
             .text{
                 padding: 96px 0 0 16px;
@@ -680,7 +683,7 @@ a:hover{
                 height: 254px;
                 background-color: #050214;
                 opacity: 0.8;
-                // display: none;
+                display: none;
                 div{
                     font-size: 22px;
                     line-height: 37px;
@@ -703,4 +706,350 @@ a:hover{
             margin-right: 0;
         }
     }
+}
+
+//模式对比部分
+.mode{
+    height: 1208px;
+    background-color: #f7f7f7;
+    padding-top:20px;
+    .ab-h{
+        width: 467px;
+        height: 71px;
+        margin: 0 auto ;
+        position: relative;
+        .line{
+            width:100%;
+            height: 1px;
+            background: #dbdbdb;
+            position: absolute;
+            top:50%;
+        }
+        .title{
+            width: 187px;
+            height:100%;
+            background: #fff;
+            position: absolute;
+            left:50%;
+            margin-left:-93px;
+            text-align: center;
+            top: 20px;
+            .t1{
+                font-size: 38px;
+                line-height: 20px;
+                color: #333333;
+            }
+            .underline{
+                width: 80px;
+                height: 6px;
+                background-color: #f08300;
+                margin: 13px 0 0 92px;
+            }
+            .t2{
+                font-size: 18px;
+                line-height: 20px;
+                color: #b1b1b1;
+                margin-top: 10px;
+            }
+        }
+    } 
+    .mode-list{
+        width:844px;
+        height:977px;
+        margin: 40px auto 125px;
+        li{
+            div{
+                float: left;
+            }
+            .tl{
+                margin: 114px 0 0 22px;
+                p{
+                    font-size: 36px;
+                    font-weight: bold;
+                    line-height: 36px;
+                    color: #666666;
+                }
+                div{
+                    width: 144px;
+                    height: 4px;
+                    background: #a9a9a9;
+                    margin: 3px 0 0 37px ;
+                }
+            }
+            .tp{
+                margin: 0 63px;
+                width: 304px;
+                height:160px;
+                background: url(../../images/contrast.png);
+            }
+            .tr{
+                div{
+                    width: 130px;
+                    margin-left: 0px;
+                }
+            }
+        }
+        .t1{
+        width:100%;
+        height:160px;
+        }
+        .t2{
+            margin-top: 25px;
+          .t2l{
+            width: 223px;
+            height: 109px;
+            padding-top: 30px;
+            background-color: #f08300;
+            border-radius: 62px 12px 62px 12px;
+            text-align: center; 
+              p{
+                font-size: 24px;
+                color: #ffffff;
+                text-align: center; 
+            .strong{
+                font-weight: bold;  
+                }
+              }
+          }
+         
+          .tp2{
+              text-align: center;
+              margin: 0 50px 0;
+            .arrow{
+                width: 295px;
+                height:45px;
+                background: url(../../images/arrow2.png);
+            }
+            .text{
+                font-size: 25px;
+                font-weight: bold;
+                line-height: 20px;
+                color: #666666;
+            }
+          } 
+          .tp3{
+            margin: -19px 50px 0;
+          } 
+          .tp4{
+            margin: -10px 50px 0;
+          } 
+        }
+    }
+}
+// 公司动态  行业新闻  ASD百科
+.trends{
+    width:100%;
+    height:394px;
+    padding-top: 30px;
+    .tab{
+        width:100%;
+        height:68px;
+        position: relative;
+        top:17px;
+        li{
+           
+            float: left;
+            text-align: center;
+            line-height: 34px;
+            width: 397px;
+            height:34px;
+            font-size: 24px;
+            color: #666666;  
+            border-left: 2px solid #d2d2d2;
+            cursor: pointer;
+            &:first-child{
+                border-left: none
+            }
+        }
+        .tab_on{
+            line-height: 68px;
+            width: 397px;
+            height:68px; 
+            color: #ffffff;
+            margin-top: -17px;
+            background-color: #ee52a8;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .tab_on2{
+            background-color: #5885e2;
+            line-height: 68px;
+            width: 397px;
+            height:68px; 
+            color: #ffffff;
+            margin-top: -17px;
+            border-radius: 20px 20px 0px 0px;
+        }
+        .tab_on3{
+            background-color: #a665ec;
+            line-height: 68px;
+            width: 397px;
+            height:68px; 
+            color: #ffffff;
+            margin-top: -17px;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+    }
+    .line{
+        width:100%;
+        height: 8px;
+        background: url(../../images/line.png);
+    }
+    .content1{
+        width: 1178px;
+        height:276px;
+        padding:10px 0 30px 22px;
+        background-color: #ffffff;
+        box-shadow: inset 1px 2px 7px 0px 
+            rgba(0, 0, 0, 0.24), 
+            inset 0px -2px 7px 0px 
+            rgba(0, 0, 0, 0.24);
+        div{
+           
+            width:100%;
+            height:100%;
+            display: none;
+            .frist{
+                float: left; 
+                margin-top: 20px;
+                margin-right:157px;
+                .fl-img{
+                    width:204px;
+                    height:116px;
+                }
+                .fr-text{
+                   width:208px;
+                   height:116px;
+                   margin-left: 20px;
+                   position: relative; 
+                   .title{
+                       margin-top: 13px;
+                       font-size: 20px;
+                       line-height: 26px;
+                        color: #666666;
+                   }
+                   .time{
+                       margin-top: 30px;
+                       font-size: 16px;
+                       line-height: 26px;
+                        color: #999999;
+                        position: absolute;
+                        bottom: 0;
+                   }
+                }
+               .fr-text2{
+                   width: 280px;
+               } 
+            }
+            .second{
+                margin-right: 80px;
+            }
+            .trends-more{
+                width: 204px;
+                height: 116px;
+                background-color: #ffffff;
+                border: solid 1px #d6d6d6;
+                text-align: center;
+                line-height: 116px;
+                a{
+                    display: block;
+                    width: 100%;
+                    height:100%;
+                }
+            }
+        }
+        .on{display: block;}
+    }
+}
+
+//成功案例部分
+.case{
+ width: 100%;
+ height:767px;
+ .ab-h{
+    width: 467px;
+    height: 71px;
+    margin: 70px auto 0 ;
+    position: relative;
+    .line{
+        width:100%;
+        height: 1px;
+        background: #dbdbdb;
+        position: absolute;
+        top:50%;
+    }
+    .title{
+        width: 187px;
+        height:100%;
+        background: #fff;
+        position: absolute;
+        left:50%;
+        margin-left:-93px;
+        text-align: center;
+        top: 20px;
+        .t1{
+            font-size: 38px;
+            line-height: 20px;
+            color: #333333;
+        }
+        .underline{
+            width: 80px;
+            height: 6px;
+            background-color: #f08300;
+            margin: 13px 0 0 92px;
+        }
+        .t2{
+            font-size: 18px;
+            line-height: 20px;
+            color: #b1b1b1;
+            margin-top: 10px;
+        }
+    }
+}   
+.case-list{
+    width: 100%;
+    height:228px;
+    margin-top: 50px;
+    a{
+        float: left;
+        margin-left: 16px;
+        &:first-child{
+            margin-left: 0;
+        }
+        p{
+            width: 288px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 50px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 0 16px 0 16px;
+        }
+        .c1{  
+	        background-color: #ef7649;
+        }
+        .c2{  
+            background-color: #5b82e7;
+        }
+        .c3{  
+	        background-color: #ee52a8;
+        }
+        .c4{  
+	        background-color: #ee52a8;
+        }
+    }
+}
+.video{
+    width: 100%;
+    height: 348px;
+    margin-top:20px;
+    video{
+        float: left;
+        background:#666;
+        &:first-child{
+            margin-right:20px;
+        }
+    }
+    
+}
 }
