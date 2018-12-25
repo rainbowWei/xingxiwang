@@ -92,11 +92,15 @@
     $(".nav").on("click", "li .title", function (e) {
       if (!$(this).next().hasClass("menu")) {
         var index = $(this).parent().index();
-        location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
+        if ($(this).attr("path") === "index") {
+          location.href = '/index.html';
+        } else {
+          location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
+        }
       }
     })
     $(".nav").on("click", ".menu", function (e) {
-      location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index();
+      location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index() + "&b=" + $(e.target).index();
     })
 
   })

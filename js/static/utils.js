@@ -10,7 +10,7 @@ function getUrlParams (URL) {
   console.log($.cookie('i'), '-------------')
   I = $.cookie('i') ? $.cookie('i') : I;
   $.each(URL, function (index, item) {
-    if (keywords[1] === item) {
+    if (keywords && keywords[1] === item) {
       I = index;
     }
   })

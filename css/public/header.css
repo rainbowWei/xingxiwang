@@ -165,6 +165,7 @@ textarea {
   margin-left: 58px;
   position: relative;
   height: 20px;
+  cursor: pointer;
 }
 .header .header-c .nav li:first-child {
   margin-left: 0px;
