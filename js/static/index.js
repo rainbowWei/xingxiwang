@@ -80,7 +80,7 @@ $(function(){
     
     //所获荣誉部分 
         var i1;
-        function move(){
+        function move1(){
             $("#bigul").animate({"margin-left":"-233px"},function(){  
                 $("#bigul").css("margin-left","0px");
                 $("#bigul").append($("#bigul li").eq(0));
@@ -92,7 +92,7 @@ $(function(){
             clearInterval(i1);
         },
         function(){
-            i1=setInterval(move,2000);
+            i1=setInterval(move1,2000);
         });
         /*按钮 下一个*/
         $("#right2").on("click",function(){

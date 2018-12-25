@@ -1233,8 +1233,6 @@ a:hover {
   color: #333333;
 }
 .honor .honor-list .list-content .honor-page {
-  width: 1200px;
-  height: 100%;
   position: absolute;
   top: 0;
 }
@@ -1252,5 +1250,5 @@ a:hover {
 }
 .honor .honor-list .list-content .honor-page #right2 {
   background: url(../../images/right2.png);
-  right: -61px;
+  right: -1261px;
 }
