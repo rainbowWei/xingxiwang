@@ -87,6 +87,7 @@
 
     $(".nav li p").removeClass("line");
     $(".nav li").eq(a).children("p").addClass("line");
+    $(".nav li").eq(a).addClass("active");
   
     $(".nav").on("click", "li .title", function (e) {
       if (!$(this).next().hasClass("menu")) {

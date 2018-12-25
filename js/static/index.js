@@ -87,8 +87,9 @@ $(function(){
 
             })
         }
+        i1=setInterval(move1,2000);
         /*鼠标悬浮事件*/
-        $(".honor-page").hover(function(){
+        $(".honor-list").hover(function(){
             clearInterval(i1);
         },
         function(){
@@ -98,7 +99,7 @@ $(function(){
         $("#right2").on("click",function(){
         
             $("#bigul").animate({"margin-left":"-233px"},function(){
-                $("#bigul").append($("li").eq(0));
+                $("#bigul").append($("#bigul>li:first"));
                 $("#bigul").css("margin-left","0px");
             })   
         })
@@ -110,4 +111,24 @@ $(function(){
 
             })
     })
+
+
+   //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
+   $(window).scroll(function(){
+    //创建一个变量存储当前窗口下移的高度
+   var scroTop = $(window).scrollTop();
+   //判断当前窗口滚动高度
+   //如果大于300，则显示顶部元素，否则隐藏顶部元素
+   if(scroTop>300){
+       $('#back').fadeIn(500);
+   }else{
+       $('#back').fadeOut(500);
+   }
+    }
+    );
+ //为返回顶部元素添加点击事件
+   $('#back').click(function(){
+    //将当前窗口的内容区滚动高度改为0，即顶部
+    $("html,body").animate({scrollTop:0},"fast");
+});
 })
