@@ -1,6 +1,6 @@
 $(function(){
   
-     //手动控制轮播图
+     //手动控制主轮播图
      $('#one li').eq(0).show();
         
      $('#two li').mouseover(function () {
@@ -60,7 +60,7 @@ $(function(){
         }
       );
 
-      //公司动态  行业新闻   ASD百科
+      //公司动态  行业新闻   ASD百科内容的显示与隐藏
       $(".tab li").click(function(){
         $(".content1 li").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');    
     })
@@ -77,4 +77,37 @@ $(function(){
             }
        
         });
+    
+    //所获荣誉部分 
+        var i1;
+        function move(){
+            $("#bigul").animate({"margin-left":"-233px"},function(){  
+                $("#bigul").css("margin-left","0px");
+                $("#bigul").append($("#bigul li").eq(0));
+
+            })
+        }
+        /*鼠标悬浮事件*/
+        $(".honor-page").hover(function(){
+            clearInterval(i1);
+        },
+        function(){
+            i1=setInterval(move,2000);
+        });
+        /*按钮 下一个*/
+        $("#right2").on("click",function(){
+        
+            $("#bigul").animate({"margin-left":"-233px"},function(){
+                $("#bigul").append($("li").eq(0));
+                $("#bigul").css("margin-left","0px");
+            })   
+        })
+        /*按钮 上一个*/
+        $("#left2").on("click",function(){
+            $("#bigul").prepend($("#bigul>li:last"));
+            $("#bigul").css("margin-left","-233px");
+            $("#bigul").animate({"margin-left":"0px"},function(){ 
+
+            })
+    })
 })

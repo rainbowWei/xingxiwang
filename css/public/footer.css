@@ -1,0 +1,244 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  font-family: "微软雅黑";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+a {
+  color: #666;
+  text-decoration: none;
+  outline: 0;
+}
+b,
+strong {
+  font-weight: normal;
+}
+input {
+  outline: none;
+  border: none;
+}
+textarea {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  list-style: none;
+  outline: none;
+  resize: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+.clearfix {
+  zoom: 1;
+}
+.post-service {
+  float: left;
+  width: 100%;
+  height: 264px;
+  background-color: #343434;
+  color: #999;
+}
+.other-service {
+  width: 1200px;
+  height: 222px;
+  margin: 0 auto;
+}
+.post-service-per {
+  width: 1200px;
+  height: 135px;
+}
+.service-class {
+  float: left;
+  margin: 27px 10px 0 0;
+  width: 160px;
+  height: 155px;
+}
+.w-200 {
+  width: 200px;
+}
+.service-class a span {
+  font-size: 18px;
+  line-height: 36px;
+  color: #888888;
+}
+.service-class a {
+  display: block;
+  color: #999!important;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  line-height: 23px;
+}
+.service-class a div {
+  position: absolute;
+  top: -30px;
+  left: 70px;
+  width: 100px;
+  height: 100px;
+  display: none;
+  z-index: 10;
+}
+.service-class a:hover {
+  text-decoration: underline;
+}
+.service-class a:hover div {
+  display: block;
+}
+.tel-box {
+  float: right;
+  margin: 0 0 0 20px;
+  width: 120px;
+  height: 155px;
+  text-align: center;
+}
+.tel-icon {
+  width: 120px;
+  height: 120px;
+  margin: 40px auto 0;
+}
+.tel-icon img {
+  width: 120px;
+  height: 120px;
+}
+.week {
+  color: #999;
+  text-align: center;
+  font-size: 25px;
+  line-height: 41px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.about {
+  text-align: center;
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
+}
+.about a {
+  padding: 0 10px;
+  width: 93px;
+  height: 16px;
+  border-right: 1px solid #333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+.about a:hover {
+  color: #00BDD6!important;
+  text-decoration: none;
+}
+.copyright {
+  float: left;
+  margin: auto;
+  margin-top: 16px;
+  width: 300px;
+  height: 14px;
+  color: #434343;
+  font-size: 14px;
+  line-height: 14px;
+}
+.copyright-box {
+  text-align: center;
+  font-size: 16px;
+  color: #999999;
+  margin-bottom: -10px;
+}
