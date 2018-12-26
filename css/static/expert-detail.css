@@ -1,0 +1,72 @@
+@import '../public/reset.css';
+.expert-bg {
+  width: 100%;
+  height: 84px;
+  background-color: #f08300;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 84px;
+  text-align: center;
+  color: #ffffff;
+}
+.state {
+  width: 100%;
+  height: 100%;
+}
+.state .sta-h {
+  width: 100%;
+  height: 29px;
+  line-height: 29px;
+  position: relative;
+  margin: 20px 0 35px;
+}
+.state .sta-h span,
+.state .sta-h b,
+.state .sta-h a,
+.state .sta-h i {
+  height: 29px;
+  line-height: 29px;
+  font-size: 18px;
+  display: inline-block;
+}
+.state .sta-h span {
+  position: absolute;
+  top: 0px;
+  width: 28px;
+  background: url(../../images/home.png);
+}
+.state .sta-h b,
+.state .sta-h a {
+  color: #666666;
+}
+.state .sta-h b {
+  text-indent: 37px;
+}
+.state .sta-h i {
+  color: #f08300;
+}
+.state .expert-c {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+}
+.state .expert-c .ex-img {
+  margin: 0 auto 34px;
+  width: 401px;
+  height: 471px;
+}
+.state .expert-c .ex-name {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 37px;
+  color: #f08300;
+  margin-bottom: 16px;
+}
+.state .expert-c .ex-list {
+  width: 800px;
+  font-size: 20px;
+  margin: 0 auto;
+  line-height: 39px;
+  color: #000000;
+}

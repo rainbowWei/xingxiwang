@@ -755,7 +755,7 @@ a:hover {
 }
 .expert .ex-list {
   width: 100%;
-  height: 1111px;
+  height: 100%;
   margin: 60px auto 40px;
 }
 .expert .ex-list a {
@@ -963,7 +963,7 @@ a:hover {
 }
 .trends .tab .tab_on {
   line-height: 68px;
-  width: 397px;
+  width: 400px;
   height: 68px;
   color: #ffffff;
   margin-top: -17px;
@@ -973,7 +973,7 @@ a:hover {
 .trends .tab .tab_on2 {
   background-color: #5885e2;
   line-height: 68px;
-  width: 397px;
+  width: 400px;
   height: 68px;
   color: #ffffff;
   margin-top: -17px;
@@ -982,7 +982,7 @@ a:hover {
 .trends .tab .tab_on3 {
   background-color: #a665ec;
   line-height: 68px;
-  width: 397px;
+  width: 402px;
   height: 68px;
   color: #ffffff;
   margin-top: -17px;
@@ -1013,6 +1013,10 @@ a:hover {
 .trends .content1 div .frist .fl-img {
   width: 204px;
   height: 116px;
+}
+.trends .content1 div .frist .fl-img img {
+  width: 100%;
+  height: 100%;
 }
 .trends .content1 div .frist .fr-text {
   width: 208px;
@@ -1138,12 +1142,102 @@ a:hover {
   height: 348px;
   margin-top: 20px;
 }
-.case .video video {
+.case .video .player {
   float: left;
-  background: #666;
 }
-.case .video video:first-child {
+.case .video .player:first-child {
   margin-right: 20px;
+}
+.case .video .player {
+  width: 590px;
+  position: relative;
+  height: 100%;
+}
+.case .video .player video {
+  width: 100%;
+  height: 100%;
+}
+.case .video .player .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.case .video .player .ctl {
+  width: 100%;
+  height: 30px;
+  background: rgba(90, 90, 90, 0.6);
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.case .video .player .ctl .btn,
+.case .video .player .ctl .time {
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: 5px;
+}
+.case .video .player .ctl .btn-play {
+  left: 8px;
+}
+.case .video .player .ctl .btn-jy {
+  right: 76px;
+}
+.case .video .player .ctl .btn-qp {
+  right: 20px;
+}
+.case .video .player .ctl .sch {
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+.case .video .player .ctl .sch-play {
+  width: 186px;
+  left: 140px;
+}
+.case .video .player .ctl .sch-yl {
+  width: 86px;
+  right: 80px;
+}
+.case .video .player .ctl .sch-play .sch-sp {
+  width: 200px;
+}
+.case .video .player .ctl .sch-yl .sch-sp {
+  width: 80px;
+}
+.case .video .player .ctl .sch .sch-sp {
+  position: absolute;
+  height: 12px;
+  top: 0;
+  background: #fff;
+}
+.case .video .player .ctl .sch-btn {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  top: 5px;
+  z-index: 2;
+  background: #fff;
+}
+.case .video .player .ctl .sch-s {
+  left: 129px;
+}
+.case .video .player .ctl .sch-y {
+  left: 900px;
 }
 .honor .ab-h {
   width: 467px;

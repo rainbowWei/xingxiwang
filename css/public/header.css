@@ -129,9 +129,11 @@ textarea {
 .clearfix {
   zoom: 1;
 }
-.active {
-  color: #f08300;
-  font-weight: bold;
+iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 .content {
   width: 1200px;
@@ -164,11 +166,13 @@ textarea {
   float: left;
   margin-left: 58px;
   position: relative;
-  height: 20px;
   cursor: pointer;
 }
 .header .header-c .nav li:first-child {
   margin-left: 0px;
+}
+.header .header-c .nav li .title {
+  color: #333;
 }
 .header .header-c .nav li .menu {
   width: 110px;
@@ -189,10 +193,14 @@ textarea {
   display: block;
   height: 36px;
   line-height: 36px;
+  color: #ffffff;
   border-top: 1px solid #f08300;
 }
 .header .header-c .nav li .menu a:first-child {
   border-top: none;
+}
+.header .header-c .nav li .menu a:hover {
+  background: #fcb45f;
 }
 .header .header-c .nav li .line {
   width: 48px;
@@ -209,6 +217,10 @@ textarea {
   width: 100%;
   height: 100%;
   display: inline-block;
+}
+.header .header-c .nav .active .title {
+  color: #f08300;
+  font-weight: bold;
 }
 .header .header-c .nav .on {
   width: 48px;

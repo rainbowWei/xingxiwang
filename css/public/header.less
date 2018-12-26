@@ -1,9 +1,13 @@
 @import 'reset.less';
 //头部
-.active{
-    color:#f08300;
-    font-weight: bold;
+
+iframe{
+    position: relative;
+    top:0;
+    left: 0;
+    z-index: 1;
 }
+
 .content{
     width:1200px;
     height: 100%;
@@ -32,11 +36,15 @@
               float: left;
               margin-left:58px;
               position: relative;
-              height:20px;
+            //   margin-top: 30px;
+            //   height:20px;
               cursor: pointer;
               
               &:first-child{
                   margin-left: 0px;
+              }
+              .title{
+                  color:#333;
               }
               .menu{
                   width: 110px;
@@ -56,9 +64,13 @@
                       display:block;
                       height: 36px;
                       line-height: 36px;
+                      color: #ffffff;
                       border-top: 1px solid #f08300;
                       &:first-child{
-                          border-top:none
+                          border-top:none;
+                      }
+                      &:hover{
+                          background: #fcb45f;
                       }
                   }
               }
@@ -80,6 +92,10 @@
                   display: inline-block;
               }
           }
+          .active .title{
+            color:#f08300;
+            font-weight: bold;
+        }
           .on{
               width: 48px;
               border-bottom: 4px solid   #f08300;

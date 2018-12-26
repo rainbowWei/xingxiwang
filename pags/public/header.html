@@ -1,107 +1,119 @@
-
-  <!-- header部分 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/public/header.css">
+</head>
+<body>
+   <!-- header部分 -->
 <div class="header">
-  <div class="header-c clearfix">
-      <div class="logo fl"></div>
-      <ul class="nav fl clearfix">
-          <li class="test">
-            <span class="title" path="index">首 页</span>
-            <p></p>
-          </li>
-          <li class="test">
-            <span class="title">ＭＵＳＴ课程体系</span>
-              <div class="menu" path="course">
-                  <a href="javascript:;" path="course">ＭＵＳＴ技术</a>
-                  <a href="javascript:">线上课程</a>
-                  <a href="javascript:">线下课程</a>
-                  <a href="javascript:">师资团队</a>
-                  <a href="javascript:">成功案例</a>
+    <div class="header-c clearfix">
+        <div class="logo fl"></div>
+        <ul class="nav fl clearfix">
+            <li class="test">
+              <span class="title" path="index">首 页</span>
+              <p></p>
+            </li>
+            <li class="test">
+              <span class="title">ＭＵＳＴ课程体系</span>
+                <div class="menu" path="course">
+                    <a href="javascript:;" path="course">ＭＵＳＴ技术</a>
+                    <a href="javascript:">线上课程</a>
+                    <a href="javascript:">线下课程</a>
+                    <a href="javascript:">师资团队</a>
+                    <a href="javascript:">成功案例</a>
+                </div>
+                <p></p>
+  
+            </li>
+            <li class="test">
+              <span class="title" path="internet">星希望网校</span>
+              <p></p>
+            </li>
+            <li class="test">
+              <span class="title">关于我们</span>
+                <div class="menu" path="aboutus">
+                    <a href="javascript:" path="1">星希望简介</a>
+                    <a href="javascript:">创始人简介</a>
+                    <a href="javascript:" >发展历程</a>
+                    <a href="javascript:" >所获荣誉</a>
+                    <a href="javascript:" >校区概况</a>
+                </div>
+                <p></p>
+            
+            </li>
+            <li class="test">
+              <span class="title">新闻中心</span>
+              <div class="menu" path="news">
+                  <a href="javascript:" path="1">最新动态</a>
+                  <a href="javascript:">行业新闻</a>
+                  <a href="javascript:">公益活动</a>
+                  <a href="javascript:">媒体报道</a>
               </div>
               <p></p>
-
-          </li>
-          <li class="test">
-            <span class="title" path="internet">星希望网校</span>
-            <p></p>
-          </li>
-          <li class="test">
-            <span class="title">关于我们</span>
-              <div class="menu" path="aboutus">
-                  <a href="javascript:" path="1">星希望简介</a>
-                  <a href="javascript:">创始人简介</a>
-                  <a href="javascript:" >发展历程</a>
-                  <a href="javascript:" >所获荣誉</a>
-                  <a href="javascript:" >校区概况</a>
+    
+            </li>
+            <li class="test">
+              <span class="title">爱心社</span>
+              <div class="menu" path="love">
+                  <a href="javascript:" path="1">志愿者招募</a>
+                  <a href="javascript:">爱心捐赠</a>
               </div>
               <p></p>
-          
-          </li>
-          <li class="test">
-            <span class="title">新闻中心</span>
-            <div class="menu" path="news">
-                <a href="javascript:" path="1">最新动态</a>
-                <a href="javascript:">行业新闻</a>
-                <a href="javascript:">公益活动</a>
-                <a href="javascript:">媒体报道</a>
-            </div>
-            <p></p>
-  
-          </li>
-          <li class="test">
-            <span class="title">爱心社</span>
-            <div class="menu" path="love">
-                <a href="javascript:" path="1">志愿者招募</a>
-                <a href="javascript:">爱心捐赠</a>
-            </div>
-            <p></p>
-          </li>
-      </ul>
-      <div class="contact fr">
-          <p>全国咨询热线</p>   
-          <p class="blue">010-52668752</p>
-      </div>
-  </div>   
-</div>
-<script src="/js/plugins/jquery-1.11.3.min.js"></script>
-<script src="/js/plugins/jquery.cookie.js"></script>
-<script src="/js/static/utils.js"></script>
-<script>
-  $(function () {
-    // 二级菜单的显示和隐藏
-    $(".test").hover(
-      function(){
-      $(this).find("div").css('display','block'); 
-      },
-      function(){
-      $(this).find("div").css('display','none')
-      }
-    );
-    
-    var URL = ['index', 'course', 'internet', 'aboutus', 'news', 'love'];
-    
-    var a = Number(getParams("a"))
-    if (isNaN(a)) {
-      a = getUrlParams(URL);
-    }
-    console.log(a, '000')
-
-    $(".nav li p").removeClass("line");
-    $(".nav li").eq(a).children("p").addClass("line");
-    $(".nav li").eq(a).addClass("active");
-  
-    $(".nav").on("click", "li .title", function (e) {
-      if (!$(this).next().hasClass("menu")) {
-        var index = $(this).parent().index();
-        if ($(this).attr("path") === "index") {
-          location.href = '/index.html';
-        } else {
-          location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
+            </li>
+        </ul>
+        <div class="contact fr">
+            <p>全国咨询热线</p>   
+            <p class="blue">010-52668752</p>
+        </div>
+    </div>   
+  </div>
+  <script src="/js/plugins/jquery-1.11.3.min.js"></script>
+  <script src="/js/plugins/jquery.cookie.js"></script>
+  <script src="/js/static/utils.js"></script>
+  <script>
+    $(function () {
+      // 二级菜单的显示和隐藏
+      $(".test").hover(
+        function(){
+        $(this).find("div").css('display','block'); 
+        },
+        function(){
+        $(this).find("div").css('display','none')
         }
+      );
+      
+      var URL = ['index', 'course', 'internet', 'aboutus', 'news', 'love'];
+      
+      var a = Number(getParams("a"))
+      if (isNaN(a)) {
+        a = getUrlParams(URL);
       }
+      console.log(a, '000')
+  
+      $(".nav li p").removeClass("line");
+      $(".nav li").eq(a).children("p").addClass("line");
+      $(".nav li").eq(a).addClass("active");
+    
+      $(".nav").on("click", "li .title", function (e) {
+        if (!$(this).next().hasClass("menu")) {
+          var index = $(this).parent().index();
+          if ($(this).attr("path") === "index") {
+            location.href = '/index.html';
+          } else {
+            location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
+          }
+        }
+      })
+      $(".nav").on("click", ".menu", function (e) {
+        location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index() + "&b=" + $(e.target).index();
+      })
+  
     })
-    $(".nav").on("click", ".menu", function (e) {
-      location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index() + "&b=" + $(e.target).index();
-    })
-
-  })
-</script>
+  </script>
+</body>
+</html>
+ 
