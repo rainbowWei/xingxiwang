@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>must课程体系</title>
+  <link rel="stylesheet" href="/css/public/header.css">
+  <link rel="stylesheet" href="/css/public/footer.css">
+  <link rel="stylesheet" href="/css/static/volunteer.css">
+</head>
+<body>
+  <!-- 头部 -->
+    <div id="header"></div>
+  <!-- 内容部分 -->
+    <div class="vol-bg"></div>
+    <div class="content">
+      <div class="c-title clearfix">
+        <a  href="/pags/love/volunteer.html" class="title fl show">志愿者招募</a>
+        <a href="/pags/love/donation.html" class="title fl">爱心捐赠</a>
+      </div>
+      <div class="c-content">
+          <ul class="tab2 clearfix">
+              <li class="tab_on">大龄孤独症孩子就业培训</li>
+              <p class="fl f1"></p>
+              <li class="w2">看护孤独症儿童</li>
+              <p class="fl f2"></p>                     
+              <li class="w2">陪伴孤独症儿童父母</li>
+          </ul> 
+          <div class="content1 clearfix">
+              <div class="on2"><img src="/images/volunteer.png" alt=""></div>
+              <div></div>
+              <div><img src="/images/volunteer2.png" alt=""></div>
+              <div></div>
+              <div><img src="/images/volunteer3.png" alt=""></div> 
+          </div>
+          <div class="entry">
+              <div class="theader">志愿者报名表</div>
+              <div class="tbody">
+                  <div class="th-bg"></div>
+                  <table class="table"  cellspacing="0" cellpadding="0">
+                      <tr  height="38">
+                        <td width="80">姓名</td>
+                        <td><input type="text" id="name"></td>
+                        <td width="70">年龄<span>*</span></td>
+                        <td><input type="text" id="age"></td>
+                        <td width="70">性别</td>
+                        <td><input type="text" id="sex"></td>
+                        <td class="padding" width="100">现居城市</td>
+                        <td><input type="text" id="city"></td>
+                      </tr>
+                      <tr  height="38">
+                          <td>手机号</td>
+                          <td><input type="text" id="phone"></td>
+                          <td>邮箱<span>*</span></td>
+                          <td><input type="text" id="mailbox"></td>
+                          <td>微信号</td>
+                          <td><input type="text" id="WeChat"></td>
+                          <td class="padding">文化程度</td>
+                          <td><input type="text" id="culture"></td>
+                      </tr>
+                      <tr  height="60">
+                          <td>特长</td>
+                          <td><input type="text" id="speciality"></td>
+                          <td>职业</td>
+                          <td><input type="text" id="occupation"></td>
+                          <td class="padding">所在学校/单位</td>
+                          <td><input type="text" id="scholl"></td>
+                          <td class="padding">公益项目</td>
+                          <td><input type="text" id="project"></td>
+                      </tr>
+                      <tr  height="60">
+                          <td class="padding">志愿者服务经历</td>
+                          <td colspan="7"><input type="text" id="experience"></td>
+                      </tr>
+                  </table>
+                  <p>注意事项：身体健康，没有传染性和突发性疾病；</p>
+                  <p>您的资料仅用于星希望公益内部统计,绝不会泄露给任何第三方</p>
+                  <a href="javascript:" class="submit" id="submit">提交</a>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <div id="footer"></div>
+    <script>
+      // <p class="active"></p>
+      // <p></p> 
+      //  $("p").eq( getParams("b")).addClass("active");
+    </script>
+    <script src="/js/plugins/jquery-1.11.3.min.js"></script>
+    <script src="/js/plugins/jquery.cookie.js"></script>
+    <script src="/js/static/utils.js"></script>
+    <script src="/js/static/volunteer.js"></script>
+    <script>
+        $("#header").load("/pags/public/header.html");
+        $("#footer").load("/pags/public/footer.html");
+    </script>
+</body>
+</html>

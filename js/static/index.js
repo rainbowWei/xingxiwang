@@ -7,7 +7,6 @@ $(function(){
      $(this).addClass('on').siblings().removeClass('on');
      var index = $(this).index();
      i = index;
-     // $('#one li').eq(index).stop().fadeIn(300).siblings().stop().fadeOut(300);
      $('#one li').eq(i).addClass('on').siblings().removeClass('on');
      })
      var len = $("#two li").length;
@@ -21,7 +20,6 @@ $(function(){
      i = 0;
      }
      $('#two li').eq(i).addClass('on').siblings().removeClass('on');
-     // $('#one li').eq(i).fadeIn(300).siblings().fadeOut(300);
      $('#one li').eq(i).addClass('on').siblings().removeClass('on');
      }
 
@@ -32,7 +30,6 @@ $(function(){
      i = len - 1;
      }
      $('#two li').eq(i).addClass('on').siblings().removeClass('on');
-     // $('#one li').eq(i).fadeIn(300).siblings().fadeOut(300);
      $('#one li').eq(i).addClass('on').siblings().removeClass('on');
      }
      $('#left').click(function () {
@@ -51,11 +48,11 @@ $(function(){
      //专家团队的显示隐藏
      $(".ex-list a").hover(
         function(){
-            $(this).find(".title").css('display','none')
+            $(this).find(".title").css('display','none');
             $(this).find(".text").css('display','block'); 
         },
         function(){
-            $(this).find(".title").css('display','block')
+            $(this).find(".title").css('display','block');
             $(this).find(".text").css('display','none'); 
         }
       );
@@ -134,27 +131,6 @@ $(function(){
 
 //视频播放
 
-const setMedia = function(video, scale = 0.8) {
-    // 设置poster属性：（非本地视频资源会有跨域截图问题）
-    video.addEventListener('loadeddata', function(e) {
-        // 拿到图片
-        let canvas = document.createElement('canvas');
-        canvas.width = video.videoWidth * scale;
-        canvas.height = video.videoHeight * scale;
-        canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-        let src = canvas.toDataURL('/images/vadio.png');
-        // 显示在dom，测试用
-        (function(flag = true) {
-            if (!flag) {return;}
-            let img = document.createElement('img');
-            img.src = src;
-            document.body.appendChild(img);
-        })(0);
-        // 设置属性
-        video.setAttribute('poster', src);
-    });
-
-}
 var all_oVid = document.getElementsByClassName("player");
 // console.log(all_oVid);
 for(var i = 0; i<all_oVid.length; i++){

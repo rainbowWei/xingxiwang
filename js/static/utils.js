@@ -29,3 +29,40 @@ function getParams (x) {
   }
   return obj
 }
+
+
+ // 二级菜单的显示和隐藏
+ $(".test").hover(
+  function(){
+  $(this).find("div").css('display','block'); 
+  },
+  function(){
+  $(this).find("div").css('display','none')
+  }
+);
+
+var URL = ['index', 'course', 'internet', 'aboutus', 'news', 'love'];
+
+var a = Number(getParams("a"))
+if (isNaN(a)) {
+  a = getUrlParams(URL);
+}
+console.log(a, '000')
+
+$(".nav li p").removeClass("line");
+$(".nav li").eq(a).children("p").addClass("line");
+$(".nav li").eq(a).addClass("active");
+
+$(".nav").on("click", "li .title", function (e) {
+  if (!$(this).next().hasClass("menu")) {
+    var index = $(this).parent().index();
+    if ($(this).attr("path") === "index") {
+      location.href = '/index.html';
+    } else {
+      location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
+    }
+  }
+})
+$(".nav").on("click", ".menu", function (e) {
+  location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index();
+})
