@@ -1,0 +1,528 @@
+@import '../public/reset.css';
+.skill {
+  width: 100%;
+  height: 100%;
+}
+.skill .skill-banner {
+  width: 100%;
+  height: 368px;
+  background: url(../../images/skill-banner.png);
+  background-size: 100% 100%;
+}
+.skill .setup {
+  width: 100%;
+  height: 422px;
+  background: #fff;
+}
+.skill .setup .setup-h {
+  font-size: 38px;
+  line-height: 143px;
+  color: #333333;
+  text-align: center;
+}
+.skill .setup .setup-list {
+  width: 492px;
+  margin: 0 auto;
+}
+.skill .setup .setup-list li {
+  width: 180px;
+  float: left;
+}
+.skill .setup .setup-list li:first-child {
+  margin-right: 130px;
+}
+.skill .setup .setup-list li .icon {
+  width: 180px;
+  height: 180px;
+  border-radius: 47px;
+  border: solid 1px #dcdcdc;
+}
+.skill .setup .setup-list li .icon p {
+  margin: 48px 45px;
+}
+.skill .setup .setup-list li .txt {
+  font-size: 24px;
+  line-height: 59px;
+  color: #666666;
+  text-align: center;
+}
+.skill .method {
+  width: 100%;
+  height: 540px;
+  background: #f9f9f9;
+  padding-top: 10px;
+}
+.skill .method .method-h {
+  font-size: 26px;
+  color: #666666;
+  text-align: center;
+  line-height: 93px;
+}
+.skill .method .method-h b {
+  font-size: 30px;
+}
+.skill .method .method-h b span {
+  color: #f08300;
+  font-weight: bold;
+}
+.skill .method .method-c {
+  position: relative;
+}
+.skill .method .method-c .method-bg {
+  width: 532px;
+  height: 338px;
+  margin: 0 auto;
+}
+.skill .method .method-c .frist {
+  width: 256px;
+  text-align: right;
+  position: absolute;
+  top: 140px;
+  left: 65px;
+}
+.skill .method .method-c .frist .tit {
+  font-size: 24px;
+  line-height: 44px;
+  color: #333333;
+}
+.skill .method .method-c .frist .txt {
+  font-size: 18px;
+  line-height: 24px;
+  color: #999999;
+}
+.skill .method .method-c .second {
+  position: absolute;
+  top: 296px;
+  left: 681px;
+  text-align: left;
+}
+.skill .method .method-c .third {
+  position: absolute;
+  top: 19px;
+  left: 879px;
+  text-align: left;
+}
+.skill .training {
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+.skill .training .training-h {
+  font-size: 26px;
+  color: #666666;
+  text-align: center;
+  line-height: 108px;
+}
+.skill .training .training-h b {
+  font-size: 30px;
+}
+.skill .training .training-h span {
+  font-weight: bold;
+  color: #f08300;
+}
+.skill .training .training-tit {
+  width: 429px;
+  height: 49px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 49px;
+  color: #f08300;
+  text-align: center;
+  margin: 0 auto  57px;
+  background-color: #ffffff;
+  box-shadow: 4px 6px 0px 0px #f9cf9c;
+  border: solid 1px #f9cf9c;
+}
+.skill .training .comment-h {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 38px;
+  color: #333333;
+  border-left: 8px solid #ff447a;
+  text-indent: 18px;
+}
+.skill .training .motive {
+  padding-bottom: 53px;
+}
+.skill .training .motive .motive-tit {
+  width: 858px;
+  font-size: 26px;
+  line-height: 35px;
+  color: #666666;
+  margin: 57px 0 0 170px;
+}
+.skill .training .motive .motive-bg {
+  margin-left: 90px;
+}
+.skill .training .unders {
+  width: 100%;
+  height: 768px;
+  padding-top: 60px;
+  background: url(../../images/unders-bg.png);
+  background-size: 100% 100%;
+}
+.skill .training .unders .unders-tit {
+  width: 751px;
+  font-size: 26px;
+  line-height: 35px;
+  color: #666666;
+  margin: 50px 0 0 225px;
+}
+.skill .training .unders .unders-list {
+  width: 630px;
+  height: 100%;
+  margin: 79px auto 0;
+  color: #ffffff;
+  position: relative;
+}
+.skill .training .unders .unders-list li {
+  position: absolute;
+}
+.skill .training .unders .unders-list .u1 {
+  width: 180px;
+  height: 113px;
+  padding-top: 67px;
+  background: url(../../images/unders-bg2.png);
+  background-size: 100% 100%;
+  top: 0px;
+  left: 56px;
+}
+.skill .training .unders .unders-list .u1 h3 {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 32px;
+  text-align: center;
+}
+.skill .training .unders .unders-list .u1 p {
+  font-size: 16px;
+  text-align: center;
+}
+.skill .training .unders .unders-list .u2 {
+  background: url(../../images/unders-bg5.png);
+  background-size: 100% 100%;
+  top: 145px;
+  left: 0px;
+}
+.skill .training .unders .unders-list .u3 {
+  background: url(../../images/unders-bg6.png);
+  background-size: 100% 100%;
+  top: 234px;
+  left: 105px;
+}
+.skill .training .unders .unders-list .u4 {
+  width: 270px;
+  height: 160px;
+  padding-top: 110px;
+  background: url(../../images/unders-bg3.png);
+  background-size: 100% 100%;
+  top: 48px;
+  left: 155px;
+}
+.skill .training .unders .unders-list .u5 {
+  background: url(../../images/unders-bg7.png);
+  background-size: 100% 100%;
+  top: 300px;
+  left: 238px;
+}
+.skill .training .unders .unders-list .u6 {
+  width: 203px;
+  height: 124px;
+  padding-top: 79px;
+  background: url(../../images/unders-bg4.png);
+  background-size: 100% 100%;
+  top: 189px;
+  left: 330px;
+}
+.skill .training .unders .unders-list .u7 {
+  background: url(../../images/unders-bg9.png);
+  background-size: 100% 100%;
+  top: 0px;
+  left: 352px;
+}
+.skill .training .unders .unders-list .u8 {
+  background: url(../../images/unders-bg8.png);
+  background-size: 100% 100%;
+  top: 97px;
+  left: 450px;
+}
+.skill .training .technique {
+  width: 100%;
+  height: 367px;
+  padding-top: 60px;
+  background-color: #ffffff;
+}
+.skill .training .technique .technique-tit {
+  width: 918px;
+  font-size: 26px;
+  line-height: 35px;
+  color: #666666;
+  margin: 50px 0 0 95px;
+}
+.skill .training .technique .technique-list {
+  width: 1020px;
+  margin: 44px auto 0;
+}
+.skill .training .technique .technique-list li {
+  float: left;
+  width: 240px;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  background-color: #ffa452;
+  border-radius: 26px;
+  font-size: 18px;
+  margin: 0 0 10px 20px;
+  color: #ffffff;
+}
+.skill .training .technique .technique-list li b {
+  font-size: 24px;
+  font-weight: bold;
+}
+.skill .training .technique .technique-list li span {
+  font-size: 24px;
+}
+.skill .training .technique .technique-list .ml {
+  margin-left: 0px;
+}
+.skill .training .technique .technique-list .odd {
+  background-color: #ffa452;
+}
+.skill .training .technique .technique-list .even {
+  background-color: #ff7901;
+}
+.skill .training .way {
+  height: 636px;
+  padding-top: 41px;
+  width: 100%;
+  background: #f9f9f9;
+}
+.skill .training .way .way-tit {
+  width: 347px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  margin: 0 auto 48px;
+  background-color: #ffffff;
+  box-shadow: 4px 6px 0px 0px #f6cb98;
+  border: solid 1px #f9cf9c;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f08300;
+}
+.skill .training .way .way-tit2 {
+  width: 1000px;
+  height: 85px;
+  padding-top: 15px;
+  background: url(../../images/way-bg.png);
+  background-size: 100% 100%;
+  margin: 30px 0 0 100px;
+}
+.skill .training .way .way-tit2 p {
+  width: 780px;
+  font-size: 26px;
+  line-height: 35px;
+  color: #666666;
+  margin-left: 116px;
+}
+.skill .training .way .way-list {
+  width: 100%;
+  height: 305px;
+  margin-top: 29px;
+}
+.skill .training .way .way-list li {
+  width: 180px;
+  height: 100%;
+  float: left;
+  margin-left: 24px;
+}
+.skill .training .way .way-list li:first-child {
+  margin-left: 0;
+}
+.skill .training .way .way-list li div {
+  font-size: 24px;
+  line-height: 35px;
+  color: #333333;
+  text-align: center;
+  margin-top: 10px;
+}
+.skill .training .way .way-list li p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-align: center;
+}
+.skill .training .way .way-list .mt {
+  margin-top: 10px;
+}
+.skill .training .point {
+  height: 997px;
+  width: 100%;
+}
+.skill .training .point .point-h {
+  font-size: 38px;
+  line-height: 124px;
+  color: #333333;
+  text-align: center;
+}
+.skill .training .point .point-c {
+  width: 605px;
+  height: 387px;
+  background: url(../../images/point-line.png);
+  margin: 113px auto 0;
+  position: relative;
+}
+.skill .training .point .point-c li {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  text-align: center;
+}
+.skill .training .point .point-c li span {
+  display: block;
+  margin: 26px auto 0;
+}
+.skill .training .point .point-c li div {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 52px;
+  color: #ffffff;
+}
+.skill .training .point .point-c li p {
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.skill .training .point .point-c .p1 {
+  top: -113px;
+  left: -88px;
+  background-color: #f6795c;
+  box-shadow: 0px 6px 0px 0px 
+                        #ff977f;
+}
+.skill .training .point .point-c .p1 span {
+  width: 50px;
+  height: 48px;
+  background: url(../../images/p1.png);
+}
+.skill .training .point .point-c .p2 {
+  top: -113px;
+  right: -88px;
+  background-color: #fd64a9;
+  box-shadow: 0px 6px 0px 0px 
+                                #ff82ba;
+}
+.skill .training .point .point-c .p2 span {
+  width: 49px;
+  height: 51px;
+  background: url(../../images/p2.png);
+}
+.skill .training .point .point-c .p3 {
+  top: 187px;
+  left: 178px;
+  background-color: #a7dd3d;
+  box-shadow: 0px 6px 0px 0px 
+                        #cefb74;
+}
+.skill .training .point .point-c .p3 span {
+  width: 49px;
+  height: 47px;
+  background: url(../../images/p3.png);
+  margin-top: 74px;
+}
+.skill .training .point .point-c .p4 {
+  width: 144px;
+  height: 58px;
+  font-size: 24px;
+  line-height: 33px;
+  color: #999999;
+  position: absolute;
+  top: 85px;
+  left: 230px;
+}
+.skill .training .point .point-list {
+  width: 586px;
+  margin: 66px auto 0;
+  position: relative;
+}
+.skill .training .point .point-list li {
+  position: absolute;
+  width: 218px;
+  height: 242px;
+  background: url(../../images/p4.png);
+  text-align: center;
+}
+.skill .training .point .point-list li p {
+  width: 53px;
+  font-size: 26px;
+  line-height: 22px;
+  color: #9ed336;
+  padding-bottom: 3px;
+  border-bottom: 4px solid #9ed336;
+  margin: 56px auto 10px;
+}
+.skill .training .point .point-list li div {
+  font-size: 18px;
+  line-height: 22px;
+  color: #9ed336;
+}
+.skill .training .point .point-list .li1 {
+  left: 0;
+}
+.skill .training .point .point-list .li2 {
+  left: 183px;
+  z-index: 1000;
+}
+.skill .training .point .point-list .li3 {
+  right: 0;
+}
+.skill .training .result {
+  height: 1410px;
+  width: 100%;
+  position: relative;
+}
+.skill .training .result .result-bg {
+  width: 100%;
+  height: 862px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../../images/result-bg.png);
+  background-size: 100% 100%;
+}
+.skill .training .result .result-c {
+  position: absolute;
+  z-index: 1000;
+  padding-top: 18px;
+  left: 50%;
+  margin-left: -600px;
+}
+.skill .training .result .result-c .res-h {
+  font-size: 38px;
+  line-height: 96px;
+  color: #333333;
+  text-align: center;
+}
+.skill .training .result .result-c .res-c {
+  height: 1080px;
+  padding-top: 40px;
+  background-color: #ffffff;
+}
+.skill .training .result .result-c .res-c .res-img {
+  width: 800px;
+  height: 537px;
+  margin: 0 auto;
+}
+.skill .training .result .result-c .res-c .res-img img {
+  width: 100%;
+  height: 100%;
+}
+.skill .training .result .result-c .res-c .res-t {
+  width: 1106px;
+  height: 446px;
+  margin: 39px auto 0;
+}
+.skill .training .result .result-c .res-c .res-t img {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,70 @@
+@import '../public/reset.css';
+.faculty {
+  height: 1272px;
+  position: relative;
+}
+.faculty .faculty-list {
+  width: 1161px;
+  height: 1050px;
+  margin: 80px auto 142px;
+  background: #999;
+}
+.faculty .faculty-list li {
+  float: left;
+  width: 232px;
+  height: 350px;
+  background: red;
+  position: relative;
+}
+.faculty .faculty-list li .img {
+  width: 100%;
+  height: 100%;
+}
+.faculty .faculty-list li .img img {
+  width: 100%;
+  height: 100%;
+}
+.faculty .faculty-list li p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  width: 100%;
+  background-color: #442500;
+  opacity: 0.38;
+  filter: alpha(opacity=38);
+  -moz-opacity: 0.38;
+  -khtml-opacity: 0.38;
+  font-size: 24px;
+  color: #ffffff;
+}
+.faculty .faculty-list .show-f p {
+  background: #f08300;
+  opacity: 0.62;
+  filter: alpha(opacity=62);
+  -moz-opacity: 0.62;
+  -khtml-opacity: 0.62;
+}
+.faculty .faculty-list .ml {
+  margin-left: 696px;
+}
+.faculty .faculty-c {
+  width: 662px;
+  padding: 96px 0 0 34px;
+  height: 254px;
+  background-color: #f5a94f;
+  position: absolute;
+  top: 350px;
+  left: 581px;
+}
+.faculty .faculty-c div {
+  font-size: 20px;
+  line-height: 31px;
+  color: #ffffff;
+  display: none;
+}
+.faculty .faculty-c .show-c {
+  display: block;
+}

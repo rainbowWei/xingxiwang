@@ -129,6 +129,7 @@ $(function(){
     $("html,body").animate({scrollTop:0},"fast");
 });
 
+
 //视频播放
 
 var all_oVid = document.getElementsByClassName("player");
@@ -221,7 +222,7 @@ function vides(oVid){
           oUl[5].innerHTML = "声音";
       }
   }
-  var move = function(ev){
+  var move2 = function(ev){
       ev = ev || window.event;
       var _X = ev.clientX;
       oVideo.ontimeupdate = null;
@@ -263,8 +264,8 @@ function vides(oVid){
       }
 
   }
-  oUl[2].onmousedown = move;
-  oUl[3].onmousedown = move;
+  oUl[2].onmousedown = move2;
+  oUl[3].onmousedown = move2;
   oUl[6].onclick = function(){
       //oVideo.webkitRequestFullScreen();
        if(oVideo.requestFullScreen) {

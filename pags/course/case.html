@@ -17,17 +17,76 @@
     <!-- 内容区 -->
     <div class="course-header">
         <ul class="h-content clearfix">
-            <a href="javascript:"><p>MUST技术</p></a>
-            <a href="javascript:"><p>MUST课程</p></a>
-            <a href="javascript:"><p>师资力量</p></a>
-            <a href="javascript:"><p class="on3">成功案例</p></a>
+            <a href="/pags/course/skill.html?a=1"><p>MUST技术</p></a>
+            <a href="/pags/course/course.html?a=1"><p>MUST课程</p></a>
+            <a href="/pags/course/faculty.html?a=1"><p>师资力量</p></a>
+            <a href="/pags/course/case.html?a=1"><p class="on3">成功案例</p></a>
         </ul>
+        
     </div>
-    
+    <div class="case">
+            <div class="content">
+                    <ul class="case-list clearfix case-list2">
+                        <a href="/pags/index/case.html">
+                            <img src="/images/case/case.png" alt="">
+                            <p class="c1">语言能力训练</p>
+                        </a>
+                        <a href="/pags/index/case2.html">
+                            <img src="/images/case/case2.png" alt="">
+                            <p class="c2">问题行为矫正</p>
+                        </a>
+                        <a href="/pags/index/case3.html">
+                            <img src="/images/case/case3.png" alt="">
+                            <p class="c3">社交互动促进</p>
+                        </a>
+                        <a href="/pags/index/case4.html">
+                            <img src="/images/case/case4.png" alt="">
+                            <p class="c4">理解能力培训</p>
+                        </a>
+                    </ul>
+                    <div class="video clearfix video2" id="video">
+                        <div class="player">
+                            <video poster="/images/vadio.png">
+                                <source src="/video/movie.mp4" type="video/mp4">
+                                您的浏览器不支持Video标签。
+                            </video>
+                            <ul class="ctl" onselectstart="return false">
+                                <li class="btn btn-play">播放</li>
+                                <li class="time" style="left:55px">00:00:00</li>
+                                <li class="sch sch-play">
+                                    <span class="sch-sp" style = "width:0px;"></span>
+                                </li>
+                                <li class="sch-btn sch-s" style="left:134px;"></li>
+                                <li class="time" style="right:184px">00:00:00</li>
+                                <li class="btn btn-jy">静音</li>
+                                <li class="btn btn-qp">全屏</li>
+                            </ul>
+                        </div>
+                        <div class="player">
+                            <video poster="/images/vadio.png">
+                                <source src="/video/movie.mp4" type="video/mp4">
+                                您的浏览器不支持Video标签。
+                            </video>
+                            <ul class="ctl" onselectstart="return false">
+                                <li class="btn btn-play">播放</li>
+                                <li class="time" style="left:55px">00:00:00</li>
+                                <li class="sch sch-play">
+                                    <span class="sch-sp" style = "width:0px;"></span>
+                                </li>
+                                <li class="sch-btn sch-s" style="left:134px;"></li>
+                                <li class="time" style="right:184px">00:00:00</li>
+                                <li class="btn btn-jy">静音</li>
+                                <li class="btn btn-qp">全屏</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
     <div id="footer"></div>
     <script src="/js/plugins/jquery-1.11.3.min.js"></script>
     <script src="/js/plugins/jquery.cookie.js"></script>
     <script src="/js/static/utils.js"></script>
+    <script src="/js/static/index.js"></script>
     <script>
         $("#header").load("/pags/public/header.html");
         $("#footer").load("/pags/public/footer.html");

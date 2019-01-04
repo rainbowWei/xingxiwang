@@ -58,9 +58,14 @@ $(".nav").on("click", "li .title", function (e) {
     var index = $(this).parent().index();
     if ($(this).attr("path") === "index") {
       location.href = '/index.html';
-    } else {
-      location.href = '/pags/' + $(this).attr("path") + ".html?a=" + index;
     }
+    if ($(this).attr("path") === "internet") {
+      location.href =  '/pags/' + 'internet' + '/' + 'internet.html';
+    }
+
+    //  else {
+    //   location.href = $(this).attr("path") + ".html?a=" + index;
+    // }
   }
 })
 $(".nav").on("click", ".menu", function (e) {

@@ -35,3 +35,85 @@
 .asd-h i {
   color: #f08300;
 }
+.asd-c {
+  padding: 0 100px;
+  width: 1000px;
+  margin-bottom: 210px;
+}
+.asd-c .c-h {
+  width: 100%;
+  height: 243px;
+  margin-bottom: 44px;
+}
+.asd-c .c-h li {
+  float: left;
+}
+.asd-c .c-h .asd-img {
+  width: 427px;
+  height: 243px;
+  margin-right: 20px;
+}
+.asd-c .c-h .asd-img img {
+  width: 100%;
+  height: 100%;
+}
+.asd-c .c-h .asd-text {
+  width: 517px;
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+  margin-top: 20px;
+}
+.asd-c .c-h .asd-text p {
+  text-indent: 2em;
+}
+.asd-c .standard {
+  font-size: 18px;
+  line-height: 32px;
+  color: #666666;
+}
+.asd-c .standard h3 {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 38px;
+}
+.asd-c .standard .main {
+  text-indent: 2em;
+}
+.asd-c .standard .main span {
+  font-weight: bold;
+}
+.asd-c .standard .A {
+  margin-bottom: 40px;
+}
+.asd-c .standard .A b {
+  font-size: 24px;
+  font-weight: bold;
+}
+.asd-c .standard .A p {
+  text-indent: 2em;
+}
+.asd-c .standard .A p span {
+  font-weight: bold;
+}
+.asd-c .degree {
+  font-size: 18px;
+  line-height: 31px;
+  color: #666666;
+}
+.asd-c .degree h3 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.asd-c .degree .frist {
+  margin-bottom: 40px;
+}
+.asd-c .degree .frist h4 {
+  font-size: 24px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.asd-c .degree .frist .tit {
+  font-weight: bold;
+}

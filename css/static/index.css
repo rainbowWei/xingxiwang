@@ -374,6 +374,7 @@ a:hover {
   width: 25px;
   height: 78px;
   background: url(../../images/arrow.png);
+  background-size: 100% 100%;
   position: absolute;
   bottom: 0;
   left: 330px;
@@ -464,9 +465,11 @@ a:hover {
 }
 .system .sy-c .left {
   background: url(../../images/left.png);
+  background-size: 100%;
 }
 .system .sy-c .right {
   background: url(../../images/right.png);
+  background-size: 100%;
 }
 .system .on-line {
   margin: 34px auto 0;
@@ -522,6 +525,14 @@ a:hover {
 }
 .system .sy-list li:first-child {
   margin-left: 0;
+}
+.system .sy-list li div {
+  width: 221px;
+  height: 198px;
+}
+.system .sy-list li div img {
+  width: 100%;
+  height: 100%;
 }
 .system .sy-list li p {
   font-size: 18px;
@@ -1068,7 +1079,7 @@ a:hover {
 }
 .case {
   width: 100%;
-  height: 718px;
+  height: 100%;
 }
 .case .ab-h {
   width: 467px;
@@ -1141,7 +1152,10 @@ a:hover {
   background-color: #ee52a8;
 }
 .case .case-list a .c4 {
-  background-color: #ee52a8;
+  background-color: #e94f65;
+}
+.case .case-list2 {
+  margin-top: 60px;
 }
 .case .video {
   width: 100%;
@@ -1244,6 +1258,9 @@ a:hover {
 }
 .case .video .player .ctl .sch-y {
   left: 900px;
+}
+.case .video2 {
+  margin-bottom: 223px;
 }
 .honor .ab-h {
   width: 467px;

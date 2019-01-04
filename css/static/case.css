@@ -1,0 +1,29 @@
+@import '../public/reset.css';
+.case-bg {
+  width: 100%;
+  height: 84px;
+  background-color: #f08300;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 84px;
+  color: #ffffff;
+  text-align: center;
+}
+.case-c {
+  padding: 34px 140px 170px;
+}
+.case-c .case-img {
+  margin: 0 auto 32px;
+  width: 427px;
+  height: 243px;
+}
+.case-c .case-img img {
+  width: 100%;
+  height: 100%;
+}
+.case-c .text p {
+  text-indent: 2em;
+  font-size: 18px;
+  line-height: 31px;
+  color: #666666;
+}
