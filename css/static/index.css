@@ -129,25 +129,11 @@ textarea {
 .clearfix {
   zoom: 1;
 }
-a:hover {
-  text-decoration: none;
-}
-.mar0 {
-  margin: 0 auto;
-}
-.pos1 {
-  position: relative;
-}
 .w100 {
-  width: 100%;
-}
-.h100 {
-  height: 100%;
-}
-#lunbo {
   width: 100%;
   height: 570px;
   margin: 0 auto;
+  position: relative;
 }
 #one {
   width: 100%;
@@ -167,10 +153,6 @@ a:hover {
 #one .on {
   display: block;
 }
-#two .on {
-  border: 1px solid #fdad4c;
-  background: #fdad4c;
-}
 #two {
   position: absolute;
   margin-left: -75px;
@@ -188,6 +170,10 @@ a:hover {
   cursor: pointer;
   text-align: center;
 }
+#two .on {
+  border: 1px solid #fdad4c;
+  background: #fdad4c;
+}
 .slider-page {
   display: none;
 }
@@ -201,7 +187,6 @@ a:hover {
   font-size: 50px;
   font-weight: 400;
   margin-top: -5px;
-  font-family: simsun;
 }
 #left {
   position: absolute;
@@ -445,7 +430,7 @@ a:hover {
 }
 .system .sy-c li {
   width: 131px;
-  height: 290px;
+  height: 285px;
   text-align: center;
   font-size: 34px;
   letter-spacing: 2px;
@@ -805,8 +790,8 @@ a:hover {
   display: block;
 }
 .expert .ex-list a .text {
-  padding: 96px 0 0 16px;
-  width: 216px;
+  padding: 96px 5px 0 16px;
+  width: 211px;
   height: 254px;
   background-color: #050214;
   opacity: 0.8;

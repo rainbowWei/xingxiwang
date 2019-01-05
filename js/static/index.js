@@ -12,7 +12,7 @@ $(function(){
      var len = $("#two li").length;
      //自动播放
      var i = 0;
-     var t = setInterval(move, 4000);
+     var t = setInterval(move, 3000);
      //自动播放核心函数
      function move() {
      i++;
@@ -42,7 +42,7 @@ $(function(){
      $('#lunbo').hover(function () {
      clearInterval(t);
      }, function () {
-     t = setInterval(move, 4000);
+     t = setInterval(move, 3000);
      })
 
      //专家团队的显示隐藏
@@ -57,23 +57,24 @@ $(function(){
         }
       );
 
-      //公司动态  行业新闻   ASD百科内容的显示与隐藏
-      $(".tab li").click(function(){
+    //公司动态  行业新闻   ASD百科内容的显示与隐藏
+
+    $(".tab li").click(function(){
         $(".content1 li").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');    
     })
     $(".tab li").mouseover(function(){
-        //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
-            var _index = $(this).index();
-            $(".content1>div").eq(_index).show().siblings().hide();
-            if(_index == 0){
-                 $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
-            }else if(_index == 1){
-                $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3");
-            }else{
-                $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3");
-            }
-       
-        });
+    //通过 .index()方法获取元素下标，从0开始，赋值给某个变量
+        var _index = $(this).index();
+        $(".content1>div").eq(_index).show().siblings().hide();
+        if(_index == 0){
+                $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
+        }else if(_index == 1){
+            $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3");
+        }else{
+            $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3");
+        }
+    
+    });
     
     //所获荣誉部分 
         var i1;
@@ -109,6 +110,7 @@ $(function(){
             })
     })
 
+    //返回顶部
 
    //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））
    $(window).scroll(function(){
@@ -150,7 +152,6 @@ function vides(oVid){
   var maxTime;
   var thisTime;
   var oSp = oUl[2].children[0];
-//   console.log(parseInt(oUl[3].style.left));
   var oLeft = parseInt(oUl[2].offsetLeft)+parseInt(oVid.offsetLeft)+parseInt(oCtl.offsetLeft);
   var oSchSp = parseInt(oVid.offsetLeft);
 
@@ -208,7 +209,6 @@ function vides(oVid){
 
       var t = (thisTime/maxTime);
 
-      // console.log(oUl[2].children[0].width);
       oSp.style.width = parseInt(oUlWidth-2) * t.toFixed(2)+"px";
       oUl[3].style.left = 134+parseInt( oSp.style.width ) +"px";
   }
@@ -226,21 +226,16 @@ function vides(oVid){
       ev = ev || window.event;
       var _X = ev.clientX;
       oVideo.ontimeupdate = null;
-      //console.log(_X-oLeft);
       var t = _X-oLeft;
       oVideo.currentTime = parseInt(maxTime * (t/oUlWidth).toFixed(2));
-      //console.log(parseInt(oUl[3].style.left));
       oSp.style.width = oUlWidth * (t/oUlWidth).toFixed(2)+"px";
       oUl[3].style.left = _X - oSchSp-15 +"px";
       document.onmousemove = function(ev){
           ev = ev || window.event;
           var _x = ev.clientX;
           var xChange = parseInt(_x)-parseInt(_X);
-
-          //oUl[3].style.left = xChange + _X - oSchSp - 15 +"px";
-
           var t = _x - oLeft;
-        //   console.log(oVideo.currentTime);
+
           oVideo.currentTime = parseInt(maxTime * (t/oUlWidth).toFixed(2));
           oSp.style.width = oUlWidth * (t/oUlWidth).toFixed(2)+"px";
           if ((_x - oSchSp-15)<200) {
@@ -252,22 +247,18 @@ function vides(oVid){
           else{
               oUl[3].style.left = _x - oSchSp-15+"px";
           }
-          //console.log(parseInt(_x)-parseInt(_X));
           date();
       }
       document.onmouseup = function(){
-          //oUl[2].onmousedown = null;
-
+         
           document.onmousemove = null;
           oVideo.ontimeupdate = date;
-          //alert(oSp.onmousemove);
       }
 
   }
   oUl[2].onmousedown = move2;
   oUl[3].onmousedown = move2;
   oUl[6].onclick = function(){
-      //oVideo.webkitRequestFullScreen();
        if(oVideo.requestFullScreen) {
           oVideo.requestFullScreen();
         } else if(oVideo.mozRequestFullScreen) {

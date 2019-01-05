@@ -1,0 +1,31 @@
+@import '../public/reset.css';
+.activity {
+  padding: 40px 0 126px;
+}
+.activity .act-h {
+  font-size: 38px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  padding-left: 48px;
+}
+.activity .act-h span {
+  width: 38px;
+  height: 33px;
+  position: absolute;
+  top: 4px;
+  left: 502px;
+  background: url(../../images/news/a1.png);
+}
+.activity .act-list {
+  height: 390px;
+  width: 100%;
+}
+.activity .act-list li {
+  float: left;
+  height: 390px;
+  width: 386px;
+  margin-right: 21px;
+  background: #666;
+}
