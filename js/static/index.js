@@ -56,6 +56,7 @@ $(function(){
             $(this).find(".text").css('display','none'); 
         }
       );
+      
 
     //公司动态  行业新闻   ASD百科内容的显示与隐藏
 
@@ -67,11 +68,11 @@ $(function(){
         var _index = $(this).index();
         $(".content1>div").eq(_index).show().siblings().hide();
         if(_index == 0){
-                $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
+            $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).removeClass("border").eq(2).addClass("border");
         }else if(_index == 1){
-            $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3");
-        }else{
-            $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3");
+            $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3 border");
+        }else if(_index == 2){
+            $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).addClass("border");
         }
     
     });

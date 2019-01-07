@@ -1,87 +1,6 @@
 @import '../public/reset.less';
 
 //轮播部分
-// a:hover{
-//     text-decoration: none;
-// }
-// .mar0{
-//     margin:0 auto;
-// }
-// .pos1{
-//     position:relative;
-// }
- 
-// .w100{
-//     width:100%;
-// }
-// .h100{
-//     height: 100%;
-// }
-// #lunbo{
-//     width:100%;
-//     height: 570px;
-//     margin:0 auto;
- 
-// }
-// #one{
-//     width:100%;
-//     height:100%;
-//     overflow:hidden;
-// }
-// #one li{
-//     float:left;
-//     width:100%;
-//     height:100%;
-//     display:none;
-// }
-// #one li img{
-//     width:100%;
-//     height:100%;
-// }
-// #one .on{display:block;}
-// #two .on{ border:1px solid #fdad4c;background:#fdad4c;}
-// #two{
-//     position:absolute;
-//     // width:100px;
-//     margin-left: -75px;
-//     left:50%;
-//     bottom:41px;
-// }
-// #two li{
-//     float:left;
-//     width: 18px;
-// 	height: 18px;
-//     border-radius: 50%;
-//     border:1px solid #dbdbdb;
-//     background:#dbdbdb;
-//     margin-left:30px;
-//     cursor: pointer;
-//     text-align:center;
-// }
- 
-// .slider-page{display:none;}
-// .slider-page a{
-//     display: block;
-//     width: 28px;
-//     height: 62px;
-//     line-height: 62px;
-//     color: #999;
-//     text-align: center;
-//     font-size: 50px;
-//     font-weight: 400;
-//     margin-top: -5px;
-// }
-// #left{
-//     position:absolute;
-//     left:5%;
-//     top:215px;
-// }
-// #right{position:absolute;
-//     right:5%;
-//     top:215px;
-// }
-// #lunbo:hover .slider-page{display:block;}
-
 .w100{
     width:100%;
     height: 570px;
@@ -501,7 +420,7 @@
         line-height: 36px;
         color: #ffffff;
         position: absolute;
-        bottom: 61px;
+        bottom: 40px;
         left:50%;
         margin-left:-101px;
     }
@@ -611,6 +530,10 @@
         height:562px;
         margin-top: 40px;
         z-index: 1000;
+        overflow: hidden;
+        ul{
+            width: 1216px;
+        }
         li{
             float: left;
             margin-right:16px;
@@ -652,9 +575,6 @@
             .p8{
                 background:#ef7649; 
             }
-        }
-        .mr{
-            margin-right: 0px;
         }
     }
     .more2{
@@ -720,6 +640,10 @@
         width:100%;
         height:100%;
         margin: 60px auto 40px;
+        overflow: hidden;
+        ul{
+            width:1210px;
+        }
         a{
             float: left;
             display: block;
@@ -781,9 +705,6 @@
                     line-height: 26px;  
                 }
             }
-        }
-        .mr{
-            margin-right: 0;
         }
     }
 }
@@ -919,7 +840,7 @@
 // 公司动态  行业新闻  ASD百科
 .trends{
     width:100%;
-    height:394px;
+    height:100%;
     padding-top: 30px;
     .tab{
         width:100%;
@@ -935,11 +856,10 @@
             height:34px;
             font-size: 24px;
             color: #666666;  
-            border-left: 2px solid #d2d2d2;
             cursor: pointer;
-            &:first-child{
-                border-left: none
-            }
+        }
+        .border{
+              border-left: 2px solid #d2d2d2;
         }
         .tab_on{
             line-height: 68px;
@@ -976,70 +896,72 @@
         background: url(../../images/line.png);
     }
     .content1{
-        width: 1178px;
-        height:276px;
-        padding:10px 0 30px 22px;
+        width: 1180px;
+        height:407px;
+        padding:33px 10px 0px 10px;
         background-color: #ffffff;
         box-shadow: inset 1px 2px 7px 0px 
             rgba(0, 0, 0, 0.24), 
             inset 0px -2px 7px 0px 
             rgba(0, 0, 0, 0.24);
-        div{
+        .list{
            
             width:100%;
             height:100%;
             display: none;
-            .frist{
-                float: left; 
-                margin-top: 20px;
-                margin-right:157px;
-                .fl-img{
-                    width:204px;
-                    height:116px;
-                    img{
-                        width:100%;
-                        height: 100%;
-                    }
-                }
-                .fr-text{
-                   width:208px;
-                   height:116px;
-                   margin-left: 20px;
-                   position: relative; 
-                   .title{
-                       margin-top: 13px;
-                       font-size: 20px;
-                       line-height: 26px;
-                        color: #666666;
-                   }
-                   .time{
-                       margin-top: 30px;
-                       font-size: 16px;
-                       line-height: 26px;
-                        color: #999999;
-                        position: absolute;
-                        bottom: 0;
-                   }
-                }
-               .fr-text2{
-                   width: 280px;
-               } 
+            overflow: hidden;
+            position: relative;
+            ul{
+                width:1220px;
             }
-            .second{
-                margin-right: 80px;
-            }
-            .trends-more{
-                width: 204px;
-                height: 116px;
-                background-color: #ffffff;
-                border: solid 1px #d6d6d6;
-                text-align: center;
-                line-height: 116px;
-                a{
-                    display: block;
+            li{
+                float: left;
+                width:380px;
+                height:310px;
+                margin-right:20px;
+                .img{
                     width: 100%;
-                    height:100%;
+                    height:210px;
+                    img{
+                        width: 100%;
+                        height:100%;
+                    }
+
                 }
+                .title{
+                    font-size: 20px;
+                    line-height: 37px;
+                    color: #666666;
+                    margin: 13px 0 5px;
+                }
+                .center{
+                    text-align: center;
+                }
+                .time{
+                    font-size: 16px;
+                    line-height: 36px;
+                    color: #999999;
+                    margin-left:240px;
+                }
+            }
+            .more3{
+                width: 202px;
+                height: 40px;
+                display: block;
+                background-color: #bfbfbf;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 20px;
+                font-size: 18px;
+                line-height: 36px;
+                color: #ffffff;
+                position: absolute;
+                bottom: 30px;
+                left:50%;
+                margin-left:-101px;
+            }
+            .mt{
+                bottom: 60px;
             }
         }
         .on{display: block;}
@@ -1095,12 +1017,13 @@
     width: 100%;
     height:228px;
     margin-top: 50px;
+    overflow: hidden;
+    ul{
+        width:1216px;
+    }
     a{
         float: left;
-        margin-left: 16px;
-        &:first-child{
-            margin-left: 0;
-        }
+        margin-right: 16px;
         p{
             width: 288px;
             height: 50px;

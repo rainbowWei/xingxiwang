@@ -541,7 +541,7 @@ textarea {
   line-height: 36px;
   color: #ffffff;
   position: absolute;
-  bottom: 61px;
+  bottom: 40px;
   left: 50%;
   margin-left: -101px;
 }
@@ -647,6 +647,10 @@ textarea {
   height: 562px;
   margin-top: 40px;
   z-index: 1000;
+  overflow: hidden;
+}
+.must-under .under-list ul {
+  width: 1216px;
 }
 .must-under .under-list li {
   float: left;
@@ -689,9 +693,6 @@ textarea {
 }
 .must-under .under-list li .p8 {
   background: #ef7649;
-}
-.must-under .under-list .mr {
-  margin-right: 0px;
 }
 .must-under .more2 {
   width: 202px;
@@ -753,6 +754,10 @@ textarea {
   width: 100%;
   height: 100%;
   margin: 60px auto 40px;
+  overflow: hidden;
+}
+.expert .ex-list ul {
+  width: 1210px;
 }
 .expert .ex-list a {
   float: left;
@@ -812,9 +817,6 @@ textarea {
 }
 .expert .ex-list a .text2 p {
   line-height: 26px;
-}
-.expert .ex-list .mr {
-  margin-right: 0;
 }
 .mode {
   height: 1208px;
@@ -940,7 +942,7 @@ textarea {
 }
 .trends {
   width: 100%;
-  height: 394px;
+  height: 100%;
   padding-top: 30px;
 }
 .trends .tab {
@@ -957,11 +959,10 @@ textarea {
   height: 34px;
   font-size: 24px;
   color: #666666;
-  border-left: 2px solid #d2d2d2;
   cursor: pointer;
 }
-.trends .tab li:first-child {
-  border-left: none;
+.trends .tab .border {
+  border-left: 2px solid #d2d2d2;
 }
 .trends .tab .tab_on {
   line-height: 68px;
@@ -996,68 +997,69 @@ textarea {
   background: url(../../images/line.png);
 }
 .trends .content1 {
-  width: 1178px;
-  height: 276px;
-  padding: 10px 0 30px 22px;
+  width: 1180px;
+  height: 407px;
+  padding: 33px 10px 0px 10px;
   background-color: #ffffff;
   box-shadow: inset 1px 2px 7px 0px rgba(0, 0, 0, 0.24), inset 0px -2px 7px 0px rgba(0, 0, 0, 0.24);
 }
-.trends .content1 div {
+.trends .content1 .list {
   width: 100%;
   height: 100%;
   display: none;
-}
-.trends .content1 div .frist {
-  float: left;
-  margin-top: 20px;
-  margin-right: 157px;
-}
-.trends .content1 div .frist .fl-img {
-  width: 204px;
-  height: 116px;
-}
-.trends .content1 div .frist .fl-img img {
-  width: 100%;
-  height: 100%;
-}
-.trends .content1 div .frist .fr-text {
-  width: 208px;
-  height: 116px;
-  margin-left: 20px;
+  overflow: hidden;
   position: relative;
 }
-.trends .content1 div .frist .fr-text .title {
-  margin-top: 13px;
-  font-size: 20px;
-  line-height: 26px;
-  color: #666666;
+.trends .content1 .list ul {
+  width: 1220px;
 }
-.trends .content1 div .frist .fr-text .time {
-  margin-top: 30px;
-  font-size: 16px;
-  line-height: 26px;
-  color: #999999;
-  position: absolute;
-  bottom: 0;
+.trends .content1 .list li {
+  float: left;
+  width: 380px;
+  height: 310px;
+  margin-right: 20px;
 }
-.trends .content1 div .frist .fr-text2 {
-  width: 280px;
+.trends .content1 .list li .img {
+  width: 100%;
+  height: 210px;
 }
-.trends .content1 div .second {
-  margin-right: 80px;
-}
-.trends .content1 div .trends-more {
-  width: 204px;
-  height: 116px;
-  background-color: #ffffff;
-  border: solid 1px #d6d6d6;
-  text-align: center;
-  line-height: 116px;
-}
-.trends .content1 div .trends-more a {
-  display: block;
+.trends .content1 .list li .img img {
   width: 100%;
   height: 100%;
+}
+.trends .content1 .list li .title {
+  font-size: 20px;
+  line-height: 37px;
+  color: #666666;
+  margin: 13px 0 5px;
+}
+.trends .content1 .list li .center {
+  text-align: center;
+}
+.trends .content1 .list li .time {
+  font-size: 16px;
+  line-height: 36px;
+  color: #999999;
+  margin-left: 240px;
+}
+.trends .content1 .list .more3 {
+  width: 202px;
+  height: 40px;
+  display: block;
+  background-color: #bfbfbf;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -101px;
+}
+.trends .content1 .list .mt {
+  bottom: 60px;
 }
 .trends .content1 .on {
   display: block;
@@ -1110,13 +1112,14 @@ textarea {
   width: 100%;
   height: 228px;
   margin-top: 50px;
+  overflow: hidden;
+}
+.case .case-list ul {
+  width: 1216px;
 }
 .case .case-list a {
   float: left;
-  margin-left: 16px;
-}
-.case .case-list a:first-child {
-  margin-left: 0;
+  margin-right: 16px;
 }
 .case .case-list a p {
   width: 288px;
