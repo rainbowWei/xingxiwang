@@ -2,7 +2,7 @@
  * 解析地址参数
  */
 
-function getUrlParams (URL) {
+function getUrlParams(URL) {
   var reg = /(\w*).html/;
   var url = location.href;
   var keywords = reg.exec(url);
@@ -17,10 +17,10 @@ function getUrlParams (URL) {
   return I;
 }
 
-function getParams (x) {
+function getParams(x) {
   var search = location.search.substr(1).split("&");
   var obj = {}
-  for(var i=0; i<search.length; i++) {
+  for (var i = 0; i < search.length; i++) {
     var temp = search[i].split('=');
     obj[temp[0]] = temp[1]
   }
@@ -31,13 +31,11 @@ function getParams (x) {
 }
 
 
- // 二级菜单的显示和隐藏
- $(".test").hover(
-  function(){
-  $(this).find("div").css('display','block'); 
-  },
-  function(){
-  $(this).find("div").css('display','none')
+// 二级菜单的显示和隐藏
+$(".test").hover(function () {
+    $(this).find("div").css('display', 'block');
+  }, function () {
+    $(this).find("div").css('display', 'none')
   }
 );
 
@@ -47,7 +45,6 @@ var a = Number(getParams("a"))
 if (isNaN(a)) {
   a = getUrlParams(URL);
 }
-// console.log(a, '000')
 
 $(".nav li p").removeClass("line");
 $(".nav li").eq(a).children("p").addClass("line");
