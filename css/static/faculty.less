@@ -1,18 +1,21 @@
-@import '../public/reset.css';
+
 .faculty{
+    width: 100%;
     height: 1272px;
-    position: relative;
+   
+    .faculty2{
+         position: relative;
+    }
     .faculty-list{
         width:1161px;
         height:1050px;
         margin: 80px auto 142px;
-        background: #999;
         li{
             float: left;
-            width: 232px;
+            width: 230px;
             height: 350px;
-            background: red;
             position: relative;
+            border:1px solid #fff;
             .img{
                 width:100%;
                 height:100%; 
@@ -21,30 +24,35 @@
                     height:100%;
                 }
             }
-            p{
+            .title{
                 position: absolute;
                 bottom: 0;
                 left:0;
-                height: 54px;
-                line-height:54px;
                 text-align: center;
                 width: 100%;
-                background-color:#442500;
-                opacity: 0.38;
-                filter:alpha(opacity=38);  
-                -moz-opacity:0.38;  
-                -khtml-opacity:0.38;
-                font-size: 24px;
-	            color: #ffffff;
+                background:#442500;
+                opacity: 0.6;
+                filter:alpha(opacity=60);  
+                -moz-opacity:0.6;  
+                -khtml-opacity:0.6;
+                padding:10px 0;
+               
+                span{
+                    position: relative;
+                    color: #ffffff;
+                    font-size: 24px;
+                    display: block;
+                    
+                }
             }
         }
         .show-f{
             p{
                 background: #f08300;
-                opacity: 0.62;
-                filter:alpha(opacity=62);  
-                -moz-opacity:0.62;  
-                -khtml-opacity:0.62;
+                opacity: 0.9;
+                filter:alpha(opacity=90);  
+                -moz-opacity:0.9;  
+                -khtml-opacity:0.9;
             }
         }
         
@@ -53,13 +61,14 @@
         }
     }
     .faculty-c{
-        width: 662px;
+        width: 660px;
         padding: 96px 0 0 34px;
         height: 254px;
-        background-color: #f5a94f;
+        background-color: #f28e16;
         position: absolute;
-        top: 350px;
-        left: 581px;
+        top: 352px;
+        left: 251px;
+        border: 1px solid #fff;
         div{
             font-size: 20px;
             line-height: 31px;

@@ -1,4 +1,3 @@
-@import '../public/reset.css';
 .case-bg {
   width: 100%;
   height: 84px;
@@ -26,4 +25,118 @@
   font-size: 18px;
   line-height: 31px;
   color: #666666;
+}
+.case-c2 {
+  width: 600px;
+  height: 100%;
+  margin: 35px auto 118px;
+}
+.case-c2 .video {
+  width: 100%;
+  height: 348px;
+  margin-top: 20px;
+}
+.case-c2 .video .player {
+  width: 590px;
+  position: relative;
+  height: 100%;
+}
+.case-c2 .video .player video {
+  width: 100%;
+  height: 100%;
+}
+.case-c2 .video .player .bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.case-c2 .video .player .ctl {
+  width: 100%;
+  height: 30px;
+  background: rgba(90, 90, 90, 0.6);
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  cursor: default;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.case-c2 .video .player .ctl .btn,
+.case-c2 .video .player .ctl .time {
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 20px;
+  border-radius: 5px;
+  background: #fff;
+  position: absolute;
+  bottom: 5px;
+}
+.case-c2 .video .player .ctl .btn-play {
+  left: 8px;
+}
+.case-c2 .video .player .ctl .btn-jy {
+  right: 76px;
+}
+.case-c2 .video .player .ctl .btn-qp {
+  right: 20px;
+}
+.case-c2 .video .player .ctl .sch {
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 8px;
+  overflow: hidden;
+  z-index: 1;
+}
+.case-c2 .video .player .ctl .sch-play {
+  width: 186px;
+  left: 140px;
+}
+.case-c2 .video .player .ctl .sch-yl {
+  width: 86px;
+  right: 80px;
+}
+.case-c2 .video .player .ctl .sch-play .sch-sp {
+  width: 200px;
+}
+.case-c2 .video .player .ctl .sch-yl .sch-sp {
+  width: 80px;
+}
+.case-c2 .video .player .ctl .sch .sch-sp {
+  position: absolute;
+  height: 12px;
+  top: 0;
+  background: #fff;
+}
+.case-c2 .video .player .ctl .sch-btn {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  border-radius: 5px;
+  top: 5px;
+  z-index: 2;
+  background: #fff;
+}
+.case-c2 .video .player .ctl .sch-s {
+  left: 129px;
+}
+.case-c2 .video .player .ctl .sch-y {
+  left: 900px;
+}
+.case-c2 .text3 h3 {
+  margin: 30px 0 10px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 31px;
+  color: #033333;
+}
+.case-c2 .text3 p {
+  font-size: 20px;
+  color: #666666;
+  text-indent: 2em;
+  line-height: 31px;
 }

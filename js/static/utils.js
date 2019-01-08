@@ -7,7 +7,7 @@ function getUrlParams (URL) {
   var url = location.href;
   var keywords = reg.exec(url);
   var I = 0;
-  console.log($.cookie('i'), '-------------')
+  // console.log($.cookie('i'), '-------------')
   I = $.cookie('i') ? $.cookie('i') : I;
   $.each(URL, function (index, item) {
     if (keywords && keywords[1] === item) {
@@ -47,27 +47,8 @@ var a = Number(getParams("a"))
 if (isNaN(a)) {
   a = getUrlParams(URL);
 }
-console.log(a, '000')
+// console.log(a, '000')
 
 $(".nav li p").removeClass("line");
 $(".nav li").eq(a).children("p").addClass("line");
 $(".nav li").eq(a).addClass("active");
-
-$(".nav").on("click", "li .title", function (e) {
-  if (!$(this).next().hasClass("menu")) {
-    var index = $(this).parent().index();
-    if ($(this).attr("path") === "index") {
-      location.href = '/index.html';
-    }
-    if ($(this).attr("path") === "internet") {
-      location.href =  '/pags/' + 'internet' + '/' + 'internet.html';
-    }
-
-    //  else {
-    //   location.href = $(this).attr("path") + ".html?a=" + index;
-    // }
-  }
-})
-$(".nav").on("click", ".menu", function (e) {
-  location.href = '/pags/' + $(this).attr("path") + "/" + $(e.target).attr("path") + ".html?a=" + $(this).parent().index();
-})

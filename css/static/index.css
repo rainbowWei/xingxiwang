@@ -1,139 +1,12 @@
-html,
-body,
-div,
-span,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-abbr,
-address,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-samp,
-small,
-strong,
-sub,
-sup,
-var,
-b,
-i,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-  font-family: "微软雅黑";
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-em,
-i {
-  font-weight: normal;
-  font-style: normal;
-}
-ul,
-ol,
-li {
-  list-style-type: none;
-}
-a {
-  color: #666;
-  text-decoration: none;
-  outline: 0;
-}
-b,
-strong {
-  font-weight: normal;
-}
-input {
-  outline: none;
-  border: none;
-}
-textarea {
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  list-style: none;
-  outline: none;
-  resize: none;
-}
-.fl {
-  float: left;
-}
-.fr {
-  float: right;
-}
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-}
-.clearfix {
-  zoom: 1;
-}
 .w100 {
   width: 100%;
   height: 570px;
   margin: 0 auto;
   position: relative;
+}
+.w100 .pos1 {
+  width: 100%;
+  height: 100%;
 }
 #one {
   width: 100%;
@@ -252,80 +125,38 @@ textarea {
   position: relative;
 }
 .abstract .ab-c .circle {
-  width: 362px;
-  height: 362px;
-  border-radius: 50%;
-  border: 2px solid #e2e2e2;
-  position: absolute;
-  top: 73px;
-}
-.abstract .ab-c .circle .circle2 {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  border: 2px solid #e2e2e2;
-  position: absolute;
-  top: 40px;
-  left: 40px;
-}
-.abstract .ab-c .circle .circle2 .circle3 {
-  width: 212px;
-  height: 212px;
-  border-radius: 50%;
-  background-color: #f08300;
-  box-shadow: 1px 6px 0px 0px rgba(147, 89, 18, 0.35);
-  position: absolute;
-  top: 32px;
-  left: 32px;
-  font-size: 56px;
-  line-height: 20px;
-  color: #ffffff;
-  line-height: 212px;
-  text-align: center;
+  width: 421px;
+  height: 494px;
+  background: url(../../images/circle.png);
+  position: relative;
 }
 .abstract .ab-c .circle .m {
   width: 360px;
   height: 108px;
   position: absolute;
-  left: 196px;
-  top: -61px;
+  left: 290px;
+  top: 0px;
 }
-.abstract .ab-c .circle .m .m-l {
-  width: 95px;
-  height: 95px;
-  background-color: #b0d012;
-  border-radius: 50%;
-  font-size: 56px;
-  line-height: 20px;
-  color: #ffffff;
-  line-height: 95px;
-  text-align: center;
-}
-.abstract .ab-c .circle .m .m-r {
-  width: 260px;
-  height: 95px;
-}
-.abstract .ab-c .circle .m .m-r .m-c {
+.abstract .ab-c .circle .m .m-c {
   font-size: 40px;
   line-height: 49px;
   color: #b0d012;
   text-align: center;
 }
-.abstract .ab-c .circle .m .m-r .m-line {
+.abstract .ab-c .circle .m .m-line {
   width: 261px;
   height: 2px;
   background-color: #b8b8b8;
 }
-.abstract .ab-c .circle .m .m-r .m-e {
+.abstract .ab-c .circle .m .m-e {
   font-size: 30px;
   line-height: 49px;
   color: #999999;
   text-align: center;
 }
 .abstract .ab-c .circle .u {
-  position: absolute;
-  left: 325px;
-  top: 66px;
+  left: 421px;
+  top: 127px;
 }
 .abstract .ab-c .circle .u .m-l {
   background-color: #ff5881;
@@ -334,9 +165,8 @@ textarea {
   color: #ff5881;
 }
 .abstract .ab-c .circle .s {
-  position: absolute;
-  left: 310px;
-  top: 235px;
+  left: 404px;
+  top: 297px;
 }
 .abstract .ab-c .circle .s .m-l {
   background-color: #ebadbb;
@@ -345,9 +175,8 @@ textarea {
   color: #ebadbb;
 }
 .abstract .ab-c .circle .t {
-  position: absolute;
-  left: 135px;
-  top: 337px;
+  left: 228px;
+  top: 400px;
 }
 .abstract .ab-c .circle .t .m-l {
   background-color: #c1de34;
@@ -430,7 +259,7 @@ textarea {
 }
 .system .sy-c li {
   width: 131px;
-  height: 285px;
+  height: 290px;
   text-align: center;
   font-size: 34px;
   letter-spacing: 2px;
@@ -450,11 +279,9 @@ textarea {
 }
 .system .sy-c .left {
   background: url(../../images/left.png);
-  background-size: 100%;
 }
 .system .sy-c .right {
   background: url(../../images/right.png);
-  background-size: 100%;
 }
 .system .on-line {
   margin: 34px auto 0;
@@ -818,6 +645,12 @@ textarea {
 .expert .ex-list a .text2 p {
   line-height: 26px;
 }
+.expert .ex-list a:hover .title {
+  display: none;
+}
+.expert .ex-list a:hover .text {
+  display: block;
+}
 .mode {
   height: 1208px;
   background-color: #f7f7f7;
@@ -904,11 +737,10 @@ textarea {
   margin-top: 25px;
 }
 .mode .mode-list .t2 .t2l {
-  width: 223px;
-  height: 109px;
+  width: 222px;
+  height: 108px;
   padding-top: 30px;
-  background-color: #f08300;
-  border-radius: 62px 12px 62px 12px;
+  background: url(../../images/mode.png);
   text-align: center;
 }
 .mode .mode-list .t2 .t2l p {
@@ -955,7 +787,7 @@ textarea {
   float: left;
   text-align: center;
   line-height: 34px;
-  width: 397px;
+  width: 398px;
   height: 34px;
   font-size: 24px;
   color: #666666;
@@ -985,7 +817,7 @@ textarea {
 .trends .tab .tab_on3 {
   background-color: #a665ec;
   line-height: 68px;
-  width: 402px;
+  width: 400px;
   height: 68px;
   color: #ffffff;
   margin-top: -17px;
@@ -1150,104 +982,19 @@ textarea {
   height: 348px;
   margin-top: 20px;
 }
-.case .video .player {
+.case .video a {
+  width: 590px;
+  height: 100%;
   float: left;
 }
-.case .video .player:first-child {
+.case .video a:first-child {
   margin-right: 20px;
 }
-.case .video .player {
-  width: 590px;
-  position: relative;
-  height: 100%;
-}
-.case .video .player video {
+.case .video a img {
   width: 100%;
   height: 100%;
 }
-.case .video .player .bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-.case .video .player .ctl {
-  width: 100%;
-  height: 30px;
-  background: rgba(90, 90, 90, 0.6);
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  cursor: default;
-  opacity: 0;
-  transition: opacity 0.8s;
-}
-.case .video .player .ctl .btn,
-.case .video .player .ctl .time {
-  padding: 0 5px;
-  font-size: 14px;
-  line-height: 20px;
-  border-radius: 5px;
-  background: #fff;
-  position: absolute;
-  bottom: 5px;
-}
-.case .video .player .ctl .btn-play {
-  left: 8px;
-}
-.case .video .player .ctl .btn-jy {
-  right: 76px;
-}
-.case .video .player .ctl .btn-qp {
-  right: 20px;
-}
-.case .video .player .ctl .sch {
-  height: 12px;
-  border: 1px solid #fff;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 8px;
-  overflow: hidden;
-  z-index: 1;
-}
-.case .video .player .ctl .sch-play {
-  width: 186px;
-  left: 140px;
-}
-.case .video .player .ctl .sch-yl {
-  width: 86px;
-  right: 80px;
-}
-.case .video .player .ctl .sch-play .sch-sp {
-  width: 200px;
-}
-.case .video .player .ctl .sch-yl .sch-sp {
-  width: 80px;
-}
-.case .video .player .ctl .sch .sch-sp {
-  position: absolute;
-  height: 12px;
-  top: 0;
-  background: #fff;
-}
-.case .video .player .ctl .sch-btn {
-  position: absolute;
-  width: 30px;
-  height: 20px;
-  border-radius: 5px;
-  top: 5px;
-  z-index: 2;
-  background: #fff;
-}
-.case .video .player .ctl .sch-s {
-  left: 129px;
-}
-.case .video .player .ctl .sch-y {
-  left: 900px;
-}
-.case .video2 {
+.case .case-video {
   margin-bottom: 223px;
 }
 .honor .ab-h {

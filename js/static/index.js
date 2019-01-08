@@ -46,16 +46,16 @@ $(function(){
      })
 
      //专家团队的显示隐藏
-     $(".ex-list a").hover(
-        function(){
-            $(this).find(".title").css('display','none');
-            $(this).find(".text").css('display','block'); 
-        },
-        function(){
-            $(this).find(".title").css('display','block');
-            $(this).find(".text").css('display','none'); 
-        }
-      );
+    //  $(".ex-list a").hover(
+    //     function(){
+    //         $(this).find(".title").css('display','none');
+    //         $(this).find(".text").css('display','block'); 
+    //     },
+    //     function(){
+    //         $(this).find(".title").css('display','block');
+    //         $(this).find(".text").css('display','none'); 
+    //     }
+    //   );
       
 
     //公司动态  行业新闻   ASD百科内容的显示与隐藏
@@ -68,11 +68,15 @@ $(function(){
         var _index = $(this).index();
         $(".content1>div").eq(_index).show().siblings().hide();
         if(_index == 0){
-            $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).removeClass("border").eq(2).addClass("border");
+            $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
+            $('#border').addClass("border").css('width','400');
         }else if(_index == 1){
-            $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3 border");
+            $(this).addClass("tab_on2").removeClass("border").siblings().removeClass("tab_on tab_on2 tab_on3 border");
+            $('#border').css('width','400');
         }else if(_index == 2){
-            $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).addClass("border");
+            $(this).addClass("tab_on3").removeClass("border").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).addClass("border").css('width','398');
+            $(this)
+            $(this).css('width','402');
         }
     
     });
