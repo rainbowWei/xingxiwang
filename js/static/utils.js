@@ -30,15 +30,6 @@ function getParams(x) {
   return obj
 }
 
-
-// 二级菜单的显示和隐藏
-$(".test").hover(function () {
-    $(this).find("div").css('display', 'block');
-  }, function () {
-    $(this).find("div").css('display', 'none')
-  }
-);
-
 var URL = ['index', 'course', 'internet', 'aboutus', 'news', 'love'];
 
 var a = Number(getParams("a"))

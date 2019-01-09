@@ -116,15 +116,9 @@ $(function () {
 
     //视频播放
 
-    // var all_oVid = document.getElementById("video1");
-    // console.log(all_oVid,'---')
     var all_oVid = $(".player");
-    // console.log(all_oVid);
-    for (var i = 0; i < all_oVid.length; i++) {
-        oVid = all_oVid[i][0];
-        vides(oVid);
-    }
-    // console.log(all_oVid.length);
+    var  oVid = all_oVid[0];
+    vides(oVid);
     function vides(oVid) {
         var oVideo = oVid.children[0];  //拿到video
         var oCtl = oVid.children[1]

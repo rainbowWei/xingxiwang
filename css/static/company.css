@@ -1,0 +1,30 @@
+.course-header .h-aboutus {
+  width: 935px;
+}
+.company {
+  width: 100%;
+  height: 100%;
+}
+.company .company-c {
+  height: 828px;
+  width: 1130px;
+  padding: 40px 35px 170px;
+}
+.company .company-c .com-tit {
+  font-size: 38px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+.company .company-c .com-img {
+  width: 570px;
+  height: 316px;
+  margin: 40px auto 20px;
+  background: url(../../images/aboutus/company.png);
+}
+.company .company-c .com-text p {
+  text-indent: 2em;
+  font-size: 18px;
+  line-height: 41px;
+  color: #666666;
+}

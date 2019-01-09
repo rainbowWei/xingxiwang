@@ -201,12 +201,12 @@
   text-align: center;
   margin-top: 380px;
 }
-.time {
+.time2 {
   height: 725px;
   width: 100%;
   padding-top: 58px;
 }
-.time .time-line {
+.time2 .time-line {
   font-size: 24px;
   font-weight: bold;
   line-height: 45px;
@@ -214,57 +214,57 @@
   text-align: center;
   margin-bottom: 46px;
 }
-.time .time-line p {
+.time2 .time-line p {
   text-decoration: underline;
 }
-.time .time-tit {
+.time2 .time-tit {
   font-size: 30px;
   font-weight: bold;
   color: #666666;
   text-align: center;
   margin-bottom: 10px;
 }
-.time .time-tit span {
+.time2 .time-tit span {
   color: #f08300;
 }
-.time .time-tit2 {
+.time2 .time-tit2 {
   font-size: 20px;
   line-height: 22px;
   color: #666666;
   text-align: center;
 }
-.time .time-list {
+.time2 .time-list {
   width: 1182px;
   height: 305px;
   margin-top: 18px;
 }
-.time .time-list li {
+.time2 .time-list li {
   float: left;
   width: 560px;
   height: 100%;
   margin-left: 60px;
   border-bottom: 6px solid #f76a31;
 }
-.time .time-list li:first-child {
+.time2 .time-list li:first-child {
   margin-left: 0px;
 }
-.time .time-list li div {
+.time2 .time-list li div {
   float: left;
 }
-.time .time-list li .time-img {
+.time2 .time-list li .time-img {
   width: 232px;
   height: 100%;
 }
-.time .time-list li .time-img img {
+.time2 .time-list li .time-img img {
   width: 100%;
   height: 100%;
 }
-.time .time-list li .time-txt {
+.time2 .time-list li .time-txt {
   width: 328px;
   height: 100%;
   background-color: #fff0ef;
 }
-.time .time-list li .time-txt .title {
+.time2 .time-list li .time-txt .title {
   width: 206px;
   height: 53px;
   line-height: 53px;
@@ -275,7 +275,7 @@
   color: #ffffff;
   margin: 32px 64px 16px  64px;
 }
-.time .time-list li .time-txt p {
+.time2 .time-list li .time-txt p {
   font-size: 26px;
   font-weight: bold;
   line-height: 44px;
@@ -497,64 +497,64 @@
   top: 44px;
   left: 19px;
 }
-.expert {
+.expert2 {
   height: 610px;
   width: 100%;
   padding-top: 38px;
 }
-.expert .ex-tit {
+.expert2 .ex-tit {
   font-size: 30px;
   font-weight: bold;
   color: #666666;
   text-align: center;
 }
-.expert .ex-tit span {
+.expert2 .ex-tit span {
   color: #f08300;
 }
-.expert .ex-tit2 {
+.expert2 .ex-tit2 {
   font-size: 20px;
   line-height: 22px;
   color: #666666;
   text-align: center;
   margin-top: 8px;
 }
-.expert .ex-list {
+.expert2 .ex-list {
   width: 903px;
   height: 340px;
   margin: 36px auto 0;
 }
-.expert .ex-list li {
+.expert2 .ex-list li {
   float: left;
 }
-.expert .ex-list .ex-img {
+.expert2 .ex-list .ex-img {
   width: 317px;
   height: 340px;
 }
-.expert .ex-list .ex-img img {
+.expert2 .ex-list .ex-img img {
   width: 100%;
   height: 100%;
 }
-.expert .ex-list .ex-text {
+.expert2 .ex-list .ex-text {
   margin-top: 50px;
 }
-.expert .ex-list .ex-text .ex-h {
+.expert2 .ex-list .ex-text .ex-h {
   width: 566px;
   height: 76px;
   padding: 14px 0 0 20px;
   border-top: 4px solid #cfcdca;
   background: #fffbf6;
 }
-.expert .ex-list .ex-text .ex-h p {
+.expert2 .ex-list .ex-text .ex-h p {
   font-size: 33px;
   line-height: 38px;
   color: #231815;
 }
-.expert .ex-list .ex-text .ex-h div {
+.expert2 .ex-list .ex-text .ex-h div {
   font-size: 18px;
   letter-spacing: 1px;
   color: #231815;
 }
-.expert .ex-list .ex-text .ex-p {
+.expert2 .ex-list .ex-text .ex-p {
   padding-left: 20px;
   font-size: 18px;
   line-height: 33px;
@@ -765,7 +765,7 @@
   margin-left: 30px;
 }
 .member {
-  height: 578px;
+  height: 350px;
   padding-top: 40px;
 }
 .member .mem-tit {

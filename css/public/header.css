@@ -87,6 +87,9 @@ iframe {
   height: 100%;
   display: inline-block;
 }
+.header .header-c .nav li:hover .menu {
+  display: block;
+}
 .header .header-c .nav .active .title {
   color: #f08300;
   font-weight: bold;

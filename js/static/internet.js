@@ -10,9 +10,9 @@ $(function () {
   var len = $("#two2 li").length;
   //自动播放
   var i = 0;
-  var t = setInterval(move, 2000);
+  var t = setInterval(move11, 2000);
   //自动播放核心函数
-  function move() {
+  function move11() {
     i++;
     if (i == len) {
       i = 0;
@@ -22,7 +22,7 @@ $(function () {
   }
 
   //向右播放核心函数
-  function moveL() {
+  function move22() {
     i--;
     if (i == -1) {
       i = len - 1;
@@ -31,16 +31,16 @@ $(function () {
     $('#one2 li').eq(i).addClass('on').siblings().removeClass('on');
   }
   $('#left').click(function () {
-    moveL();
+    move22();
   })
   $('#right').click(function () {
-    move();
+    move11();
   })
   //鼠标移入移除
   $('#lunbo2').hover(function () {
     clearInterval(t);
   }, function () {
-    t = setInterval(move, 2000);
+    t = setInterval(move11, 2000);
   })
 
 });
