@@ -1,0 +1,40 @@
+.brand {
+  width: 100%;
+  height: 100%;
+}
+.brand .brand-c {
+  height: 930px;
+  padding: 40px 0 95px;
+  position: relative;
+}
+.brand .brand-c .brand-tit {
+  font-size: 38px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+}
+.brand .brand-c .brand-img {
+  width: 570px;
+  height: 316px;
+  background: url(../../images/aboutus/brand.png);
+  margin: 29px auto 0;
+}
+.brand .brand-c .brand-text {
+  position: absolute;
+  top: 385px;
+  left: 22px;
+  padding-top: 51px;
+  width: 1155px;
+  height: 527px;
+  background: url(../../images/aboutus/brand-bg.png);
+  font-size: 18px;
+  line-height: 44px;
+  color: #666666;
+}
+.brand .brand-c .brand-text .brand-p {
+  width: 1035px;
+  margin: 0 auto;
+}
+.brand .brand-c .brand-text p {
+  text-indent: 2em;
+}

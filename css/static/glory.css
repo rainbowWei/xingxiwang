@@ -1,0 +1,42 @@
+.glory {
+  height: 100%;
+  width: 100%;
+}
+.glory .glory-c {
+  padding: 40px 0 120px;
+  height: 730px;
+}
+.glory .glory-c .glory-tit {
+  font-size: 38px;
+  line-height: 36px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.glory .glory-c .glory-list {
+  width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.glory .glory-c .list {
+  width: 1128px;
+  height: 100%;
+}
+.glory .glory-c .list li {
+  float: left;
+  margin: 0 48px 20px 0;
+  width: 233px;
+  height: 213px;
+  background: url(../../images/honor-bg.png);
+}
+.glory .glory-c .list li img {
+  width: 195px;
+  height: 137px;
+  margin: 21px 20px 0;
+}
+.glory .glory-c .list li p {
+  text-align: center;
+  line-height: 38px;
+  font-size: 18px;
+  color: #333333;
+}

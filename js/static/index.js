@@ -121,7 +121,7 @@ $(function () {
     vides(oVid);
     function vides(oVid) {
         var oVideo = oVid.children[0];  //拿到video
-        var oCtl = oVid.children[1]
+        var oCtl = oVid.children[1];
         var oUl = oCtl.children;  //拿到所有li
 
 

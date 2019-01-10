@@ -46,7 +46,9 @@
   display: none;
 }
 .don-content .content1 .c1 .entry1 {
+  width: 100%;
   height: 600px;
+  margin-top: 45px;
 }
 .don-content .content1 .c1 .entry1 td {
   font-size: 14px;
@@ -54,6 +56,9 @@
 .don-content .content1 .c1 .entry1 .blod td {
   font-weight: bold;
   font-size: 18px;
+}
+.don-content .content1 .c1 .entry1 .theader {
+  line-height: 82px;
 }
 .don-content .content1 .c1 .img {
   width: 400px;
@@ -115,6 +120,7 @@
 .don-content .content1 .c1 .tbody {
   width: 996px;
   height: 408px;
+  margin: 0 auto;
 }
 .don-content .content1 .c1 .tbody tr {
   height: 36px;
