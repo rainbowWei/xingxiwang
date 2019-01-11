@@ -230,7 +230,7 @@
   text-align: center;
   position: relative;
 }
-.system .sy-h strong {
+.system .sy-h i {
   position: absolute;
   top: 28px;
   left: -5px;
@@ -293,7 +293,7 @@
   color: #666666;
   position: relative;
 }
-.system .on-line strong {
+.system .on-line i {
   position: absolute;
   top: 28px;
   left: -5px;
@@ -453,7 +453,7 @@
   position: relative;
   margin-top: 60px;
 }
-.must-under .under-tit strong {
+.must-under .under-tit i {
   position: absolute;
   top: 28px;
   left: -7px;

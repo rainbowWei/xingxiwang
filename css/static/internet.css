@@ -310,6 +310,7 @@
   top: 33px;
 }
 .problem .problem-content .pro-c .p-g {
+  cursor: pointer;
   border-radius: 50%;
   position: absolute;
   box-shadow: 1px 10px 3px 0px rgba(50, 58, 142, 0.16);

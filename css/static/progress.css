@@ -3,7 +3,7 @@
   width: 100%;
 }
 .progress .progress-c {
-  height: 1166px;
+  height: 1580px;
   width: 1108px;
   padding: 40px 46px 128px;
 }
@@ -16,7 +16,7 @@
 }
 .progress .progress-c .pro-list {
   width: 100%;
-  height: 1098px;
+  height: 1516px;
 }
 .progress .progress-c .pro-list li {
   float: left;
@@ -51,8 +51,14 @@
 .progress .progress-c .pro-list .left {
   width: 515px;
 }
+.progress .progress-c .pro-list .left .l-2018 {
+  margin-top: 78px;
+}
+.progress .progress-c .pro-list .left .l-2018 .img {
+  background: url(../../images/aboutus/2018.png);
+}
 .progress .progress-c .pro-list .left .l-2016 {
-  margin-top: 59px;
+  margin-top: 228px;
 }
 .progress .progress-c .pro-list .left .l-2016 .img {
   background: url(../../images/aboutus/2016.png);
@@ -72,8 +78,19 @@
 .progress .progress-c .pro-list .right {
   width: 515px;
 }
+.progress .progress-c .pro-list .right .r-2017 {
+  margin-top: 277px;
+}
+.progress .progress-c .pro-list .right .r-2017 .img {
+  float: right;
+  background: url(../../images/aboutus/2017.png);
+}
+.progress .progress-c .pro-list .right .r-2017 .txt {
+  float: left;
+  text-align: left;
+}
 .progress .progress-c .pro-list .right .r-2015 {
-  margin-top: 256px;
+  margin-top: 230px;
 }
 .progress .progress-c .pro-list .right .r-2015 .img {
   float: right;

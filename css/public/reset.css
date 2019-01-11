@@ -90,8 +90,7 @@ a {
   text-decoration: none;
   outline: 0;
 }
-b,
-strong {
+b {
   font-weight: normal;
 }
 input {
@@ -121,4 +120,17 @@ textarea {
 }
 .clearfix {
   zoom: 1;
+}
+#page-table2 a {
+  padding: 5px;
+  border: 1px solid #f08300;
+  margin: 5px;
+}
+#page-table2 span.current {
+  padding: 5px;
+  background: #f08300;
+  margin: 5px;
+  color: #FFF;
+  font-weight: bold;
+  border: 1px solid #f08300;
 }
