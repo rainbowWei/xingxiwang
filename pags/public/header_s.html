@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="希望教育成立于2011年，以“MUST行为引导技术”为核心，旗下包括 “星希望康复中心”、“星希望网校”、“MUST研发中心”三大业务板块。致力于为孤独症儿童和家庭及康复训练师，提供评估、干预、培训一体化的专业服务。">
+    <meta name="keywords" content="自闭症、孤独症、儿童自闭症语言训练、自闭症儿童训练、自闭症儿童、自闭症儿童的特征、儿童孤独症障碍、孤独症儿童训练方法、自闭症儿童干预方法、轻微自闭症的训练方法、自闭症怎么治、自闭症儿童康复训练、自闭症干预方法、自闭症aba的训练方法、自闭症儿童康复中心、自闭症最佳干预时间">  
+    <title>星希望官网——15年专注于自闭症/孤独症家庭康复训练教育</title>
+    <link rel="stylesheet" href="/css/public/reset.css">
+    <link rel="stylesheet" href="/css/public/header_s.css" media="all" />
+    <script src="/js/plugins/jquery-1.11.3.js"></script>
+    <script type="text/javascript">
+        //移动端   设计图纸是750px
+        $(function(){
+                document.querySelector("html").style.opacity = 1;
+                $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                $(window).resize(function(){
+                    $("html").css("fontSize",parseInt($(window).width()) / 7.5 +"px");
+                    document.getElementsByTagName("html")[0].style.opacity = 1;
+
+                });
+            
+        });
+    </script>
+</head>
+<body>
+<header>
+    <ul class="header clearfix">
+        <li class="h-left fl"></li>
+        <li class="logo fl"></li>
+        <li class="h-right fr">
+            <p class="one">全国咨询热线</p>
+            <p class="two">010-52668752</p>     
+        </li>
+        <ul class="nav" id="nav">
+                <li class="list1 close">
+                    导航
+                   <div></div> 
+                </li>
+                <a href="javascript:"><li class="list1"> 首页</li></a>
+                <li class="list1 button">
+                    MUST课程体系
+                    <i></i>
+                    <ul class="list2">
+                        <a href="javascript:"><li>MUST技术</li></a>
+                        <a href="javascript:"><li>MUST课程</li></a>
+                        <a href="javascript:"><li>师资力量</li></a>
+                        <a href="javascript:"><li>成功案例</li></a>
+                    </ul>
+                </li>
+                <a href="javascript:"><li class="list1"> 星希望网校</li></a>
+                <li class="list1 button">
+                    关于我们
+                    <i></i>
+                    <ul class="list2">
+                        <a href="javascript:"><li>星希望简介</li></a>
+                        <a href="javascript:"><li>发展历程</li></a>
+                        <a href="javascript:"><li>创始人简介</li></a>
+                        <a href="javascript:"><li>品牌故事</li></a>
+                        <a href="javascript:"><li>所获荣誉</li></a>
+                        <a href="javascript:"><li>校区概况</li></a>
+                    </ul>
+                </li>
+                <li class="list1 button">
+                    新闻中心
+                    <i></i>
+                    <ul class="list2">
+                        <a href="javascript:"><li>最新动态</li></a>
+                        <a href="javascript:"><li>行业新闻</li></a>
+                        <a href="javascript:"><li>公益活动</li></a>
+                        <a href="javascript:"><li>媒体报道</li></a>
+                    </ul>
+                </li>
+                <li class="list1 button">
+                    爱心社
+                    <i></i>
+                    <ul class="list2">
+                        <a href="javascript:"><li>志愿者招募</li></a>
+                        <a href="javascript:"><li>爱心捐赠</li></a>
+                    </ul>
+                </li>
+                
+            </ul>
+        </ul>
+    </header>
+   <script>
+  
+   $(".h-left").click(function(){
+     $("#nav").css("display","block")
+   })
+   $(".close>div").click(function(){
+     $("#nav").css("display","none")
+   })
+   $(document).ready(function(e) {
+    $(".button").click(function(e) {
+        $(".list2").toggle();
+        $(this).css("background","#f5a94f");
+    })
+});
+
+// $(".nav .button").click(function(){
+    
+//     $(".nav .button").each(function(){
+//         if($(".list2").css('display') === 'none'){
+//             $(this).css("dispaly","block");
+//             $(this).parent(".button").css("background","#f5a94f");
+//         }else{
+//             $(this).css("dispaly","none")
+//             $(this).parent(".button").css("background","#f39800");
+//         }
+//     });
+//   });
+   </script>
+    
+</body>
+</html>

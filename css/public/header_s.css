@@ -1,0 +1,81 @@
+header {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 7.3rem;
+  margin: 0 auto;
+  height: .66rem;
+  padding-top: .14rem;
+}
+.header .h-left {
+  width: .38rem;
+  height: .34rem;
+  margin-top: .1rem;
+  background: url(../../img/index/nav.png);
+  background-size: 100% 100%;
+}
+.header .logo {
+  width: 1.18rem;
+  height: .58rem;
+  background: url(../../images/logo.png);
+  background-size: 100% 100%;
+  margin: 0 1.89rem 0 2.2rem;
+}
+.header .h-right {
+  width: 1.2rem;
+  height: .38rem;
+  font-size: .16rem;
+  line-height: .24rem;
+  color: #666666;
+  margin-top: .05rem;
+}
+.header .h-right .two {
+  color: #00b8e9;
+  font-weight: bold;
+}
+.header .nav {
+  width: 2rem;
+  background: #f39800;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: .16rem;
+  display: none;
+}
+.header .nav .list1 {
+  width: 100%;
+  padding: .22rem 0;
+  border-bottom: .01rem solid #e1910b;
+  font-size: .16rem;
+  color: #f7f7f7;
+  text-indent: .3rem;
+  position: relative;
+  line-height: .28rem;
+}
+.header .nav .list1 div {
+  width: .2rem;
+  height: .2rem;
+  position: absolute;
+  top: .2rem;
+  right: .2rem;
+  background: url(../../img/index/close.png);
+  background-size: 100% 100%;
+}
+.header .nav .list1 i {
+  width: .16rem;
+  height: .09rem;
+  position: absolute;
+  top: .26rem;
+  right: .16rem;
+  background: url(../../img/index/jt.png);
+  background-size: 100% 100%;
+}
+.header .nav .list2 {
+  display: none;
+  font-size: .14rem;
+  line-height: .28rem;
+}
+.header .nav .list2 a {
+  color: #ffecda;
+}

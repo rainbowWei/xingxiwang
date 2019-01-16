@@ -168,7 +168,7 @@
   top: 297px;
 }
 .abstract .ab-c .circle .s .m-c {
-  color: #ff2727;
+  color: #ed41a6;
 }
 .abstract .ab-c .circle .t {
   left: 228px;
@@ -657,8 +657,8 @@
 }
 .expert .ex-list li:hover .mask {
   margin-top: -350px;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
 .mode {
   height: 877px;
