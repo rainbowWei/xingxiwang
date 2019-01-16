@@ -47,6 +47,7 @@ $(function () {
 
     //公司动态  行业新闻   ASD百科内容的显示与隐藏
 
+
     $(".tab li").click(function () {
         $(".content1 li").eq($(".tab li").index(this)).addClass("on").siblings().removeClass('on');
     })
@@ -56,15 +57,13 @@ $(function () {
         $(".content1>div").eq(_index).show().siblings().hide();
         if (_index == 0) {
             $(this).addClass("tab_on").siblings().removeClass("tab_on tab_on2 tab_on3");
-            $('#border').addClass("border").css('width', '400');
-        } else if (_index == 1) {
-            $(this).addClass("tab_on2").removeClass("border").siblings().removeClass("tab_on tab_on2 tab_on3 border");
-            $('#border').css('width', '400');
+            $(".tab p").addClass("line2");
         } else if (_index == 2) {
-            $(this).addClass("tab_on3").removeClass("border").siblings().removeClass("tab_on tab_on2 tab_on3").eq(1).addClass("border").css('width', '398');
-            $(this).css('width', '402');
+            $(this).addClass("tab_on2").siblings().removeClass("tab_on tab_on2 tab_on3 line2");
+        } else if (_index == 4) {
+            $(this).addClass("tab_on3").siblings().removeClass("tab_on tab_on2 tab_on3");
+            $(".tab p").addClass("line2");
         }
-
     });
 
     //所获荣誉部分 

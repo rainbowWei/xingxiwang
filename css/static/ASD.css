@@ -4,8 +4,8 @@
 }
 .asd-h {
   width: 100%;
-  height: 29px;
-  line-height: 29px;
+  height: 22px;
+  line-height: 22px;
   position: relative;
   margin: 20px 0 59px;
 }
@@ -13,15 +13,15 @@
 .asd-h b,
 .asd-h a,
 .asd-h i {
-  height: 29px;
-  line-height: 29px;
-  font-size: 18px;
+  height: 22px;
+  line-height: 22px;
+  font-size: 16px;
   display: inline-block;
 }
 .asd-h span {
   position: absolute;
   top: 0px;
-  width: 28px;
+  width: 22px;
   background: url(../../images/home.png);
 }
 .asd-h b,
@@ -29,7 +29,7 @@
   color: #666666;
 }
 .asd-h b {
-  text-indent: 37px;
+  text-indent: 30px;
 }
 .asd-h i {
   color: #f08300;

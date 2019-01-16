@@ -36,7 +36,7 @@
 }
 .system1 {
   padding-top: 40px;
-  height: 1240px;
+  height: 1200px;
   position: relative;
 }
 .system1 h3 {
@@ -47,12 +47,12 @@
 }
 .system1 .more {
   position: absolute;
-  bottom: 266px;
+  bottom: 225px;
   left: 50%;
   margin-left: -101px;
 }
 .system1 .under {
-  margin-top: 148px;
+  margin-top: 128px;
 }
 .on-under {
   width: 100%;
@@ -66,7 +66,7 @@
   line-height: 100px;
   background-color: #ffffff;
   border-radius: 50px;
-  border: dashed 1px #999999;
+  border: solid 1px #999999;
   margin: 0 auto;
   text-align: center;
   font-size: 24px;
@@ -103,7 +103,7 @@
   line-height: 100px;
   background-color: #ffffff;
   border-radius: 50px;
-  border: dashed 1px #999999;
+  border: solid 1px #999999;
   text-align: center;
   margin: 0 auto 70px;
   font-size: 24px;
