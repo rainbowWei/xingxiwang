@@ -39,46 +39,46 @@
                     导航
                    <div></div> 
                 </li>
-                <a href="javascript:"><li class="list1"> 首页</li></a>
+                <li class="list1"> <a href="javascript:"><span>首页</span></a></li>
                 <li class="list1 button">
-                    MUST课程体系
+                    <span>MUST课程体系</span>
                     <i></i>
                     <ul class="list2">
-                        <a href="javascript:"><li>MUST技术</li></a>
-                        <a href="javascript:"><li>MUST课程</li></a>
-                        <a href="javascript:"><li>师资力量</li></a>
-                        <a href="javascript:"><li>成功案例</li></a>
+                        <li><a href="javascript:">MUST技术</a></li>
+                        <li><a href="javascript:">MUST课程</a></li>
+                        <li><a href="javascript:">师资力量</a></li>
+                        <li><a href="javascript:">成功案例</a></li>
                     </ul>
                 </li>
-                <a href="javascript:"><li class="list1"> 星希望网校</li></a>
+                <li class="list1"> <a href="javascript:">星希望网校</a></li>
                 <li class="list1 button">
-                    关于我们
+                    <span>关于我们</span>
                     <i></i>
                     <ul class="list2">
-                        <a href="javascript:"><li>星希望简介</li></a>
-                        <a href="javascript:"><li>发展历程</li></a>
-                        <a href="javascript:"><li>创始人简介</li></a>
-                        <a href="javascript:"><li>品牌故事</li></a>
-                        <a href="javascript:"><li>所获荣誉</li></a>
-                        <a href="javascript:"><li>校区概况</li></a>
-                    </ul>
-                </li>
-                <li class="list1 button">
-                    新闻中心
-                    <i></i>
-                    <ul class="list2">
-                        <a href="javascript:"><li>最新动态</li></a>
-                        <a href="javascript:"><li>行业新闻</li></a>
-                        <a href="javascript:"><li>公益活动</li></a>
-                        <a href="javascript:"><li>媒体报道</li></a>
+                        <li><a href="javascript:">星希望简介</a></li>
+                        <li><a href="javascript:">发展历程</a></li>
+                        <li><a href="javascript:">创始人简介</a></li>
+                        <li><a href="javascript:">品牌故事</a></li>
+                        <li><a href="javascript:">所获荣誉</a></li>
+                        <li><a href="javascript:">校区概况</a></li>
                     </ul>
                 </li>
                 <li class="list1 button">
-                    爱心社
+                    <span>新闻中心</span>
                     <i></i>
                     <ul class="list2">
-                        <a href="javascript:"><li>志愿者招募</li></a>
-                        <a href="javascript:"><li>爱心捐赠</li></a>
+                        <li><a href="javascript:">最新动态</a></li>
+                        <li><a href="javascript:">行业新闻</a></li>
+                        <li><a href="javascript:">公益活动</a></li>
+                        <li><a href="javascript:">媒体报道</a></li>
+                    </ul>
+                </li>
+                <li class="list1 button">
+                    <span>爱心社</span>
+                    <i></i>
+                    <ul class="list2">
+                        <li><a href="javascript:">志愿者招募</a></li>
+                        <li><a href="javascript:">爱心捐赠</a></li>
                     </ul>
                 </li>
                 
@@ -87,19 +87,22 @@
     </header>
    <script>
   
-   $(".h-left").click(function(){
+  var heightArr = [];
+    $(".h-left").click(function(){
      $("#nav").css("display","block")
-   })
+       
+    })
    $(".close>div").click(function(){
      $("#nav").css("display","none")
    })
-   $(document).ready(function(e) {
-    $(".button").click(function(e) {
-        $(".list2").toggle();
-        $(this).css("background","#f5a94f");
-    })
-});
+   
 
+    $("#nav").on("click", "li.button", function (e) {
+        if ($(e.target).is('SPAN')) {
+            $(this).siblings().removeClass("active");
+            $(this).toggleClass("active");
+        }
+    })
 // $(".nav .button").click(function(){
     
 //     $(".nav .button").each(function(){
@@ -108,7 +111,7 @@
 //             $(this).parent(".button").css("background","#f5a94f");
 //         }else{
 //             $(this).css("dispaly","none")
-//             $(this).parent(".button").css("background","#f39800");
+//             $(this).parent(".button").css("background","#");
 //         }
 //     });
 //   });

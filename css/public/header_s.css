@@ -44,6 +44,7 @@ header {
   display: none;
 }
 .header .nav .list1 {
+  background: #f39800;
   width: 100%;
   padding: .22rem 0;
   border-bottom: .01rem solid #e1910b;
@@ -52,6 +53,23 @@ header {
   text-indent: .3rem;
   position: relative;
   line-height: .28rem;
+  transition: background 0.5s;
+}
+.header .nav .list1 span {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.header .nav .list1 .list2 {
+  overflow: hidden;
+  max-height: 0;
+  height: auto;
+  font-size: .14rem;
+  line-height: .28rem;
+  transition: all 0.5s;
+}
+.header .nav .list1 .list2 a {
+  color: #ffecda;
 }
 .header .nav .list1 div {
   width: .2rem;
@@ -70,12 +88,16 @@ header {
   right: .16rem;
   background: url(../../img/index/jt.png);
   background-size: 100% 100%;
+  transform: rotate(0);
+  transition: all 0.5s;
 }
-.header .nav .list2 {
-  display: none;
-  font-size: .14rem;
-  line-height: .28rem;
+.header .nav .active {
+  background: #f5a94f;
 }
-.header .nav .list2 a {
-  color: #ffecda;
+.header .nav .active .list2 {
+  max-height: 180px;
+  height: auto;
+}
+.header .nav .active i {
+  transform: rotate(180deg);
 }

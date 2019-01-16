@@ -42,7 +42,10 @@ header{
     left:0;
     font-size: .16rem;
     display: none;
+
+    @time: .5s;
   .list1{
+    background: #f39800;
     width: 100%;
     padding: .22rem 0;
     border-bottom:.01rem solid #e1910b;
@@ -51,6 +54,24 @@ header{
     text-indent: .3rem;
     position: relative;
     line-height:.28rem;
+    transition: background @time;
+    span {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .list2{
+        overflow: hidden;
+        max-height:0;
+        // height: 0;
+        height: auto;
+        font-size: .14rem;
+        line-height:.28rem;
+        transition: all @time;
+        a{
+            color: #ffecda;
+        }
+    } 
     div{
         width: .2rem;
         height: .2rem;
@@ -68,16 +89,20 @@ header{
         right:.16rem;
         background: url(../../img/index/jt.png);
         background-size: 100% 100%;
+        transform: rotate(0);
+        transition: all @time;
     }
   } 
-  .list2{
-      display: none;
-      font-size: .14rem;
-      line-height:.28rem;
-      a{
-          color: #ffecda;
+  .active {
+      background: #f5a94f;
+      .list2 {
+        max-height: 180px;
+        height: auto;
       }
-  } 
+      i {
+          transform: rotate(180deg);
+      }
+  }
  
  
 }
