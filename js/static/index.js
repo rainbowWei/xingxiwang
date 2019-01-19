@@ -67,30 +67,59 @@ $(function () {
     });
 
     //所获荣誉部分 
-    var i1;
-    function move1() {
-        $("#bigul").animate({ "margin-left": "-233px" }, function () {
-            $("#bigul").css("margin-left", "0px");
-            $("#bigul").append($("#bigul>li").eq(0));
-        })
-    }
-    i1 = setInterval(move1, 2000);
-    /*鼠标悬浮事件*/
-    $(".honor-list").hover(function () {
-        clearInterval(i1);
-    }, function () {
-        i1 = setInterval(move1, 2000);
-    });
-    /*按钮 下一个*/
-    $("#right2").on("click", move1);
-    /*按钮 上一个*/
-    $("#left2").on("click", function () {
-        $("#bigul").prepend($("#bigul>li:last"));
-        $("#bigul").css("margin-left", "-233px");
-        $("#bigul").animate({ "margin-left": "0px" }, function () {
-        })
-    })
+   
+    if($(window).width()>1024){
 
+        var i1;
+        function move1() {
+            $("#bigul").animate({ "margin-left": "-233px" }, function () {
+                $("#bigul").css("margin-left", "0px");
+                $("#bigul").append($("#bigul>li").eq(0));
+            })
+        }
+        i1 = setInterval(move1, 2000);
+        /*鼠标悬浮事件*/
+        $(".honor-list").hover(function () {
+            clearInterval(i1);
+        }, function () {
+            i1 = setInterval(move1, 2000);
+        });
+        /*按钮 下一个*/
+        $("#right2").on("click", move1);
+        /*按钮 上一个*/
+        $("#left2").on("click", function () {
+            $("#bigul").prepend($("#bigul>li:last"));
+            $("#bigul").css("margin-left", "-233px");
+            $("#bigul").animate({ "margin-left": "0px" }, function () {
+            })
+        })
+     }
+        else{
+            //移动端
+            var i1;
+            function move1() {
+                $("#bigul").animate({ "margin-left": "-2.14rem" }, function () {
+                    $("#bigul").css("margin-left", "0px");
+                    $("#bigul").append($("#bigul>li").eq(0));
+                })
+            }
+            i1 = setInterval(move1, 2000);
+            /*鼠标悬浮事件*/
+            $(".honor-list").hover(function () {
+                clearInterval(i1);
+            }, function () {
+                i1 = setInterval(move1, 2000);
+            });
+            /*按钮 下一个*/
+            $("#right2").on("click", move1);
+            /*按钮 上一个*/
+            $("#left2").on("click", function () {
+                $("#bigul").prepend($("#bigul>li:last"));
+                $("#bigul").css("margin-left", "-2.14rem");
+                $("#bigul").animate({ "margin-left": "0px" }, function () {
+                })
+            })
+    }
     //返回顶部
 
     //为当前窗口添加滚动条滚动事件（适用于所有可滚动的元素和 window 对象（浏览器窗口））

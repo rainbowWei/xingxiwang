@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="希望教育成立于2011年，以“MUST行为引导技术”为核心，旗下包括 “星希望康复中心”、“星希望网校”、“MUST研发中心”三大业务板块。致力于为孤独症儿童和家庭及康复训练师，提供评估、干预、培训一体化的专业服务。">
     <meta name="keywords" content="自闭症、孤独症、儿童自闭症语言训练、自闭症儿童训练、自闭症儿童、自闭症儿童的特征、儿童孤独症障碍、孤独症儿童训练方法、自闭症儿童干预方法、轻微自闭症的训练方法、自闭症怎么治、自闭症儿童康复训练、自闭症干预方法、自闭症aba的训练方法、自闭症儿童康复中心、自闭症最佳干预时间">  
@@ -29,7 +31,7 @@
 <header>
     <ul class="header clearfix">
         <li class="h-left fl"></li>
-        <li class="logo fl"></li>
+        <a href="/"><li class="logo fl"></li></a>
         <li class="h-right fr">
             <p class="one">全国咨询热线</p>
             <p class="two">010-52668752</p>     
@@ -39,13 +41,13 @@
                     导航
                    <div></div> 
                 </li>
-                <li class="list1"> <a href="javascript:"><span>首页</span></a></li>
+                <li class="list1"> <a href="/"><span>首页</span></a></li>
                 <li class="list1 button">
                     <span>MUST课程体系</span>
                     <i></i>
                     <ul class="list2">
-                        <li><a href="javascript:">MUST技术</a></li>
-                        <li><a href="javascript:">MUST课程</a></li>
+                        <li><a href="/pags/course/skill.html">MUST技术</a></li>
+                        <li><a href="/pags/course/course.html">MUST课程</a></li>
                         <li><a href="javascript:">师资力量</a></li>
                         <li><a href="javascript:">成功案例</a></li>
                     </ul>
@@ -98,24 +100,12 @@
    
 
     $("#nav").on("click", "li.button", function (e) {
-        if ($(e.target).is('SPAN')) {
+        if ($(e.target).is('SPAN')||$(e.target).is('I')) {
             $(this).siblings().removeClass("active");
             $(this).toggleClass("active");
         }
     })
-// $(".nav .button").click(function(){
-    
-//     $(".nav .button").each(function(){
-//         if($(".list2").css('display') === 'none'){
-//             $(this).css("dispaly","block");
-//             $(this).parent(".button").css("background","#f5a94f");
-//         }else{
-//             $(this).css("dispaly","none")
-//             $(this).parent(".button").css("background","#");
-//         }
-//     });
-//   });
    </script>
-    
+    <script src="/js/static/index.js"></script>
 </body>
 </html>

@@ -82,6 +82,7 @@
         width: 30px;
         height:62px;
         background: url(../../images/transform.png);
+        background-size: 100% 100%;
         margin: 10px auto;
     }
     .ou-h{
@@ -117,7 +118,8 @@
     }
     .ou-list{
         width:100%; 
-	    height: 212px;
+        height: 212px;
+        
         li{
             float: left;
             margin-left: 30px;
@@ -146,7 +148,11 @@
                 width: 64px;
                 height: 64px;
                 margin:27px auto 15px;
+                position: relative;
                 img{
+                    position: absolute;
+                    top:0;
+                    left: 0;
                     width:100%;
                     height:100%;
                 }
@@ -189,6 +195,21 @@
             width:100%;
             height: 260px;
             margin-bottom: 10px;
+            position: relative;
+            .z-index{
+                position: absolute;
+                z-index: 1000;
+            }
+            .u-left{
+                position: absolute;
+                top:0;
+                left: 0;
+            }
+            .u-right{
+                position: absolute;
+                top:0;
+                right: 0;
+            }
             .left{
                 width: 376px;
                 height: 100%;
@@ -198,6 +219,7 @@
                 }
             }
             .right{
+                position: absolute;
                 width: 529px;
                 height: 258px;
                 padding: 0 47px;
@@ -216,7 +238,7 @@
                     text-indent:2em;
                     line-height: 28px;
                 }
-                .tet{
+                .txt{
                     font-size: 16px;
                 }
                 .txt2{
@@ -268,4 +290,192 @@
         }
         
     }
+}
+
+
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: .1rem;
+      opacity: 0;
+    }
+    .content{
+        width: 7.3rem;
+        height: 100%;
+        margin:  0 auto;
+
+    }
+    .course-header{
+        display: none;
+    }
+    .system1{
+        padding-top:.18rem;
+        height: 10.24rem;
+        h3{
+            font-size: .3rem;
+            line-height: .3rem;
+            margin-bottom: .2rem;
+        }
+        .more{
+            width: 1.72rem;
+            height: .40rem;
+            line-height: .43rem;
+            bottom: 2.05rem;
+            margin-left: -.86rem;
+        }
+        .under {
+            margin-top:.87rem;
+        }
+    }
+
+    //线上线下相结合部分
+    .on-under{
+        height: 10.32rem;
+        padding-top: .21rem;
+        .o-h{
+            width: 4.95rem;
+            height: .84rem;
+            line-height:.84rem;
+            border-radius: .42rem;
+            border: solid 1px #999999;
+            font-size: .22rem;
+        }
+        .transform{
+            width: .25rem;
+            height:.48rem;
+            margin: .10rem auto;
+        }
+        .ou-h{
+            width: 2.41rem;
+	        height: 1.51rem;
+            border-radius: .75rem;
+            border: solid 1px #f8bba1;
+            p{
+                padding:.264rem .4rem;
+                border-radius: .75rem;
+                line-height: .46rem;
+                margin: .03rem;
+                font-size: .3rem;
+            }
+        }
+        .u-h{
+            width: 2.93rem;
+            height: .79rem;
+            line-height: .79rem;
+            border-radius: .42rem;
+            border: solid 1px #999999;
+            margin: 0 auto .08rem;
+            font-size: .22rem;
+        }
+        .ou-list{
+            width:5.88rem; 
+            height: 4.77rem;
+            margin: 0 auto;
+            li{
+                margin-left: .30rem;
+                margin-top: .52rem;
+                width: 2.78rem;
+	            height: 2.12rem;
+                .number{
+                    width: .60rem;
+                    height: .60rem;
+                    font-size: .38rem;
+                    line-height: .60rem;
+                    top:-.3rem;
+                    left:-.1rem;
+                }
+                .u-img{
+                    width: .64rem;
+                    height: .64rem;
+                    margin:.27rem auto .15rem;
+                }
+                .u-text{
+                    font-size: .20rem;
+                    line-height: .30rem;
+                }
+            }
+            .m-l{
+                margin-left: 0;
+            }
+        }
+    }
+    //MUST线下课程部分
+
+.under-course{
+    height: 18.15rem;
+    width:100%;
+    .under-list{
+        width:100%;
+        height: 100%;
+        padding:0;
+        .u-title{
+            font-size: .3rem;
+            line-height: .56rem;
+            margin-top:.19rem;
+        }
+        .u-title2{
+            margin-top: 0;
+            font-size: .18rem;
+            line-height: .24rem;
+            margin-bottom:.16rem;
+        }
+        li{
+            height:1.91rem;
+            margin-bottom: .1rem;
+            .left{
+                width: 2.77rem;
+            }
+            .right{
+                width: 4.2rem;
+                height: 1.87rem;
+                padding: 0 .14rem 0 .18rem;
+                border-radius: 0px 1.20rem 1.20rem 0px;
+                border: solid .02rem #f09934;
+                border-left:none;
+                .tit{
+                    font-size: .22rem;
+                    line-height: .29rem;
+                    margin: .17rem auto 0.05rem;
+                }
+                p{
+                    text-indent:2em;
+                    line-height: .2rem;
+                }
+                .txt{
+                    font-size: .14rem;
+                }
+                .txt2{
+                    margin-top: .06rem;
+                    font-size: .15rem;
+                    
+                }
+            }
+            .right2{
+                border-radius: 1.20rem 0px 0px 1.20rem;     
+               
+            }
+            .color{
+                border: solid .02rem #b1cd1b; 
+            }
+            .color2{
+                border: solid .02rem #ee52a8;
+            }
+            .color3{
+                border: solid .02rem #577ce5;
+            }
+            .color4{
+                border: solid .02rem #c374f1;
+            }
+            .color5{
+                border: solid .02rem #ea5661;
+            }
+            .color6{
+                border: solid .02rem #3fbee4;
+            }
+            .color7{
+                border: solid .02rem #ef7649;
+            }
+        }
+        
+    }
+}
 }
