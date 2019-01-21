@@ -23,6 +23,14 @@
   width: 100%;
   height: 100%;
 }
+#one2 .i-banner {
+  background: url(../../images/internet/banner1.png);
+  background-size: 100% 100%;
+}
+#one2 .i-banner2 {
+  background: url(../../images/internet/banner2.png);
+  background-size: 100% 100%;
+}
 #one2 .on {
   display: block;
 }
@@ -75,16 +83,18 @@
   display: block;
 }
 .fam-h {
-  font-size: 38px;
-  line-height: 22px;
   color: #333333;
   text-align: center;
+}
+.fam-h h3 {
+  font-size: 38px;
+  line-height: 38px;
 }
 .fam-h p {
   width: 234px;
   height: 27px;
   background: url(../../images/internet/tit-d.png);
-  margin: 18px auto 20px;
+  margin: 10px auto 20px;
 }
 .family {
   height: 766px;
@@ -120,9 +130,14 @@
   width: 380px;
   height: 252px;
 }
-.family .fam-list li .fam-img img {
-  width: 100%;
-  height: 100%;
+.family .fam-list li .f1 {
+  background: url(../../images/internet/f1.png);
+}
+.family .fam-list li .f2 {
+  background: url(../../images/internet/f2.png);
+}
+.family .fam-list li .f3 {
+  background: url(../../images/internet/f3.png);
 }
 .family .fam-list li .fam-text {
   width: 100%;
@@ -143,7 +158,7 @@
 .f-course .fc-h {
   font-size: 30px;
   font-weight: bold;
-  line-height: 22px;
+  line-height: 30px;
   color: #666666;
   text-align: center;
 }
@@ -152,7 +167,7 @@
 }
 .f-course .fc-h2 {
   font-size: 20px;
-  line-height: 22px;
+  line-height: 20px;
   color: #666666;
   margin: 8px auto 20px;
   text-align: center;
@@ -845,4 +860,152 @@
   width: 50px;
   height: 49px;
   background: url(../../images/internet/m4.png);
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: .1rem;
+    opacity: 0;
+  }
+  .content {
+    width: 7.3rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .w100 {
+    height: 4.18rem;
+  }
+  #one2 .i-banner {
+    background: url(../../img/internet/banner1.png);
+    background-size: 100% 100%;
+  }
+  #one2 .i-banner2 {
+    background: url(../../img/internet/banner2.png);
+    background-size: 100% 100%;
+  }
+  #two2 {
+    margin-left: -0.75rem;
+    bottom: .2rem;
+  }
+  #two2 li {
+    width: .18rem;
+    height: .18rem;
+    border: 1px solid #dbdbdb;
+    margin-left: .30rem;
+  }
+  .slider-page {
+    display: none;
+  }
+  .fam-h h3 {
+    font-size: .30rem;
+    line-height: .30rem;
+  }
+  .fam-h p {
+    width: 2.34rem;
+    height: .27rem;
+    background: url(../../images/internet/tit-d.png);
+    background-size: 100% 100%;
+    margin: .10rem auto .20rem;
+  }
+  .family {
+    height: 5.26rem;
+    width: 100%;
+    padding-top: .3rem;
+  }
+  .family .fam-tit {
+    font-size: .26rem;
+    line-height: .26rem;
+  }
+  .family .fam-list {
+    width: 100%;
+    height: 3.6rem;
+    margin: .2rem auto 0;
+    overflow: hidden;
+  }
+  .family .fam-list ul {
+    width: 7.5rem;
+  }
+  .family .fam-list li {
+    width: 2.3rem;
+    margin-right: .2rem;
+  }
+  .family .fam-list li .fam-img {
+    width: 2.30rem;
+    height: 1.98rem;
+  }
+  .family .fam-list li .f1 {
+    background: url(../../img/internet/f1.png);
+    background-size: 100% 100%;
+  }
+  .family .fam-list li .f2 {
+    background: url(../../img/internet/f2.png);
+    background-size: 100% 100%;
+  }
+  .family .fam-list li .f3 {
+    background: url(../../img/internet/f3.png);
+    background-size: 100% 100%;
+  }
+  .family .fam-list li .fam-text {
+    height: 1.38rem;
+    padding: .12rem 0;
+    font-size: .18rem;
+    line-height: .28rem;
+  }
+  .f-course {
+    height: 4.5rem;
+    padding-top: .3rem;
+  }
+  .f-course .fc-h {
+    font-size: .26rem;
+    line-height: .26rem;
+  }
+  .f-course .fc-h2 {
+    font-size: .20rem;
+    line-height: .20rem;
+    margin: 0.08rem auto .20rem;
+  }
+  .f-course .fc-list {
+    position: relative;
+  }
+  .f-course .fc-list li {
+    font-size: .16rem;
+    line-height: .22rem;
+    color: #666666;
+    position: absolute;
+  }
+  .f-course .fc-list .left {
+    width: 1.84rem;
+    height: .78rem;
+    background-color: #ffffff;
+    border: solid 1px #ffc682;
+    padding: .18rem 0 0 .17rem;
+    top: 0;
+    left: 0;
+  }
+  .f-course .fc-list .right {
+    width: 1.98rem;
+    height: .78rem;
+    background-color: #ffffff;
+    border: solid 1px #ffc682;
+    padding: .18rem 0 0 .1rem;
+    top: .54rem;
+    right: 0;
+  }
+  .f-course .fc-list .cent {
+    width: 5.32rem;
+    height: 2.7rem;
+    top: 0;
+    left: .99rem;
+  }
+  .f-course .fc-list .cent img {
+    width: 100%;
+    height: 100%;
+  }
+  .f-course .fc-t {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #666666;
+    text-align: center;
+    margin-top: 380px;
+  }
 }

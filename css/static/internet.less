@@ -1,5 +1,5 @@
 
-//轮播引用了首页的
+
 .w100{
     width:100%;
     height: 570px;
@@ -23,6 +23,14 @@
            width:100%;
            height:100%; 
         }
+    }
+    .i-banner{
+        background: url(../../images/internet/banner1.png);
+        background-size: 100% 100%;
+    }
+    .i-banner2{
+        background: url(../../images/internet/banner2.png);
+        background-size: 100% 100%;
     }
     .on{
         display:block;
@@ -77,15 +85,18 @@
 
 //公共
 .fam-h{
-    font-size: 38px;
-    line-height: 22px;
+    
     color: #333333;
     text-align: center;
+    h3{
+        font-size: 38px;
+        line-height: 38px;
+    }
     p{
         width: 234px;
         height: 27px;
         background: url(../../images/internet/tit-d.png);
-        margin: 18px auto 20px;
+        margin: 10px auto 20px;
     }
 }
 //MUST孤独症家庭干预疗法
@@ -118,11 +129,16 @@
             margin-right: 30px;
             .fam-img{
                 width: 380px;
-                height: 252px;
-                img{
-                    width: 100%;
-                    height:100%;
-                }
+                height: 252px;   
+            }
+            .f1{
+                background: url(../../images/internet/f1.png);
+            }
+            .f2{
+                background: url(../../images/internet/f2.png);
+            }
+            .f3{
+                background: url(../../images/internet/f3.png);
             }
             .fam-text{
                 width: 100%;
@@ -147,7 +163,7 @@
     .fc-h{
         font-size: 30px;
         font-weight: bold;
-        line-height: 22px;
+        line-height: 30px;
         color: #666666;
         text-align: center;
         span{
@@ -156,7 +172,7 @@
     }
     .fc-h2{
         font-size: 20px;
-        line-height: 22px;
+        line-height: 20px;
         color: #666666;
         margin:8px auto 20px;
         text-align: center;
@@ -890,4 +906,167 @@
             } 
         }
     }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: .1rem;
+      opacity: 0;
+    }
+    .content{
+        width: 7.3rem;
+        height: 100%;
+        margin:  0 auto;
+    }
+
+    //轮播图
+    
+    .w100{
+        height: 4.18rem;
+    }
+    #one2{
+        .i-banner{
+            background: url(../../img/internet/banner1.png);
+            background-size: 100% 100%;
+        }
+        .i-banner2{
+            background: url(../../img/internet/banner2.png);
+            background-size: 100% 100%;
+        }
+    }
+    #two2{
+        margin-left: -.75rem;
+        bottom:.2rem;
+        li{
+            width: .18rem;
+            height: .18rem;
+            border:1px solid #dbdbdb;
+            margin-left:.30rem;
+        }
+    }
+     
+    .slider-page{display:none;}
+
+    //公共
+    .fam-h{
+        h3{
+            font-size: .30rem;
+            line-height: .30rem;
+        }
+        p{
+            width: 2.34rem;
+            height: .27rem;
+            background: url(../../images/internet/tit-d.png);
+            background-size: 100% 100%;
+            margin: .10rem auto .20rem;
+        }
+    }
+
+    //MUST孤独症家庭干预疗法
+    .family{
+        height:5.26rem;
+        width:100%;
+        padding-top: .3rem;
+        .fam-tit{
+            font-size:.26rem;
+            line-height: .26rem;
+        }
+        .fam-list{
+            width: 100%;
+            height:3.6rem;
+            margin: .2rem auto 0;
+            overflow: hidden;
+            ul{
+                width: 7.5rem;
+            }
+            li{
+                width: 2.3rem;
+                margin-right: .2rem;
+                .fam-img{
+                    width: 2.30rem;
+                    height: 1.98rem;  
+                }
+                .f1{
+                    background: url(../../img/internet/f1.png);
+                    background-size: 100% 100%;
+                }
+                .f2{
+                    background: url(../../img/internet/f2.png);
+                    background-size: 100% 100%;
+                }
+                .f3{
+                    background: url(../../img/internet/f3.png);
+                    background-size: 100% 100%;
+                }
+                .fam-text{
+                    height:1.38rem;
+                    padding: .12rem 0;
+                    font-size: .18rem;
+                    line-height: .28rem;
+                }
+            }
+        }
+    }
+
+        
+    //家庭干预疗法体系课程
+    .f-course{
+        height: 4.5rem;
+        padding-top:.3rem;
+        .fc-h{
+            font-size: .26rem;
+            line-height: .26rem;
+        }
+        .fc-h2{
+            font-size: .20rem;
+            line-height: .20rem;
+            margin:0.08rem auto .20rem;
+        }
+        .fc-list{
+            position: relative;
+            li{
+                font-size: .16rem;
+                line-height: .22rem;
+                color: #666666;
+                position: absolute;
+            }
+            .left{
+                width: 1.84rem;
+                height: .78rem;
+                background-color: #ffffff;
+                border: solid 1px #ffc682;
+                padding:.18rem 0 0 .17rem;
+                top:0;
+                left:0;
+            }
+            .right{
+                width: 1.98rem;
+                height: .78rem;
+                background-color: #ffffff;
+                border: solid 1px #ffc682;
+                padding: .18rem 0 0 .1rem;
+                top: .54rem;
+                right: 0;
+            }
+            .cent{
+                width: 5.32rem;
+                height:2.7rem;
+                top:0;
+                left:.99rem;
+                img{
+                    width:100%;
+                    height:100%;
+                }
+            }
+        }
+        .fc-t{
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 30px;
+            color: #666666;
+            text-align: center;
+            margin-top: 380px;
+        }
+    }
+
 }
