@@ -1,7 +1,7 @@
 .course-header{
     .h-aboutus{
         width: 935px;
-}
+    }
 }
 .company{
     width:100%;
@@ -28,6 +28,50 @@
                 font-size: 18px;
                 line-height: 41px;
                 color: #666666;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: .1rem;
+      opacity: 0;
+    }
+    .content{
+        width: 7.3rem;
+        height: 100%;
+        margin:  0 auto;
+    }
+
+    .course-header{
+        display: none;
+    }
+    .company{
+        width:100%;
+        height:100%;
+        .company-c{
+            height: 10.20rem;
+            width: 6.3rem;
+            padding:.27rem .5rem .60rem;
+            .com-tit{
+                font-size: .30rem;
+                line-height: .30rem;
+            }
+            .com-img{
+                width: 4.60rem;
+                height: 2.50rem;
+                margin: .29rem auto .18rem;
+                background: url(../../images/aboutus/company.png);
+                background-size: 100% 100%;
+            }
+            .com-text{
+                p{
+                    text-indent: 2em;
+                    font-size: .20rem;
+                    line-height: .41rem;
+                }
             }
         }
     }

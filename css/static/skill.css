@@ -647,7 +647,7 @@
     background-size: 100% 100%;
   }
   .skill .method .method-c .frist {
-    width: 1.62rem;
+    width: 1.65rem;
     top: .85rem;
   }
   .skill .method .method-c .frist .tit {
@@ -822,21 +822,21 @@
     margin: .1rem 0 0 0 ;
   }
   .skill .training .way .way-tit2 p {
-    width: 6rem;
+    width: 6.5rem;
     font-size: .2rem;
     line-height: .35rem;
-    margin-left: .7rem;
+    margin-left: .6rem;
   }
   .skill .training .way .way-list {
     width: 6rem;
-    height: 100%;
+    height: 6.05rem;
     margin: .1rem auto 0;
   }
   .skill .training .way .way-list ul {
     width: 6.5rem;
   }
   .skill .training .way .way-list li {
-    width: 1.8rem;
+    width: 1.82rem;
     margin-right: .24rem;
     margin-bottom: .1rem;
   }

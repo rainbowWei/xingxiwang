@@ -142,136 +142,268 @@ $(function () {
     });
 
 
+    
     //视频播放
 
+
+
     var all_oVid = $(".player");
+
     var  oVid = all_oVid[0];
+
     vides(oVid);
+
     function vides(oVid) {
+
         var oVideo = oVid.children[0];  //拿到video
-        var oCtl = oVid.children[1];
+
+        var oCtl = oVid.children[1]
+
         var oUl = oCtl.children;  //拿到所有li
+
+
+
 
 
         var oUlWidth = parseInt(oUl[2].offsetWidth) - 2;
 
+
+
         var maxTime;
+
         var thisTime;
+
         var oSp = oUl[2].children[0];
+
         var oLeft = parseInt(oUl[2].offsetLeft) + parseInt(oVid.offsetLeft) + parseInt(oCtl.offsetLeft);
+
         var oSchSp = parseInt(oVid.offsetLeft);
 
 
 
+
+
+
+
         oVid.onmouseover = function () {
+
             oCtl.style.opacity = 0.8;
+
         }
+
         oVid.onmouseout = function () {
+
             oCtl.style.opacity = 0;
+
         }
+
+
 
         oUl[0].onclick = function () {
+
             if (oVideo.paused) {
+
                 oVideo.play();
+
                 oUl[0].innerHTML = "暂停";
+
             } else {
+
                 oVideo.pause();
+
                 oUl[0].innerHTML = "播放";
+
                 oVid.onmouseover = null;
+
                 oVid.onmouseout = null;
+
             }
 
+
+
         }
+
         oVideo.onclick = function () {
+
             if (oVideo.paused) {
+
                 oVideo.play();
+
                 oUl[0].innerHTML = "暂停";
+
             } else {
+
                 oVideo.pause();
+
                 oUl[0].innerHTML = "播放";
+
                 oVid.onmouseover = null;
+
                 oVid.onmouseout = null;
+
             }
 
+
+
         }
+
         var oDateOvideo = function (time) {
+
             time = "" + time;
+
             time = time.length < 2 ? 0 + time : time;
+
             return time;
+
         }
+
         oVideo.onloadedmetadata = function () {
+
             maxTime = oVideo.duration;
+
             var h = oDateOvideo(Math.floor(maxTime / 3600));      //时
+
             var m = oDateOvideo(Math.floor(maxTime % 3600 / 60));   //分
+
             var s = oDateOvideo(Math.floor(maxTime % 3600 % 60));   //秒
+
             oUl[4].innerHTML = h + ":" + m + ":" + s;
+
         }
+
         function date() {
+
             thisTime = oVideo.currentTime;
+
             var h = oDateOvideo(Math.floor(thisTime / 3600));     //时
+
             var m = oDateOvideo(Math.floor(thisTime % 3600 / 60));  //分
+
             var s = oDateOvideo(Math.floor(thisTime % 3600 % 60));  //秒
+
             oUl[1].innerHTML = h + ":" + m + ":" + s;
+
+
 
             var t = (thisTime / maxTime);
 
+
+
             oSp.style.width = parseInt(oUlWidth - 2) * t.toFixed(2) + "px";
+
             oUl[3].style.left = 134 + parseInt(oSp.style.width) + "px";
+
         }
+
         oVideo.ontimeupdate = date;
+
         oUl[5].onclick = function () {
+
             if (oVideo.muted) {
+
                 oVideo.muted = false;
+
                 oUl[5].innerHTML = "静音";
+
             } else {
+
                 oVideo.muted = true;
+
                 oUl[5].innerHTML = "声音";
+
             }
+
         }
+
         var move2 = function (ev) {
+
             ev = ev || window.event;
+
             var _X = ev.clientX;
+
             oVideo.ontimeupdate = null;
+
             var t = _X - oLeft;
+
             oVideo.currentTime = parseInt(maxTime * (t / oUlWidth).toFixed(2));
+
             oSp.style.width = oUlWidth * (t / oUlWidth).toFixed(2) + "px";
+
             oUl[3].style.left = _X - oSchSp - 15 + "px";
+
             document.onmousemove = function (ev) {
+
                 ev = ev || window.event;
+
                 var _x = ev.clientX;
+
                 var xChange = parseInt(_x) - parseInt(_X);
+
                 var t = _x - oLeft;
 
+
+
                 oVideo.currentTime = parseInt(maxTime * (t / oUlWidth).toFixed(2));
+
                 oSp.style.width = oUlWidth * (t / oUlWidth).toFixed(2) + "px";
+
                 if ((_x - oSchSp - 15) < 200) {
+
                     oUl[3].style.left = 200 + "px";
+
                 }
+
                 else if ((_x - oSchSp - 15) > 600) {
+
                     oUl[3].style.left = 600 + "px";
+
                 }
+
                 else {
+
                     oUl[3].style.left = _x - oSchSp - 15 + "px";
+
                 }
+
                 date();
+
             }
+
             document.onmouseup = function () {
 
+
+
                 document.onmousemove = null;
+
                 oVideo.ontimeupdate = date;
+
+            }
+
+
+
+        }
+
+        oUl[2].onmousedown = move2;
+
+        oUl[3].onmousedown = move2;
+
+        oUl[6].onclick = function () {
+
+            if (oVideo.requestFullScreen) {
+
+                oVideo.requestFullScreen();
+
+            } else if (oVideo.mozRequestFullScreen) {
+
+                oVideo.mozRequestFullScreen();
+
+            } else if (oVideo.webkitRequestFullScreen) {
+
+                oVideo.webkitRequestFullScreen();
+
             }
 
         }
-        oUl[2].onmousedown = move2;
-        oUl[3].onmousedown = move2;
-        oUl[6].onclick = function () {
-            if (oVideo.requestFullScreen) {
-                oVideo.requestFullScreen();
-            } else if (oVideo.mozRequestFullScreen) {
-                oVideo.mozRequestFullScreen();
-            } else if (oVideo.webkitRequestFullScreen) {
-                oVideo.webkitRequestFullScreen();
-            }
-        }
+
     }
 })

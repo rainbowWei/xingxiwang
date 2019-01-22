@@ -273,10 +273,14 @@
             .time-img{
                 width: 232px;
                 height:100%;
-                img{
-                    width:100%;
-                    height:100%;
-                }
+            }
+            .time1{
+                background: url(../../images/internet/time1.png);
+                background-size: 100% 100%;
+            }
+            .time22{
+                background: url(../../images/internet/time2.png);
+                background-size: 100% 100%;
             }
             .time-txt{
                 width: 328px;
@@ -287,7 +291,6 @@
                     height:53px;
                     line-height:53px;
                     text-align: center;
-                    background: url(../../images/internet/time3.png);
                     font-size: 29px;
                     font-weight: bold;
                     color: #ffffff;
@@ -299,6 +302,18 @@
                     line-height: 44px;
                     color: #666666;
                     text-align: center;
+                }
+            }
+            .time3{
+                .title{
+                    background: url(../../images/internet/time3.png);
+                    background-size: 100% 100%;
+                }
+            }
+            .time4{
+                .title{
+                    background: url(../../images/internet/time4.png);
+                    background-size: 100% 100%;
                 }
             }
         }
@@ -388,6 +403,10 @@
                 transform: scale(1);
                 &:hover{
                     transform: scale(1.2);  
+                }
+                div{
+                    top:44px;
+                    left:19px;
                 }
             }
             .p4{
@@ -521,10 +540,6 @@
         }
     }
     
-    .p3 div{
-        top:44px;
-        left:19px;
-    }
 }
 
 //专家讲座
@@ -558,10 +573,7 @@
         .ex-img{
             width: 317px;
             height: 340px;
-            img{
-                width: 100%;
-                height:100%;
-            }
+            background: url(../../images/internet/expert.png);
         }
         .ex-text{
             margin-top: 50px;
@@ -662,6 +674,7 @@
         .service-list22{
             .left{
                 background: url(../../images/internet/s1.png);
+                background-size: 100% 100%;
             }
             .right{
                 height:100px;
@@ -672,6 +685,7 @@
         .service-list3{
             .left{
                 background: url(../../images/internet/s2.png);
+                background-size: 100% 100%;
             }
             .right{
                 height:100px;
@@ -683,6 +697,7 @@
         .service-list4{
             .left{
                 background: url(../../images/internet/s3.png);
+                background-size: 100% 100%;
             }  
             .right{
                 height:100px;
@@ -694,21 +709,25 @@
         .service-list5{
             .left{
                 background: url(../../images/internet/s4.png);
+                background-size: 100% 100%;
             } 
         }
         .service-list6{
             .left{
                 background: url(../../images/internet/s5.png);
+                background-size: 100% 100%;
             }     
         }
         .service-list7{
             .left{
                 background: url(../../images/internet/s6.png);
+                background-size: 100% 100%;
             } 
         }
         .service-list8{
             .left{
                 background: url(../../images/internet/s7.png);
+                background-size: 100% 100%;
             }
             .right{
                 height:100px;
@@ -719,6 +738,7 @@
         .service-list9{
             .left{
                 background: url(../../images/internet/s8.png);
+                background-size: 100% 100%;
             }
             .right{
                 height:100px;
@@ -729,6 +749,7 @@
         .service-list10{
             .left{
                 background: url(../../images/internet/s9.png);
+                background-size: 100% 100%;
             }
             .right{
                 height:100px;
@@ -760,7 +781,7 @@
     .cre-h{
         font-size: 30px;
         font-weight: bold;
-        line-height: 22px;
+        line-height: 30px;
         color: #666666;
         text-align: center;
         span{
@@ -809,7 +830,11 @@
                 width: 130px;
                 height: 130px;
                 margin-top: 15px;
+                position: relative;
                 img{
+                    position: absolute;
+                    top:0;
+                    left: 0;
                     width: 100%;
                     height:100%;
                 }
@@ -874,6 +899,7 @@
                 width: 49px;
                 height:49px;
                 background: url(../../images/internet/m1.png);
+                background-size: 100% 100%;
                 left:23px;    
             }  
             .txt{   
@@ -886,6 +912,7 @@
                 width: 50px;
                 height:46px;
                 background: url(../../images/internet/m2.png);
+                background-size: 100% 100%;
             } 
         }
         .m3{
@@ -894,6 +921,7 @@
                 width: 51px;
                 height:44px;
                 background: url(../../images/internet/m3.png);
+                background-size: 100% 100%;
             } 
         }
         .m4{
@@ -903,6 +931,7 @@
                 width: 50px;
                 height:49px;
                 background: url(../../images/internet/m4.png);
+                background-size: 100% 100%;
             } 
         }
     }
@@ -1060,13 +1089,518 @@
             }
         }
         .fc-t{
-            font-size: 24px;
-            font-weight: bold;
-            line-height: 30px;
-            color: #666666;
-            text-align: center;
-            margin-top: 380px;
+            font-size: .22rem;
+            line-height: .30rem;
+            margin-top: 3.07rem;
+        }
+    }
+
+    
+    //时间赛跑部分
+    .time2{
+        height:9.56rem;
+        width:100%;
+        padding-top:.2rem;
+        .time-line{
+            font-size: .22rem;
+            line-height: .44rem;
+            margin-bottom: .2rem;
+        }
+        .time-tit{
+            font-size: .26rem;
+            line-height: .26rem;
+            margin-bottom: .16rem;
+        }
+        .time-tit2{
+            font-size: .20rem;
+            line-height: .2rem;
+        }
+        .time-list{
+            width: 100%;
+            height: 6.32rem;
+            margin-top: .18rem;
+
+            li{
+                float: left;
+                width: 100%;
+                height: 3.05rem;
+                margin-left:0;
+                margin-bottom: .1rem;
+                border-bottom: 0.06rem solid #f76a31;
+                div{
+                    float: left;
+                }
+                .time-img{
+                    width: 3.07rem;
+                    height: 100%;
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+                }
+                .time1{
+                    background: url(../../img/internet/time1.png);
+                    background-size: 100% 100%;
+                }
+                .time22{
+                    background: url(../../img/internet/time2.png);
+                    background-size: 100% 100%;
+                }
+                .time-txt{
+                    width: 4.23rem;
+                    height:100%;
+                    .title {
+                        width:2.06rem;
+                        height:.53rem;
+                        line-height:.53rem;
+                        font-size: .29rem;
+                        margin:.24rem 1.16rem .16rem  1.07rem;
+                    }
+                    p{
+                        font-size: .26rem;
+                        line-height: .44rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    // 星爸星妈的问题部分
+
+    .problem{
+        height: 7.4rem;
+        padding-top: .2rem;
+        .problem-content{
+            width:7.1rem;
+            .pro-h{
+                font-size: .26rem;
+            }
+            .pro-c{
+                width:100%;
+                height:4.14rem;
+                top:.20rem;
+                .p-g{  
+                    box-shadow: 1px .10rem .03rem 0px 
+                    rgba(50, 58, 142, 0.16);
+                    div{
+                        p{
+                            text-align: center;
+                            font-size: .16rem;
+                            line-height: .24rem;
+                        }
+                    }
+                
+                }
+                .p1{
+                    top:.77rem;
+                    left:0;
+                    width: 1.15rem;
+                    height: 1.16rem;
+                    div{
+                        top:.38rem;
+                        left:.23rem;
+                    }
+                }
+                .p2{
+                    top:1.87rem;
+                    left:.8rem;
+                    width: 1.05rem;
+	                height: 1.06rem;
+                    div{
+                        top:.32rem;
+                        left:.18rem;
+                    }
+                }
+                .p3{
+                    top:3.05rem;
+                    left:1.2rem;
+                    width: 1.07rem;
+	                height: 1.07rem;
+                    div{
+                        top:.32rem;
+                        left:.19rem;
+                    }
+                }
+                .p4{
+                    top:0px;
+                    left:1.14rem;
+                    width: 1.32rem;
+                    height: 1.32rem;
+                    div{
+                        top:.44rem;
+                        left:.24rem;
+                    }
+                }
+                .p5{
+                    top:1.38rem;
+                    left:1.80rem;
+                    width: .98rem;
+	                height: .98rem;
+                    div{
+                        top:.28rem;
+                        left:.32rem;
+                    }
+                }
+                .p6{
+                    top:.45rem;
+                    left:2.65rem;
+                    width: 1.11rem;
+	                height: 1.11rem;
+                    div{
+                        top:.34rem;
+                        left:.22rem;
+                    }
+                }
+                .p7{
+                    top:1.93rem;
+                    left:2.87rem;
+                    width: 1.14rem;
+                    height: 1.14rem;
+                    div{
+                        top:.36rem;
+                        left:.32rem;
+                    }
+                }
+                .p8{
+                    top:.96rem;
+                    right:1.94rem;
+                    width: 1.23rem;
+	                height: 1.23rem;
+                    div{
+                        top:.4rem;
+                        left:.28rem;
+                    }
+                }
+                .p9{
+                    top:2.43rem;
+                    right:1.58rem;
+                    width: 1.11rem;
+	                height: 1.10rem;
+                    div{
+                        top:.34rem;
+                        left:.22rem;
+                    }
+                }
+                .p10{
+                    top:.76rem;
+                    right:.23rem;
+                    width: 1.39rem;
+	                height: 1.38rem;
+                    div{
+                        top:.36rem;
+                        left:.26rem;
+                    }
+                }
+                .p11{
+                    top:2.56rem;
+                    right:0;
+                    width: 1.07rem;
+                    height: 1.08rem;
+                    div{
+                        top:.32rem;
+                        left:.2rem;
+                    }
+                }
+                .p-bg{
+                    width: 2.02rem;
+                    height:3.28rem;
+                    position: absolute;
+                    top:3.34rem;
+                    left:2.62rem;
+                    background: url(../../img/internet/dengpao.png);
+                    background-size: 100% 100%;
+                }
+            }
+        }
+        
+    }
+
+    
+    //专家讲座
+    .expert2{
+        height:5.2rem;
+        padding-top: .2rem;
+        .ex-tit{
+            font-size: .26rem;
+        }
+        .ex-tit2{
+            font-size: .2rem;
+            line-height: .2rem;
+            margin-top: .16rem;
+        }
+        .ex-list{
+            width:100%;
+            height: 3.40rem;
+            margin: .16rem auto 0;
+            .ex-img{
+                width: 1.9rem;
+                height: 3.40rem;
+                background: url(../../img/internet/expert.png);
+                background-size: 100% 100%;
+               
+            }
+            .ex-text{
+                margin-top: .50rem;
+                .ex-h{
+                    width: 5.16rem;
+                    height:.76rem;
+                    padding:.14rem 0 0 .20rem;
+                    border-top:0.04rem solid #cfcdca;
+                    p{
+                        font-size: .33rem;
+                        line-height: .38rem;
+                    }
+                    div{
+                        font-size: .18rem;
+                        letter-spacing: 1px;
+                    }
+                }
+                .ex-p{
+                    padding-left: .30rem;
+                    font-size: .16rem;
+                    line-height: .33rem;
+                    margin-top: .12rem;
+                }
+            }
+        }
+    }
+    //售后服务
+    .service{
+        height:16.40rem;
+        padding-top: .2rem;
+        .ser-h{
+            font-size: .26rem;
+            margin-top: .17rem;
+        }
+        .ser-h2{
+            font-size: .20rem;
+            line-height: .20rem;
+            margin: .15rem 0 .20rem 0;
+        }
+        .service-list{
+        
+            width:100%;
+            height:9.07rem;
+            .service-list2{
+                height:1.41rem;
+                margin-bottom: .10rem;
+                li{
+                    position: absolute;
+                    top:0;
+                }
+                .left{
+                    width: 2.38rem;
+                    height: 1.41rem;
+                    margin-right: 0;
+                    left: 0;
+                    z-index:100;
+                    .text{
+                        font-size: .24rem;
+                        line-height: .41rem;
+                        margin-top: .80rem;
+                        padding-right: .18rem;
+                        }         
+                }
+                .right{
+                    right: 0;
+                    padding: 0 .2rem 0 .4rem;
+                    width: 4.61rem;
+                    height: 1.41rem;
+                    border: none;
+                    font-size: .18rem;
+                    line-height:1.41rem;
+                    background:url(../../img/internet/border-bg.png); 
+                    background-size: 100% 100%;               
+                }         
+            }   
+            .service-list22{
+                .right{
+                    height:1.01rem;
+                    line-height: .34rem;
+                    padding-top:.4rem;         
+                }
+            }
+            .service-list3{
+                .right{
+                    height:1.21rem;
+                    line-height: .34rem;
+                    padding-top:.20rem; 
+                            
+                }
+            }
+            .service-list4{
+                .right{
+                    height:1.21rem;
+                    line-height: .34rem;
+                    padding-top:.20rem; 
+                            
+                }
+            }
+            .service-list8{
+                .right{
+                    height:1.01rem;
+                    line-height: .34rem;
+                    padding-top:.4rem;         
+                }
+            }
+            .service-list9{
+                .right{
+                    height:1.21rem;
+                    line-height: .34rem;
+                    padding-top:.20rem; 
+                            
+                }
+            }
+            .service-list10{
+                .right{
+                    height:1.01rem;
+                    line-height: .34rem;
+                    padding-top:.4rem;         
+                }
+            }
+        }
+        .service-list11{
+            margin-top: .20rem;
+            height:4.55rem;
+        }
+        .ser-h3{
+            font-size: .24rem;
+            line-height: .31rem;
+            margin-top: .16rem;
+        }
+    }
+
+    //用心打造
+    .create{
+        height: 4.05rem;
+        padding-top:.2rem;
+        .cre-h{
+            font-size: .26rem;
+            line-height: .26rem;
+        }
+        .cre-list{
+            width:100%;
+            height:3.32rem;
+            margin: .17rem auto 0;
+            li{
+                width: 3.2rem;
+                height: 1.41rem;
+                padding: .22rem .15rem 0 .15rem;
+                border-radius: 0.08rem;
+                border: solid 1px #e5e5e5;
+                margin-bottom: 0.06rem;
+                .txt{
+                    width: 2.2rem;
+                    height:100%;
+                    h3{
+                        font-size: .18rem;
+                        line-height: .2rem;
+                        margin-bottom:.05rem;
+                    }
+                    p{
+                        font-size: .14rem;
+                        line-height: .2rem;
+                        margin-bottom: .03rem;
+                        span,b{
+                            font-size: .16rem;
+                        }
+                        span{
+                            margin-bottom:.05rem;
+                        }
+                    }
+                }
+                .icon{
+                    width: .97rem;
+                    height: .97rem;
+                    margin-top: .10rem;
+                }
+            
+            } 
+            .ml{
+                margin-left:.2rem;
+            }
+        }
+    }
+    //年度会员
+    .member{
+        height:3.85rem;
+        padding-top:.20rem;
+        .mem-tit{
+            font-size: .26rem;
+        }
+        .mem-list{
+            margin-top: .30rem;
+            li{
+                height:.68rem;
+                border-right: 1px solid #e3e3e3;
+                margin-bottom: .28rem;
+                div{
+                    position: absolute;
+                }
+                .icon{
+                     top:.10rem;
+                }
+                .txt{
+                    top:-.06rem;
+                    h3{
+                        font-size: .2rem;
+                        line-height: .2rem;
+                        margin-bottom:.10rem;
+                    }
+                    p{
+                        font-size: .16rem;
+                        line-height:.20rem;
+                    }
+                }
+            }
+            .m1{
+                width: 3.60rem; 
+                .icon{
+                    width: .49rem;
+                    height:.49rem;
+                    left:1.23rem;    
+                }  
+                .txt{   
+                    left:1.93rem;
+                }
+            }
+            .m2{
+                width: 3.6rem;
+                border-right: none;
+                .icon{
+                    width: .50rem;
+                    height:.46rem;
+                    left:.6rem; 
+                } 
+                .txt{   
+                    left:1.31rem;
+                }
+            }
+            .m3{
+                width: 3.60rem;
+                .icon{
+                    width: .51rem;
+                    height:.44rem;
+                    left:1.23rem;  
+                } 
+                .txt{   
+                    left:1.93rem;
+                }
+            }
+            .m4{
+                width: 3.60rem;
+                border-right: none;
+                .icon{
+                    width: .50rem;
+                    height:.49rem;
+                    left:.6rem; 
+                } 
+                .txt{   
+                    left:1.31rem;
+                }
+            }
         }
     }
 
 }
+
