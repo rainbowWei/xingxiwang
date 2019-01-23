@@ -15,6 +15,7 @@
             width: 570px;
             height: 316px;
             background: url(../../images/aboutus/brand.png);
+            background-size: 100% 100%;
             margin: 29px auto 0;
         }
         .brand-text{
@@ -25,6 +26,7 @@
             width: 1155px;
             height: 527px;
             background: url(../../images/aboutus/brand-bg.png);
+            background-size: 100% 100%;
             font-size: 18px;
             line-height: 44px;
             color: #666666;
@@ -36,6 +38,54 @@
                 text-indent: 2em;
             }
 
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: .1rem;
+      opacity: 0;
+    }
+    .content{
+        width: 7.3rem;
+        height: 100%;
+        margin:  0 auto;
+    }
+
+    .brand{
+        width: 100%;
+        height:100%;
+        .brand-c{
+            height:10.06rem;
+            padding: .28rem 0 .5rem;
+            .brand-tit{
+                font-size: .3rem;
+                line-height:.3rem;
+            }
+            .brand-img{
+                width: 4.60rem;
+	            height: 2.50rem;
+                margin: .29rem auto 0;
+            }
+            .brand-text{
+                position: absolute;
+                top:3.27rem;
+                left:0;
+                padding-top: .18rem;
+                width: 100%;
+                height: 5.43rem;
+                background: url(../../img/brand-bg.png);
+                background-size: 100% 100%;
+                font-size: .20rem;
+                line-height:.41rem;
+                .brand-p{
+                    width: 6.6rem;
+                }
+                p{
+                    text-indent: 2em;
+                }
+    
+            }
         }
     }
 }

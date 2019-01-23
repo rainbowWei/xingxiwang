@@ -26,17 +26,85 @@
   float: left;
   margin: 0 48px 20px 0;
   width: 233px;
-  height: 213px;
+  height: 210px;
   background: url(../../images/honor-bg.png);
+  background-size: 100% 100%;
 }
-.glory .glory-c .list li img {
+.glory .glory-c .list li .img {
   width: 195px;
   height: 137px;
+  position: relative;
   margin: 21px 20px 0;
+}
+.glory .glory-c .list li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .glory .glory-c .list li p {
   text-align: center;
-  line-height: 38px;
+  line-height: 44px;
   font-size: 18px;
   color: #333333;
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: .1rem;
+    opacity: 0;
+  }
+  .content {
+    width: 7.3rem;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .glory {
+    height: 100%;
+    width: 100%;
+  }
+  .glory .glory-c {
+    padding: .28rem 0 1.20rem;
+    height: 9.14rem;
+  }
+  .glory .glory-c .glory-tit {
+    font-size: .3rem;
+    line-height: .3rem;
+    margin-bottom: .2rem;
+  }
+  .glory .glory-c .glory-list {
+    width: 100%;
+  }
+  .glory .glory-c .list {
+    width: 7.44rem;
+  }
+  .glory .glory-c .list li {
+    margin: 0 .14rem .16rem 0;
+    width: 2.33rem;
+    height: 2.10rem;
+    position: relative;
+  }
+  .glory .glory-c .list li .img {
+    position: relative;
+    width: 1.95rem;
+    height: 1.39rem;
+    margin: .21rem .20rem 0;
+  }
+  .glory .glory-c .list li .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .glory .glory-c .list li p {
+    position: absolute;
+    bottom: 0.05rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: .44rem;
+    font-size: .18rem;
+    margin-top: 0rem;
+  }
 }
