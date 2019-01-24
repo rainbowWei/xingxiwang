@@ -6,7 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>must课程体系</title>
   <link rel="stylesheet" href="/css/public/reset.css">
-  <link rel="stylesheet" href="/css/public/header.css">
+  <!-- <link rel="stylesheet" href="/css/public/header.css"> -->
+  <link rel="stylesheet" href="/css/public/header_s.css">
   <link rel="stylesheet" href="/css/public/footer.css">
   <link rel="stylesheet" href="/css/static/volunteer.css">
 </head>
@@ -23,69 +24,65 @@
       <div class="c-content">
           <ul class="tab2 clearfix">
               <li class="tab_on">大龄孤独症孩子就业培训</li>
-              <p class="fl f1"></p>
-              <li class="w2">看护孤独症儿童</li>
-              <p class="fl f2"></p>                     
-              <li class="w2">陪伴孤独症儿童父母</li>
+              <li class="w22"> <p>看护孤独症儿童<p></li>                   
+              <li>陪伴孤独症儿童父母</li>
           </ul> 
           <div class="content1 clearfix">
-              <div class="on2"><img src="/images/volunteer.png" alt=""></div>
-              <div></div>
-              <div><img src="/images/volunteer2.png" alt=""></div>
-              <div></div>
-              <div><img src="/images/volunteer3.png" alt=""></div> 
+              <div class="on2 v1"></div>
+              <div class="v2"></div>
+              <div class="v3"></div> 
           </div>
           <div class="entry">
               <div class="theader">志愿者报名表</div>
               <div class="tbody">
                   <div class="th-bg"></div>
                   <table class="table"  cellspacing="0" cellpadding="0">
-                        <tr  height="38" class="even">
+                        <tr class="even  h38">
                           <td class="w1">姓名</td>
                           <td class="w2"><input type="text" id="name"></td>
                           <td class="w1">年龄<span>*</span></td>
                           <td class="w2"><input type="text" id="age"></td>
                         </tr>
-                        <tr  height="38" class="odd">
-                            <td>性别</td>
-                            <td><input type="text" id="sex"></td>
-                            <td class="padding" width="100">现居城市</td>
-                            <td><input type="text" id="city"></td>
+                        <tr class="odd  h38">
+                            <td class="w1">性别</td>
+                            <td class="w2"><input type="text" id="sex"></td>
+                            <td class="w1" width="100">现居城市</td>
+                            <td class="w2"><input type="text" id="city"></td>
                         </tr>
-                        <tr  height="38" class="even">
-                            <td>手机号</td>
-                            <td><input type="text" id="phone"></td>
-                            <td>邮箱<span>*</span></td>
-                            <td><input type="text" id="mailbox"></td>
+                        <tr class="even  h38">
+                            <td class="w1">手机号</td>
+                            <td class="w2"><input type="text" id="phone"></td>
+                            <td class="w1">邮箱<span>*</span></td>
+                            <td class="w2"><input type="text" id="mailbox"></td>
                         </tr>
-                        <tr  height="38" class="odd">
-                            <td>微信号</td>
-                            <td><input type="text" id="WeChat"></td>
-                            <td class="padding">文化程度</td>
-                            <td><input type="text" id="culture"></td>
+                        <tr class="odd h38">
+                            <td class="w1">微信号</td>
+                            <td class="w2"><input type="text" id="WeChat"></td>
+                            <td class="w1">文化程度</td>
+                            <td class="w2"><input type="text" id="culture"></td>
                         </tr>
-                        <tr  height="60" class="even">
-                            <td>特长</td>
-                            <td><input type="text" id="speciality"></td>
-                            <td>职业</td>
-                            <td><input type="text" id="occupation"></td>
+                        <tr  class="even h60">
+                            <td class="w1">特长</td>
+                            <td class="w2"><input type="text" id="speciality"></td>
+                            <td class="w1">职业</td>
+                            <td class="w2"><input type="text" id="occupation"></td>
                         </tr>
-                        <tr  height="60" class="odd">
-                            <td class="padding">所在学校/单位</td>
-                            <td><input type="text" id="scholl"></td>
-                            <td class="padding">公益项目</td>
-                            <td><textarea id="project"></textarea></td>
+                        <tr class="odd h60">
+                            <td class="w1">所在学校/单位</td>
+                            <td class="w2"><input type="text" id="scholl"></td>
+                            <td class="w1">公益项目</td>
+                            <td class="w2"><textarea id="project"></textarea></td>
                         </tr>
                         
-                        <tr  height="80" class="even">
-                            <td class="padding">志愿者服务经历</td>
+                        <tr class="even h80">
+                            <td class="w1">志愿者服务经历</td>
                             <td colspan="3"><textarea id="experience"></textarea></td>
                         </tr>
 
                     </table>
                   <p>注意事项：身体健康，没有传染性和突发性疾病；</p>
                   <p>您的资料仅用于星希望公益内部统计,绝不会泄露给任何第三方</p>
-                  <a href="javascript:" class="submit" id="submit">提交</a>
+                  <a href="javascript:" class="submit" id="submit">提    交</a>
               </div>
           </div>
       </div>
@@ -99,7 +96,7 @@
     <script src="/js/static/utils.js"></script>
     <script src="/js/static/volunteer.js"></script>
     <script>
-        $("#header").load("/pags/public/header.html");
+        $("#header").load("/pags/public/header_s.html");
         $("#footer").load("/pags/public/footer.html");
     </script>
 </body>

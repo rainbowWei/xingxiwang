@@ -1514,7 +1514,7 @@
   }
   .must-under .ab-h .title .underline {
     width: .55rem;
-    height: .05rem;
+    height: .04rem;
     margin: .02rem 0 0 1.02rem;
   }
   .must-under .ab-h .title .t2 {
@@ -1824,7 +1824,7 @@
   .trends .content1 .list li .time {
     font-size: .12rem;
     line-height: .28rem;
-    margin-left: 1rem;
+    margin-left: .08rem;
   }
   .trends .content1 .list .more3 {
     width: 1.60rem;

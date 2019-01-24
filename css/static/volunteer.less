@@ -35,15 +35,20 @@
     background: #fff;
     border-top: 1px solid #e94f65;
     .tab2{
-        width:800px;
+        width:835px;
         margin: 10px auto 0;
         position: relative;
         li{
             float: left;
-            padding:10px 26px;
-            background-color: #ffffff; 
+            background-color: #ffffff;  
+            cursor: pointer;  
+            position: relative;  
+            width: 250px;
+            height: 39px;
+            line-height: 39px;
+            text-align: center;
             font-size: 18px; 
-            cursor: pointer;        
+            margin:  0 13px;  
         }
         .tab_on{
             box-shadow: 1px 1px 0px 0px 
@@ -53,21 +58,15 @@
             color: #e94f65; 
         }
         p{
-            width: 2px;
-            height: 26px;
-            background-color: #e71f19;
             position: absolute;
-            top:10px;
-        }
-        .f1{
-            left:264px;
-        }
-        .f2{
-            left:487px;
-        }
-        .w2{
-            margin: 0 30px;
+            left:-13px;
+            top:7px;
+            width:275px;
+            height: 26px;
+            line-height: 26px;
             text-align: center;
+            border-left: 2px solid #e71f19;
+            border-right: 2px solid #e71f19;
         }
     }
     .content1{
@@ -76,6 +75,20 @@
         margin: 45px auto 0;
         div{
             display: none;
+            width:100%;
+            height: 100%;
+        }
+        .v1{
+            background: url(../../images/volunteer.png);
+            background-size: 100% 100%;
+        }
+        .v2{
+            background: url(../../images/volunteer2.png);
+            background-size: 100% 100%;
+        }
+        .v3{
+            background: url(../../images/volunteer3.png);
+            background-size: 100% 100%;
         }
         .on2{
             display: block;
@@ -108,6 +121,15 @@
             border-right:1px solid #aaa3a7;
             border-bottom:1px solid #aaa3a7;
             margin-bottom: 10px;
+            .h38{
+                height: 38px;
+            }
+            .h60{
+                height: 60px;
+            }
+            .h80{
+                height: 80px;
+            }
             .even{
                 background: #fdf3fb;
                 input{
@@ -120,47 +142,51 @@
                     background: #fff;
                 }
             }
-            .w1{
-                width: 150px;
-            }
-            .w2{
-                width: 227px;
-            }
-            td{
-                border-left:1px solid #aaa3a7;
-                border-top:1px solid #aaa3a7;
-                font-size: 18px;
-                vertical-align: middle;
-                text-align: center;
-                color: #333333;
-                span{
-                    color:red;
+            tr{
+               .w1{
+                    width: 150px;
                 }
-                input{
-                    height:100%;
-                    width:227px;
-                    font-size: 16px;
-                    color: #999;
+                .w2{
+                    width: 227px;
+                    input{
+                       width:227px;  
+                    }
+                } 
+                td{
+                    border-left:1px solid #aaa3a7;
+                    border-top:1px solid #aaa3a7;
+                    font-size: 18px;
+                    vertical-align: middle;
                     text-align: center;
-                }
-                #project{
-                    width: 208px;
-                    height: 50px;
-                    padding: 5px 10px;
-                    color: #999;
-                    font-size: 16px;
-                    background: #fff;
-                }
-                #experience{
-                    width: 580px;
-                    height:68px;
-                    padding: 5px 10px;
-                    font-size: 16px;
-                    color: #999;
-                    background: #fdf3fb;
-                }
-
-            }
+                    color: #333333;
+                    span{
+                        color:red;
+                    }
+                    input{
+                        height:100%;
+                        font-size: 16px;
+                        color: #999;
+                        text-align: center;
+                    }
+                    #project{
+                        width: 208px;
+                        height: 50px;
+                        padding: 5px 10px;
+                        color: #999;
+                        font-size: 16px;
+                        background: #fff;
+                    }
+                    #experience{
+                        width: 580px;
+                        height:68px;
+                        padding: 5px 10px;
+                        font-size: 16px;
+                        color: #999;
+                        background: #fdf3fb;
+                    }
+    
+                } 
+            } 
         }
         p{
             font-size: 16px;
@@ -183,6 +209,180 @@
             left:50%;
             margin-left: -101px;
         }
+    }
+    
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+      font-size: .1rem;
+      opacity: 0;
+    }
+    .content{
+        width: 7.3rem;
+        height: 100%;
+        margin:  0 auto;
+    }
+
+    .vol-bg{
+        display: none;
+    }
+    .c-title{
+       width:6.00rem;
+       height: .57rem;
+       .title{
+        display: block;
+        width: 2.9rem;
+        height: .57rem;
+        border:1px solid #e94f65;
+        border-bottom:none;
+        font-size: .18rem;
+        line-height: .57rem;
+       }
+       .show{
+            
+            color: #e94f65;
+            font-weight:bold;
+            border:1px solid #e94f65;
+            border-bottom:none;
+            background-color: #fff;
+       }
+    }
+    .c-content{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-top: 1px solid #e94f65;
+        .tab2{
+            width:7.2rem;
+            margin: .10rem auto 0;
+            position: relative;
+            padding-left: .1rem;
+            li{
+                float: left;
+                background-color: #ffffff;  
+                cursor: pointer;  
+                position: relative;  
+                width: 2.25rem;
+                height: .39rem;
+                line-height: .39rem;
+                text-align: center;
+                font-size: .18rem; 
+                margin:  0 0.13rem;  
+            }
+            .w22{
+                width: 1.78rem;
+            }
+            .tab_on{
+                box-shadow: 0.01rem 0.01rem 0 0
+                    #e94f65;
+                border-radius: .19rem;
+                border: solid 1px #e94f65;
+                color: #e94f65; 
+            }
+            p{
+                position: absolute;
+                left:-.13rem;
+                top:.07rem;
+                width:2.02rem;
+                height: .26rem;
+                line-height: .26rem;
+                text-align: center;
+                border-left: 1px solid #e71f19;
+                border-right: 1px solid #e71f19;
+            }
+        }
+        .content1{
+            width: 7.10rem;
+	        height: 12.96rem;
+            margin: .22rem auto 0;
+        }
+        
+    }
+    
+    .entry{
+        width: 6.1rem;
+        height: 6.5rem;
+        margin:  .30rem auto 0;
+        position: relative;
+        .theader{
+            width: 100%;
+            font-size: .38rem;
+            line-height: .76rem;
+        }
+        .tbody{
+            width:100%;
+            height:100%;
+            .th-bg{
+                width: 100%;
+                height: .38rem;
+            }
+            .table{
+               
+                border-right:1px solid #aaa3a7;
+                border-bottom:1px solid #aaa3a7;
+                margin-bottom: .1rem;
+                .h38{
+                    height: .38rem;
+                }
+                .h60{
+                    height: .60rem;
+                }
+                .h80{
+                    height: .80rem;
+                }
+                tr{
+                    .w1{
+                            width: 1rem;
+                        }
+                    .w2{
+                            width: 1.5rem;
+                        input{
+                            width: 1.8rem;
+                        }
+                    }  
+                    td{
+                        border-left:1px solid #aaa3a7;
+                        border-top:1px solid #aaa3a7;
+                        font-size: .18rem;
+                        padding: 0.01rem 0.01rem;
+                        input{
+                            font-size: .18rem;
+                        }
+                        #project{
+                            width: 1.8rem;
+                            height: .50rem;
+                            padding: 0.05rem .10rem;
+                            font-size:.18rem;
+                        }
+                        #experience{
+                            width: 5.2rem;
+                            height:.70rem;
+                            padding: 0.05rem .10rem;
+                            font-size: .18rem;
+                        }
+        
+                    }
+                }
+                 
+            }
+            p{
+                font-size: .16rem;
+            }
+            .submit{
+                width: 2.02rem;
+                height: .40rem;
+                box-shadow: 0.02rem 0.03rem 0px 0px 
+                    rgba(233, 79, 101, 0.29);
+                border-radius: .20rem;
+                line-height:.40rem;
+                font-size: .18rem;
+                bottom:.50rem;
+                left:50%;
+                margin-left: -1.01rem;
+            }
+        }
+        
     }
     
 }
