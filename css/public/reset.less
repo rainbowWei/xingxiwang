@@ -55,3 +55,22 @@ textarea{
 //分页样式
 #page-table2 a{padding:5px;border:1px solid #f08300;margin:5px;}
 #page-table2 span.current{padding:5px;background:#f08300;margin:5px;color:#FFF;font-weight:bold;border:1px solid #f08300;}
+
+.isrequired:after {
+    content: '*';
+    color: red;
+}
+
+.right-separator {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        right: -3px;
+        top: 50%;
+        height: 26px;
+        width: 2px;
+        background: #e71f19;
+        margin-top: -13px;
+    }
+}

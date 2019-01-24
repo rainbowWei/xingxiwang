@@ -157,26 +157,22 @@
   text-align: center;
   color: #333333;
 }
-.entry .tbody .table tr td span {
-  color: red;
-}
 .entry .tbody .table tr td input {
   height: 100%;
   font-size: 16px;
   color: #999;
   text-align: center;
 }
-.entry .tbody .table tr td #project {
+.entry .tbody .table tr td .project {
   width: 208px;
-  height: 50px;
   padding: 5px 10px;
   color: #999;
   font-size: 16px;
   background: #fff;
 }
-.entry .tbody .table tr td #experience {
+.entry .tbody .table tr td .experience {
   width: 580px;
-  height: 68px;
+  height: 78px;
   padding: 5px 10px;
   font-size: 16px;
   color: #999;
@@ -269,17 +265,6 @@
     border: solid 1px #e94f65;
     color: #e94f65;
   }
-  .c-content .tab2 p {
-    position: absolute;
-    left: -0.13rem;
-    top: .07rem;
-    width: 2.02rem;
-    height: .26rem;
-    line-height: .26rem;
-    text-align: center;
-    border-left: 1px solid #e71f19;
-    border-right: 1px solid #e71f19;
-  }
   .c-content .content1 {
     width: 7.10rem;
     height: 12.96rem;
@@ -322,29 +307,29 @@
     width: 1rem;
   }
   .entry .tbody .table tr .w2 {
-    width: 1.5rem;
+    width: 2rem;
   }
   .entry .tbody .table tr .w2 input {
-    width: 1.8rem;
+    width: 100%;
+    box-sizing: border-box;
   }
   .entry .tbody .table tr td {
     border-left: 1px solid #aaa3a7;
     border-top: 1px solid #aaa3a7;
     font-size: .18rem;
-    padding: 0.01rem 0.01rem;
   }
   .entry .tbody .table tr td input {
     font-size: .18rem;
   }
-  .entry .tbody .table tr td #project {
-    width: 1.8rem;
-    height: .50rem;
+  .entry .tbody .table tr td .project {
+    width: 100%;
+    box-sizing: border-box;
     padding: 0.05rem .10rem;
     font-size: .18rem;
   }
-  .entry .tbody .table tr td #experience {
-    width: 5.2rem;
-    height: .70rem;
+  .entry .tbody .table tr td .experience {
+    width: 100%;
+    box-sizing: border-box;
     padding: 0.05rem .10rem;
     font-size: .18rem;
   }
