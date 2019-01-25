@@ -1,3 +1,7 @@
+.isrequired:after {
+  content: '*';
+  color: red;
+}
 .vol-bg {
   width: 100%;
   height: 48px;
@@ -165,6 +169,7 @@
 }
 .entry .tbody .table tr td .project {
   width: 208px;
+  height: 50px;
   padding: 5px 10px;
   color: #999;
   font-size: 16px;
@@ -231,27 +236,15 @@
     border-bottom: none;
     background-color: #fff;
   }
-  .c-content {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    border-top: 1px solid #e94f65;
-  }
   .c-content .tab2 {
     width: 7.2rem;
     margin: .10rem auto 0;
-    position: relative;
     padding-left: .1rem;
   }
   .c-content .tab2 li {
-    float: left;
-    background-color: #ffffff;
-    cursor: pointer;
-    position: relative;
     width: 2.25rem;
     height: .39rem;
     line-height: .39rem;
-    text-align: center;
     font-size: .18rem;
     margin: 0 0.13rem;
   }
@@ -262,8 +255,15 @@
     box-shadow: 0.01rem 0.01rem 0 0
                     #e94f65;
     border-radius: .19rem;
-    border: solid 1px #e94f65;
-    color: #e94f65;
+  }
+  .c-content .tab2 p {
+    left: -0.13rem;
+    top: .07rem;
+    width: 2.02rem;
+    height: .26rem;
+    line-height: .26rem;
+    border-left: 1px solid #e71f19;
+    border-right: 1px solid #e71f19;
   }
   .c-content .content1 {
     width: 7.10rem;
@@ -272,9 +272,8 @@
   }
   .entry {
     width: 6.1rem;
-    height: 6.5rem;
+    height: 6.4rem;
     margin: .30rem auto 0;
-    position: relative;
   }
   .entry .theader {
     width: 100%;
@@ -304,10 +303,10 @@
     height: .80rem;
   }
   .entry .tbody .table tr .w1 {
-    width: 1rem;
+    width: 1.2rem;
   }
   .entry .tbody .table tr .w2 {
-    width: 2rem;
+    width: 1.8rem;
   }
   .entry .tbody .table tr .w2 input {
     width: 100%;
@@ -323,12 +322,14 @@
   }
   .entry .tbody .table tr td .project {
     width: 100%;
-    box-sizing: border-box;
+    height: .58rem;
     padding: 0.05rem .10rem;
+    box-sizing: border-box;
     font-size: .18rem;
   }
   .entry .tbody .table tr td .experience {
     width: 100%;
+    height: .78rem;
     box-sizing: border-box;
     padding: 0.05rem .10rem;
     font-size: .18rem;
@@ -343,7 +344,7 @@
     border-radius: .20rem;
     line-height: .40rem;
     font-size: .18rem;
-    bottom: .50rem;
+    bottom: .30rem;
     left: 50%;
     margin-left: -1.01rem;
   }

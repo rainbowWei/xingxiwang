@@ -100,6 +100,7 @@
   height: 766px;
   width: 100%;
   padding-top: 42px;
+  background: #fff;
 }
 .family .fam-tit {
   font-size: 30px;
@@ -221,6 +222,7 @@
   height: 725px;
   width: 100%;
   padding-top: 58px;
+  background: #fff;
 }
 .time2 .time-line {
   font-size: 24px;
@@ -526,6 +528,7 @@
   height: 610px;
   width: 100%;
   padding-top: 38px;
+  background: #fff;
 }
 .expert2 .ex-tit {
   font-size: 30px;
@@ -586,6 +589,7 @@
 .service {
   height: 1705px;
   width: 100%;
+  background: #fff;
 }
 .service .ser-h {
   font-size: 30px;
@@ -802,6 +806,7 @@
 .member {
   height: 350px;
   padding-top: 40px;
+  background: #fff;
 }
 .member .mem-tit {
   font-size: 30px;
@@ -1007,11 +1012,11 @@
     left: 0;
   }
   .f-course .fc-list .right {
-    width: 1.98rem;
+    width: 2.05rem;
     height: .78rem;
     background-color: #ffffff;
     border: solid 1px #ffc682;
-    padding: .18rem 0 0 .1rem;
+    padding: .18rem 0 0 .05rem;
     top: .54rem;
     right: 0;
   }

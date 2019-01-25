@@ -161,6 +161,8 @@
 .under-course {
   height: 2436px;
   width: 100%;
+  background: #fff;
+  padding-top: 24px;
 }
 .under-course .under-list {
   width: 1000px;
@@ -172,7 +174,6 @@
   line-height: 59px;
   color: #333333;
   text-align: center;
-  margin-top: 24px;
 }
 .under-course .under-list .u-title2 {
   margin-top: 13px;
@@ -381,6 +382,7 @@
   .under-course {
     height: 18.15rem;
     width: 100%;
+    padding-top: .19rem;
   }
   .under-course .under-list {
     width: 100%;
@@ -390,7 +392,6 @@
   .under-course .under-list .u-title {
     font-size: .3rem;
     line-height: .56rem;
-    margin-top: .19rem;
   }
   .under-course .under-list .u-title2 {
     margin-top: 0;

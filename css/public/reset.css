@@ -138,16 +138,3 @@ textarea {
   content: '*';
   color: red;
 }
-.right-separator {
-  position: relative;
-}
-.right-separator:after {
-  content: '';
-  position: absolute;
-  right: -3px;
-  top: 50%;
-  height: 26px;
-  width: 2px;
-  background: #e71f19;
-  margin-top: -13px;
-}
