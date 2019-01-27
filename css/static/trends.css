@@ -14,29 +14,22 @@
   position: relative;
   margin-top: 22px;
 }
-.state .sta-h span,
-.state .sta-h b,
-.state .sta-h a,
-.state .sta-h i {
-  height: 22px;
-  line-height: 22px;
-  font-size: 16px;
-  display: inline-block;
-}
 .state .sta-h span {
+  position: absolute;
   top: 0px;
   width: 22px;
+  height: 22px;
   background: url(../../images/home.png);
   background-size: 100% 100%;
 }
-.state .sta-h b,
-.state .sta-h a {
-  color: #666666;
+.state .sta-h .nav_bar {
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  color: #666;
 }
-.state .sta-h b {
-  text-indent: 30px;
-}
-.state .sta-h i {
+.state .sta-h .nav_bar .active {
   color: #f08300;
 }
 .state .sta-list li {
@@ -100,22 +93,13 @@
     line-height: .22rem;
     margin-top: .2rem;
   }
-  .state .sta-h span,
-  .state .sta-h b,
-  .state .sta-h a,
-  .state .sta-h i {
-    height: .22rem;
-    line-height: .22rem;
-    font-size: .16rem;
-  }
   .state .sta-h span {
-    width: .18rem;
-    height: .2rem;
-    background: url(../../images/home.png);
-    background-size: 100% 100%;
+    width: .22rem;
+    height: .22rem;
   }
-  .state .sta-h b {
-    text-indent: .30rem;
+  .state .sta-h .nav_bar {
+    font-size: .16rem;
+    left: .30rem;
   }
   .state .sta-list li {
     width: 851px;

@@ -14,28 +14,23 @@
         line-height: 22px;
         position: relative;
         margin-top: 22px;
-        span,b,a,i{
-            height: 22px;
-            line-height: 22px; 
-            font-size: 16px;
-            display: inline-block;
-            // position: absolute;
-        }
         span{
-            // position: absolute;
+            position: absolute;
             top:0px;
-            width: 22px; 
+            width: 22px;
+            height: 22px; 
             background: url(../../images/home.png);
             background-size: 100% 100%;
         }
-        b,a{ 
-            color: #666666;
-        }
-        b{
-            text-indent:30px;
-        }
-        i{
-	        color: #f08300;
+        .nav_bar{
+            font-size: 16px;
+            position: absolute;
+            top:0;
+            left:30px;
+            color: #666;
+            .active{
+               color: #f08300;  
+            }
         }
     }
     .sta-list{
@@ -104,20 +99,13 @@
             height:.20rem;
             line-height: .22rem;
             margin-top: .2rem;
-            span,b,a,i{
-                
-                height: .22rem;
-                line-height: .22rem; 
-                font-size: .16rem;
-            }
             span{
-                width: .18rem;
-                height: .2rem; 
-                background: url(../../images/home.png);
-                background-size: 100% 100%;
+                width: .22rem;
+                height: .22rem; 
             }
-            b{
-                text-indent:.30rem;
+            .nav_bar{
+                font-size: .16rem;
+                left:.30rem;
             }
         }
         .sta-list{
