@@ -4,42 +4,38 @@ html {
 body {
   background: #fff;
 }
-header {
-  width: 100%;
-  height: 100%;
-}
-.header {
+.m-header {
   width: 7.3rem;
   margin: 0 auto;
   height: .66rem;
   padding: .14rem 0;
 }
-.header .h-left {
+.m-header .h-left {
   width: .55rem;
   height: .47rem;
   margin-top: .1rem;
   background: url(../../img/index/nav.png);
   background-size: 100% 100%;
 }
-.header .logo {
+.m-header .logo {
   width: 1.18rem;
   height: .58rem;
   background: url(../../img/index/logo.png);
   background-size: 100% 100%;
   margin: 0.05rem 0 0 2rem;
 }
-.header .h-right {
+.m-header .h-right {
   height: .38rem;
   font-size: .20rem;
   line-height: .26rem;
   color: #666666;
   margin-top: .12rem;
 }
-.header .h-right .two {
+.m-header .h-right .two {
   color: #00b8e9;
   font-weight: bold;
 }
-.header .nav {
+.m-header .nav {
   width: 4rem;
   background: #f39800;
   position: fixed;
@@ -49,7 +45,7 @@ header {
   display: none;
   z-index: 2000;
 }
-.header .nav .list1 {
+.m-header .nav .list1 {
   background: #f39800;
   width: 100%;
   padding: .22rem 0;
@@ -61,15 +57,15 @@ header {
   line-height: .45rem;
   transition: background 0.5s;
 }
-.header .nav .list1 a {
+.m-header .nav .list1 a {
   color: #f7f7f7;
 }
-.header .nav .list1 span {
+.m-header .nav .list1 span {
   width: 100%;
   height: 100%;
   display: block;
 }
-.header .nav .list1 .list2 {
+.m-header .nav .list1 .list2 {
   overflow: hidden;
   max-height: 0;
   height: auto;
@@ -77,13 +73,13 @@ header {
   line-height: .45rem;
   transition: all 0.5s;
 }
-.header .nav .list1 .list2 a {
+.m-header .nav .list1 .list2 a {
   color: #ffecda;
   font-size: .26rem;
   display: block;
   width: 100%;
 }
-.header .nav .list1 div {
+.m-header .nav .list1 div {
   width: .36rem;
   height: .36rem;
   position: absolute;
@@ -92,7 +88,7 @@ header {
   background: url(../../img/index/close.png);
   background-size: 100% 100%;
 }
-.header .nav .list1 i {
+.m-header .nav .list1 i {
   width: .33rem;
   height: .18rem;
   position: absolute;
@@ -103,13 +99,13 @@ header {
   transform: rotate(0);
   transition: all 0.5s;
 }
-.header .nav .active {
+.m-header .nav .active {
   background: #f5a94f;
 }
-.header .nav .active .list2 {
+.m-header .nav .active .list2 {
   max-height: 280px;
   height: auto;
 }
-.header .nav .active i {
+.m-header .nav .active i {
   transform: rotate(180deg);
 }

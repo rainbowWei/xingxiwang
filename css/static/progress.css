@@ -145,15 +145,6 @@
   background: url(../../images/aboutus/progress.png);
 }
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: .1rem;
-    opacity: 0;
-  }
-  .content {
-    width: 7.3rem;
-    height: 100%;
-    margin: 0 auto;
-  }
   .progress {
     height: 100%;
     width: 100%;

@@ -7,7 +7,6 @@
     <title>公司动态</title>
     <link rel="stylesheet" href="/css/public/reset.css">
     <link rel="stylesheet" href="/css/public/header.css">
-    <link rel="stylesheet" href="/css/public/header_s.css">
     <link rel="stylesheet" href="/css/public/footer.css">
     <link rel="stylesheet" href="/css/static/trends.css">
 </head>
@@ -20,9 +19,11 @@
         <div class="content">
             <div class="sta-h">
                 <span></span>
-                <b>当前位置 :</b>
-                <b> <a href="/index.html">首页 ></a></b>
-                <b class="active">公司动态</b>
+                <div class="nav_bar">
+                    <b>当前位置 :</b>
+                    <b> <a href="/index.html">首页 ></a></b>
+                    <b class="active">公司动态</b>
+                </div>
             </div>
             <div class="sta-list">
                 <a href="/pags/index/trends-detail.html">
@@ -65,10 +66,8 @@
     </div>
     <div id="footer"></div>
     <script src="/js/plugins/jquery-1.11.3.min.js"></script>
-    <script src="/js/plugins/jquery.cookie.js"></script>
-    <script src="/js/static/utils.js"></script>
     <script>
-            $("#header").load("/pags/public/header_s.html");
+            $("#header").load("/pags/public/header.html");
             $("#footer").load("/pags/public/footer.html");
     </script>
 </body>

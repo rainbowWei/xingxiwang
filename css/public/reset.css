@@ -64,7 +64,6 @@ video {
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   font-family: "微软雅黑";
@@ -137,4 +136,18 @@ textarea {
 .isrequired:after {
   content: '*';
   color: red;
+}
+.mobile-show {
+  display: none;
+}
+.mobile-none {
+  display: block;
+}
+@media screen and (max-width: 1024px) {
+  .mobile-show {
+    display: block;
+  }
+  .mobile-none {
+    display: none;
+  }
 }

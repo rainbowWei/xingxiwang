@@ -74,15 +74,6 @@
   display: block;
 }
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: .1rem;
-    opacity: 0;
-  }
-  .content {
-    width: 7.3rem;
-    height: 100%;
-    margin: 0 auto;
-  }
   .faculty {
     width: 100%;
     height: 8.09rem;
@@ -93,14 +84,14 @@
     margin: .3rem auto 1.15rem;
   }
   .faculty .faculty-list li {
-    width: 1.46rem;
+    width: 1.45rem;
     height: 2.2rem;
   }
   .faculty .faculty-list li .title {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 1.45rem;
+    width: 1.44rem;
     padding: .08rem 0;
     font-size: .16rem;
     z-index: 99;
@@ -109,7 +100,7 @@
     left: 0;
     bottom: 0;
     z-index: 40;
-    width: 1.45rem;
+    width: 1.44rem;
     height: .35rem;
   }
   .faculty .faculty-list .ml {
