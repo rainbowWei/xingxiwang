@@ -10,7 +10,7 @@
     text-align: center;
 }
 .case-c{
-    padding: 34px 140px 170px;
+    padding: 34px 140px 0;
     .case-img{
         margin:0 auto 32px;
         width: 427px;
@@ -72,4 +72,74 @@
         }
     }
 
+}
+@media screen and (max-width: 1024px) {
+    .case-bg{
+        height: .48rem;
+        font-size: .22rem;
+        line-height: .48rem;
+    }
+    .case-c{
+        padding: .30rem .1rem 0;
+        .case-img{
+            margin:0 auto .2rem;
+            width: 4.27rem;
+	        height: 2.43rem;
+            img{
+                width:100%;
+                height:100%;
+            }
+        }
+        .text{
+            p{
+                text-indent: 2em;
+                font-size: .18rem;
+                line-height: .31rem;
+            }
+        }
+    }
+
+    .case-c2{
+        width:7.1rem;
+        height:100%;
+        margin: .30rem auto 0;
+        .video{
+            width: 100%;
+            height: 3.48rem;
+            margin-top:.20rem;
+            .player{width: 5.90rem;position: relative;height:100%;margin:  0 auto;}
+            .player video{width:100%;height:100%;}
+            .player .bg{width:100%;height:100%;position: absolute;top:0;left:0;z-index: 1000;}
+            .player .ctl{width: 100%;height: .30rem;background: rgba(90,90,90,.6);position: absolute;right: 0; bottom: 2px;cursor:default;opacity:1;transition:opacity 0.8s;}
+            .player .ctl .btn,.player .ctl .time{padding: 0.05rem; font-size: .14rem;line-height: .20rem;border-radius: 0.05rem; background: #fff;position: absolute;bottom:0rem;}
+            .player .ctl .btn-play{left: 0.08rem;}
+            .player .ctl .btn-jy{right: .76rem;}
+            .player .ctl .btn-qp{right: .20rem;}
+            .player .ctl .sch{height: .12rem;border:1px solid #fff;border-radius: .10rem;position: absolute; bottom: 0.08rem;overflow: hidden;z-index: 1;}
+            .player .ctl .sch-play{width: 1.86rem;left: 1.40rem;}
+            .player .ctl .sch-yl{width: .86rem;right: .80rem;}
+            .player .ctl .sch-play .sch-sp{width: 2.00rem}
+            .player .ctl .sch-yl .sch-sp{width: .80rem;}
+            .player .ctl .sch .sch-sp{position: absolute;height: .12rem; top: 0;background: #fff;}
+            .player .ctl .sch-btn{position: absolute;width: .30rem;height: .20rem;border-radius: 0.05rem; top: 0.05rem;z-index: 2;background: #fff;}
+            .player .ctl .sch-s{left:1.29rem;}
+            .player .ctl .sch-y{left:9.00rem;}
+        
+        }
+        .text3{
+            width: 5.90rem;
+            margin: 0 auto;
+            h3{
+                margin: .30rem 0 .10rem;
+                font-size: .22rem;
+                line-height: .31rem;
+            }
+            p{
+                font-size: .18rem;
+                text-indent: 2em;
+                line-height: .31rem;
+            }
+        }
+    
+    }
 }

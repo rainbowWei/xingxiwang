@@ -6,6 +6,9 @@
 .state {
   width: 100%;
   height: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 100px;
 }
 .state .sta-h {
   width: 100%;
@@ -17,7 +20,7 @@
 .state .sta-h span {
   position: absolute;
   top: 0px;
-  width: 22px;
+  width: 20px;
   height: 22px;
   background: url(../../images/home.png);
   background-size: 100% 100%;
@@ -41,8 +44,12 @@
 .state .sta-list .img {
   width: 322px;
   height: 179px;
+  position: relative;
 }
 .state .sta-list .img img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -65,7 +72,7 @@
 }
 .state .sta-list .text .content1 span {
   color: #f08300;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   font-size: 14px;
 }
 .state .sta-list .text .time {
@@ -76,8 +83,12 @@
   right: 0;
 }
 .state #page-table {
-  margin: 130px 0  111px 676px;
-  width: 300px;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  text-align: right;
+  font-size: 16px;
+  width: 100%;
   height: 50px;
 }
 @media screen and (max-width: 1024px) {
@@ -85,68 +96,69 @@
     height: .48rem;
   }
   .state {
-    width: 100%;
+    width: 7.3rem;
     height: 100%;
+    padding-bottom: 1rem;
   }
   .state .sta-h {
     height: .20rem;
-    line-height: .22rem;
+    line-height: .20rem;
     margin-top: .2rem;
   }
   .state .sta-h span {
-    width: .22rem;
-    height: .22rem;
+    width: .18rem;
+    height: .20rem;
   }
   .state .sta-h .nav_bar {
     font-size: .16rem;
     left: .30rem;
   }
   .state .sta-list li {
-    width: 851px;
-    border-bottom: 2px solid #e5e5e5;
-    margin: 29px auto 0;
-    padding-bottom: 10px;
+    width: 7.1rem;
+    border-bottom: 1px solid #e5e5e5;
+    margin: .18rem auto 0;
+    padding-bottom: .10rem;
   }
   .state .sta-list .img {
-    width: 322px;
-    height: 179px;
+    width: 3.06rem;
+    height: 1.75rem;
   }
   .state .sta-list .img img {
     width: 100%;
     height: 100%;
   }
   .state .sta-list .text {
-    width: 506px;
-    height: 179px;
+    width: 3.87rem;
+    height: 1.75rem;
     position: relative;
   }
   .state .sta-list .text .tit {
-    font-size: 20px;
-    line-height: 25px;
-    color: #333333;
-    margin: 9px 0 10px;
+    font-size: .20rem;
+    line-height: .25rem;
+    margin: .09rem 0 .10rem;
   }
   .state .sta-list .text .content1 {
-    font-size: 16px;
-    line-height: 26px;
-    color: #666666;
+    font-size: .14rem;
+    line-height: .24rem;
     text-indent: 2em;
   }
   .state .sta-list .text .content1 span {
-    color: #f08300;
-    letter-spacing: -4px;
-    font-size: 14px;
+    letter-spacing: -0.03rem;
+    font-size: .14rem;
   }
   .state .sta-list .text .time {
-    font-size: 14px;
-    color: #999999;
+    font-size: .14rem;
     position: absolute;
     bottom: 0;
     right: 0;
   }
   .state #page-table {
-    margin: 130px 0  111px 676px;
-    width: 300px;
-    height: 50px;
+    position: absolute;
+    bottom: .30rem;
+    right: 0;
+    text-align: right;
+    font-size: .18rem;
+    width: 100%;
+    height: .50rem;
   }
 }
