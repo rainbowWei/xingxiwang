@@ -1,5 +1,7 @@
 .activity {
+  position: relative;
   padding: 40px 0 120px;
+  margin: 0 auto;
 }
 .activity .act-h {
   font-size: 38px;
@@ -84,11 +86,19 @@
   display: inline-block;
 }
 .activity #page-table2 {
-  margin: 51px 0  0px 853px;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  text-align: right;
+  font-size: 16px;
+  width: 100%;
+  height: 50px;
 }
 @media screen and (max-width: 1024px) {
   .activity {
-    padding: .08rem 0 .5rem;
+    width: 7.3rem;
+    height: 100%;
+    padding: .08rem 0 1rem;
   }
   .activity .act-h {
     font-size: .3rem;
@@ -160,6 +170,12 @@
     display: inline-block;
   }
   .activity #page-table2 {
-    margin: .51rem 0  0px 3.68rem;
+    position: absolute;
+    bottom: .30rem;
+    right: 0;
+    text-align: right;
+    font-size: .18rem;
+    width: 100%;
+    height: .50rem;
   }
 }

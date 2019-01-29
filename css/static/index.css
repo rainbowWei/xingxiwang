@@ -635,7 +635,7 @@
   left: 0;
   top: 0;
 }
-.expert .ex-list a .title {
+.expert .ex-list a .title-m {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -645,31 +645,15 @@
   text-align: center;
   font-size: 24px;
   color: #ffffff;
-  z-index: 99;
+  display: block;
 }
-.expert .ex-list a .text {
-  padding: 96px 5px 0 16px;
-  width: 211px;
-  height: 254px;
+.expert .ex-list a .title-m .title {
+  width: 100%;
   position: absolute;
-  top: 700px;
+  bottom: 0;
   left: 0;
-  z-index: 99;
 }
-.expert .ex-list a .text div {
-  font-size: 22px;
-  line-height: 37px;
-  color: #ffffff;
-}
-.expert .ex-list a .text p {
-  font-size: 14px;
-  line-height: 31px;
-  color: #ffffff;
-}
-.expert .ex-list a .text2 p {
-  line-height: 26px;
-}
-.expert .ex-list a .mask {
+.expert .ex-list a .title-m .mask {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -677,20 +661,52 @@
   filter: alpha(opacity=40);
   background-color: #050214;
   left: 0;
-  top: 350px;
-  margin-top: -54px;
-  z-index: 40;
+  bottom: 0;
 }
-.expert .ex-list li:hover .title {
+.expert .ex-list a .title-m2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: none;
 }
-.expert .ex-list li:hover .text {
-  top: 0;
+.expert .ex-list a .title-m2 .text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 96px 5px 0 16px;
+  width: 211px;
+  height: 254px;
 }
-.expert .ex-list li:hover .mask {
-  margin-top: -350px;
-  opacity: 0.5;
-  filter: alpha(opacity=50);
+.expert .ex-list a .title-m2 .text div {
+  font-size: 22px;
+  line-height: 37px;
+  color: #ffffff;
+}
+.expert .ex-list a .title-m2 .text p {
+  font-size: 14px;
+  line-height: 31px;
+  color: #ffffff;
+}
+.expert .ex-list a .title-m2 .text2 p {
+  line-height: 26px;
+}
+.expert .ex-list a .title-m2 .mask2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  background-color: #050214;
+}
+.expert li:hover .title-m {
+  display: none;
+}
+.expert li:hover .title-m2 {
+  display: block;
 }
 .mode {
   height: 877px;
@@ -1629,25 +1645,20 @@
     width: 100%;
     height: 100%;
   }
-  .expert .ex-list a .title {
+  .expert .ex-list a .title-m {
     height: .35rem;
     line-height: .35rem;
     font-size: .14rem;
+    text-align: center;
   }
-  .expert .ex-list a .text {
+  .expert .ex-list a .title-m2 {
     display: none;
   }
-  .expert .ex-list a .mask {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    background-color: #050214;
-    left: 0;
-    top: 2.11rem;
-    margin-top: -0.35rem;
-    z-index: 40;
+  .expert .ex-list li:hover .title-m {
+    display: block;
+  }
+  .expert .ex-list li:hover .title-m2 {
+    display: none;
   }
   .mode {
     height: 7.4rem;
@@ -1811,8 +1822,8 @@
   }
   .trends .content1 .list li .describe {
     font-size: .14rem;
-    line-height: .18rem;
-    height: .64rem;
+    line-height: .16rem;
+    height: .60rem;
   }
   .trends .content1 .list li .time {
     font-size: .12rem;

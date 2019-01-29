@@ -27,9 +27,9 @@
   color: #666666;
 }
 .case-c2 {
-  width: 600px;
+  width: 590px;
   height: 100%;
-  margin: 35px auto 118px;
+  margin: 35px auto 0;
 }
 .case-c2 .video {
   width: 100%;
@@ -37,7 +37,7 @@
   margin-top: 20px;
 }
 .case-c2 .video .player {
-  width: 590px;
+  width: 100%;
   position: relative;
   height: 100%;
 }
@@ -74,6 +74,12 @@
   position: absolute;
   bottom: 5px;
 }
+.case-c2 .video .player .ctl .l1 {
+  left: 55px;
+}
+.case-c2 .video .player .ctl .l2 {
+  left: 342px;
+}
 .case-c2 .video .player .ctl .btn-play {
   left: 8px;
 }
@@ -101,7 +107,7 @@
   right: 80px;
 }
 .case-c2 .video .player .ctl .sch-play .sch-sp {
-  width: 200px;
+  width: 0px;
 }
 .case-c2 .video .player .ctl .sch-yl .sch-sp {
   width: 80px;
@@ -111,6 +117,7 @@
   height: 12px;
   top: 0;
   background: #fff;
+  width: 0px;
 }
 .case-c2 .video .player .ctl .sch-btn {
   position: absolute;
@@ -122,7 +129,7 @@
   background: #fff;
 }
 .case-c2 .video .player .ctl .sch-s {
-  left: 129px;
+  left: 134px;
 }
 .case-c2 .video .player .ctl .sch-y {
   left: 900px;
@@ -197,20 +204,20 @@
     background: rgba(90, 90, 90, 0.6);
     position: absolute;
     right: 0;
-    bottom: 2px;
+    bottom: 0px;
     cursor: default;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.8s;
   }
   .case-c2 .video .player .ctl .btn,
   .case-c2 .video .player .ctl .time {
-    padding: 0.05rem;
+    padding: 0.03rem;
     font-size: .14rem;
-    line-height: .20rem;
+    line-height: .14rem;
     border-radius: 0.05rem;
     background: #fff;
     position: absolute;
-    bottom: 0rem;
+    bottom: 0.05rem;
   }
   .case-c2 .video .player .ctl .btn-play {
     left: 0.08rem;
@@ -220,6 +227,12 @@
   }
   .case-c2 .video .player .ctl .btn-qp {
     right: .20rem;
+  }
+  .case-c2 .video .player .ctl .l1 {
+    left: .55rem;
+  }
+  .case-c2 .video .player .ctl .l2 {
+    left: 3.42rem;
   }
   .case-c2 .video .player .ctl .sch {
     height: .12rem;
@@ -239,7 +252,7 @@
     right: .80rem;
   }
   .case-c2 .video .player .ctl .sch-play .sch-sp {
-    width: 2rem;
+    width: 0;
   }
   .case-c2 .video .player .ctl .sch-yl .sch-sp {
     width: .80rem;
@@ -253,9 +266,9 @@
   .case-c2 .video .player .ctl .sch-btn {
     position: absolute;
     width: .30rem;
-    height: .20rem;
+    height: .22rem;
     border-radius: 0.05rem;
-    top: 0.05rem;
+    top: 0.03rem;
     z-index: 2;
     background: #fff;
   }

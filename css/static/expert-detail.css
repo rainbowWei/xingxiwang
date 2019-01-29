@@ -11,6 +11,7 @@
 .state {
   width: 100%;
   height: 100%;
+  padding-bottom: 100px;
 }
 .state .sta-h {
   width: 100%;
@@ -75,6 +76,7 @@
   .state {
     width: 100%;
     height: 100%;
+    padding-bottom: 1rem;
   }
   .state .sta-h {
     height: .20rem;

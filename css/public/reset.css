@@ -133,6 +133,22 @@ textarea {
   font-weight: bold;
   border: 1px solid #f08300;
 }
+#page-table a {
+  padding: 5px;
+  border: 1px solid #f08300;
+  margin: 5px;
+}
+#page-table span.current {
+  padding: 5px;
+  background: #f08300;
+  margin: 5px;
+  color: #FFF;
+  font-weight: bold;
+  border: 1px solid #f08300;
+}
+div#mobile_icon_div {
+  font-size: 0;
+}
 .isrequired:after {
   content: '*';
   color: red;
@@ -149,5 +165,21 @@ textarea {
   }
   .mobile-none {
     display: none;
+  }
+  #page-table2 a {
+    padding: .05rem;
+    margin: .05rem;
+  }
+  #page-table2 span.current {
+    padding: .05rem;
+    margin: .05rem;
+  }
+  #page-table a {
+    padding: .05rem;
+    margin: .05rem;
+  }
+  #page-table span.current {
+    padding: .05rem;
+    margin: .05rem;
   }
 }
