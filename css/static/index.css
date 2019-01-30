@@ -1249,7 +1249,7 @@
     background-size: 100% 100%;
   }
   #two {
-    margin-left: -0.75rem;
+    margin-left: -1rem;
     bottom: .41rem;
   }
   #two li {
@@ -1822,8 +1822,8 @@
   }
   .trends .content1 .list li .describe {
     font-size: .14rem;
-    line-height: .16rem;
-    height: .60rem;
+    line-height: .18rem;
+    height: .64rem;
   }
   .trends .content1 .list li .time {
     font-size: .12rem;
