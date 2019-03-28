@@ -1,52 +1,64 @@
 .glory {
   height: 100%;
   width: 100%;
+  background: #fcf3ec;
+  padding-bottom: 80px;
 }
-.glory .glory-c {
-  padding: 40px 0 120px;
-  height: 730px;
+.glory .glory-h {
+  width: 100%;
+  height: 320px;
+  position: relative;
 }
-.glory .glory-c .glory-tit {
-  font-size: 38px;
-  line-height: 36px;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 26px;
+.glory .glory-h p {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "华文中宋";
+  position: absolute;
+  top: 230px;
+  left: 100px;
 }
-.glory .glory-c .glory-list {
-  width: 1080px;
+.glory .glory-h .glory-img {
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  width: 532px;
+  height: 293px;
+  background: url(../../images/aboutus/glory.png);
+}
+.glory .glory-list {
+  width: 1188px;
+  padding-top: 80px;
+  padding: 80px 0 50px 12px;
   margin: 0 auto;
   overflow: hidden;
+  background: #fff;
 }
-.glory .glory-c .list {
-  width: 1128px;
+.glory .list {
+  width: 100%;
   height: 100%;
 }
-.glory .glory-c .list li {
+.glory .list li {
   float: left;
-  margin: 0 48px 20px 0;
-  width: 233px;
-  height: 210px;
-  background: url(../../images/honor-bg.png);
-  background-size: 100% 100%;
+  margin-right: 12px;
+  width: 285px;
+  height: 250px;
 }
-.glory .glory-c .list li .img {
-  width: 195px;
-  height: 137px;
+.glory .list li .img {
+  width: 100%;
+  height: 190px;
   position: relative;
-  margin: 21px 20px 0;
 }
-.glory .glory-c .list li img {
+.glory .list li img {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.glory .glory-c .list li p {
+.glory .list li p {
   text-align: center;
-  line-height: 44px;
-  font-size: 18px;
+  line-height: 48px;
+  font-size: 16px;
   color: #333333;
 }
 @media screen and (max-width: 1024px) {

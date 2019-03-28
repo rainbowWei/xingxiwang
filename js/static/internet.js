@@ -1,46 +1,54 @@
-$(function () {
-  //手动控制主轮播图
-  $('#one2 li').eq(0).show();
-  $('#two2 li').mouseover(function () {
-    $(this).addClass('on').siblings().removeClass('on');
-    var index = $(this).index();
-    i = index;
-    $('#one2 li').eq(i).addClass('on').siblings().removeClass('on');
-  })
-  var len = $("#two2 li").length;
-  //自动播放
-  var i = 0;
-  var t = setInterval(move11, 2000);
-  //自动播放核心函数
-  function move11() {
-    i++;
-    if (i == len) {
-      i = 0;
-    }
-    $('#two2 li').eq(i).addClass('on').siblings().removeClass('on');
-    $('#one2 li').eq(i).addClass('on').siblings().removeClass('on');
-  }
+//家长感言 
+   
+if($(window).width()>1024){
 
-  //向右播放核心函数
-  function move22() {
-    i--;
-    if (i == -1) {
-      i = len - 1;
-    }
-    $('#two2 li').eq(i).addClass('on').siblings().removeClass('on');
-    $('#one2 li').eq(i).addClass('on').siblings().removeClass('on');
+  var i1;
+  function move1() {
+      $("#bigul2").animate({ "margin-left": "-302px" }, function () {
+          $("#bigul2").css("margin-left", "0px");
+          $("#bigul2").append($("#bigul2>li").eq(0));
+      })
   }
-  $('#left').click(function () {
-    move22();
-  })
-  $('#right').click(function () {
-    move11();
-  })
-  //鼠标移入移除
-  $('#lunbo2').hover(function () {
-    clearInterval(t);
+  i1 = setInterval(move1, 4000);
+  /*鼠标悬浮事件*/
+  $(".m1-list").hover(function () {
+      clearInterval(i1);
   }, function () {
-    t = setInterval(move11, 2000);
+      i1 = setInterval(move1, 4000);
+  });
+  /*按钮 下一个*/
+  $("#r-btn").on("click", move1);
+  /*按钮 上一个*/
+  $("#l-btn").on("click", function () {
+      $("#bigul2").prepend($("#bigul>li:last"));
+      $("#bigul2").css("margin-left", "-302px");
+      $("#bigul2").animate({ "margin-left": "0px" }, function () {
+      })
   })
-
-});
+}
+  else{
+      //移动端
+      var i1;
+      function move1() {
+          $("#bigul2").animate({ "margin-left": "-2.14rem" }, function () {
+              $("#bigul2").css("margin-left", "0px");
+              $("#bigul2").append($("#bigul2>li").eq(0));
+          })
+      }
+      i1 = setInterval(move1, 4000);
+      /*鼠标悬浮事件*/
+      $(".m1-list").hover(function () {
+          clearInterval(i1);
+      }, function () {
+          i1 = setInterval(move1, 4000);
+      });
+      /*按钮 下一个*/
+      $("#r-btn").on("click", move1);
+      /*按钮 上一个*/
+      $("#l-btn").on("click", function () {
+          $("#bigul2").prepend($("#bigul>li:last"));
+          $("#bigul2").css("margin-left", "-233px");
+          $("#bigul2").animate({ "margin-left": "0px" }, function () {
+          })
+      })
+}

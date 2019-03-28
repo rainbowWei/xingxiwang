@@ -6,7 +6,6 @@ iframe {
 }
 .content {
   width: 1200px;
-  height: 100%;
   margin: 0 auto;
 }
 .header {
@@ -22,19 +21,20 @@ iframe {
   height: 100%;
 }
 .header .header-c .logo {
-  width: 151px;
-  height: 77px;
+  width: 166px;
+  height: 66px;
   background: url(../../images/logo.png);
 }
 .header .header-c .nav {
   width: 721px;
-  margin-left: 150px;
+  margin-left: 50px;
   height: 100%;
   padding-top: 32px;
+  font-size: 18px;
 }
 .header .header-c .nav li {
   float: left;
-  margin-left: 58px;
+  margin-left: 42px;
   position: relative;
   height: 30px;
   cursor: pointer;
@@ -101,9 +101,8 @@ iframe {
   border-bottom: 4px solid   #f08300;
 }
 .header .header-c .contact {
-  width: 135px;
+  width: 225px;
   height: 41px;
-  margin-top: 19px;
 }
 .header .header-c .contact p {
   font-size: 18px;
@@ -111,8 +110,28 @@ iframe {
   color: #666666;
   text-align: center;
 }
+.header .header-c .contact .consult {
+  width: 155px;
+  height: 31px;
+  background: #ef8200;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 23px;
+  line-height: 31px;
+  margin: 0 auto  8px;
+}
 .header .header-c .contact .blue {
-  color: #00b8e9;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 27px;
+  color: #000000;
+}
+.header .header-c .contact .blue span {
+  width: 23px;
+  height: 24px;
+  display: inline-block;
+  background: url(../../images/2.png);
+  margin-right: 7px;
 }
 @media screen and (max-width: 1024px) {
   html {

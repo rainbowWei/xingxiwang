@@ -16,7 +16,7 @@ time, mark, audio, video {
     outline:0;
     vertical-align:baseline;
     background:transparent;
-    font-family: "微软雅黑";
+    font-family: SimHei;
 }
 h1,h2,h3,h4,h5,h6,em,i {
     font-weight: normal;
@@ -53,36 +53,35 @@ textarea{
 
 //分页样式
 #page-table2 a{
-    padding:5px;
-    border:1px solid #f08300;
-    margin:5px;
+    margin-right:5px;
+    color: #5d5d5d;
 }
 #page-table2 span.current{
-    padding:5px;
-    background:#f08300;
-    margin:5px;color:#FFF;
+    margin-right:5px;
+    color:#f08300;
     font-weight:bold;
-    border:1px solid #f08300;
 }
-#page-table a {
-    padding: 5px;
-    border: 1px solid #f08300;
-    margin: 5px;
-  }
-  #page-table span.current {
-    padding: 5px;
-    background: #f08300;
-    margin: 5px;
-    color: #FFF;
-    font-weight: bold;
-    border: 1px solid #f08300;
-  }
+#page-table2 a.next{
+    margin-left:38px;
+}
+#page-table a{
+    margin-right:5px;
+    color: #5d5d5d;
+}
+#page-table span.current{
+    margin-right:5px;
+    color:#f08300;
+    font-weight:bold;
+}
+#page-table a.next{
+    margin-left:38px;
+}
   //客服图标
   div#mobile_icon_div {
     font-size: 0;
   }
 //内容变成必填项
-.isrequired:after {
+.isrequired::before {
     content: '*';
     color: red;
 }

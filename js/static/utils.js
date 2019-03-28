@@ -30,7 +30,7 @@ function getParams(x) {
   return obj
 }
 
-var URL = ['index', 'course', 'internet', 'aboutus', 'news', 'love'];
+var URL = ['index', 'course', 'underCourse','internet', 'aboutus', 'news', 'love'];
 
 var a = Number(getParams("a"))
 if (isNaN(a)) {

@@ -1,44 +1,34 @@
 .brand {
   width: 100%;
   height: 100%;
+  background: #fcf3ec;
+  padding-bottom: 80px;
 }
-.brand .brand-c {
-  height: 930px;
-  padding: 40px 0 95px;
+.brand .brand-h {
+  width: 100%;
+  height: 320px;
+  background: url(../../images/aboutus/brand.png);
   position: relative;
 }
-.brand .brand-c .brand-tit {
-  font-size: 38px;
-  line-height: 36px;
-  color: #333333;
-  text-align: center;
-}
-.brand .brand-c .brand-img {
-  width: 570px;
-  height: 316px;
-  background: url(../../images/aboutus/brand.png);
-  background-size: 100% 100%;
-  margin: 29px auto 0;
-}
-.brand .brand-c .brand-text {
+.brand .brand-h p {
+  font-size: 60px;
+  line-height: 60px;
+  font-family: "华文中宋";
   position: absolute;
-  top: 385px;
-  left: 22px;
-  padding-top: 51px;
-  width: 1155px;
-  height: 527px;
-  background: url(../../images/aboutus/brand-bg.png);
-  background-size: 100% 100%;
+  top: 230px;
+  left: 100px;
+}
+.brand .brand-text {
+  width: 1000px;
+  height: 580px;
+  padding: 120px 100px 0;
+  background: #fff;
   font-size: 18px;
-  line-height: 44px;
-  color: #666666;
+  line-height: 36px;
 }
-.brand .brand-c .brand-text .brand-p {
-  width: 1035px;
-  margin: 0 auto;
-}
-.brand .brand-c .brand-text p {
+.brand .brand-text p {
   text-indent: 2em;
+  margin-bottom: 40px;
 }
 @media screen and (max-width: 1024px) {
   .brand {
