@@ -433,7 +433,6 @@
 .expert {
   padding-top: 82px;
   background: #fff;
-  height: 1018px;
 }
 .expert .common-tit p {
   text-align: center;
@@ -505,9 +504,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 96px 5px 0 16px;
+  padding: 125px 10px 20px 10px;
   width: 211px;
-  height: 254px;
+  height: 208px;
 }
 .expert .ex-list a .title-m2 .text div {
   font-size: 22px;
@@ -516,8 +515,9 @@
 }
 .expert .ex-list a .title-m2 .text p {
   font-size: 14px;
-  line-height: 31px;
+  line-height: 22px;
   color: #ffffff;
+  margin-top: 5px;
 }
 .expert .ex-list a .title-m2 .text2 p {
   line-height: 26px;
